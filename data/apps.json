@@ -1,0 +1,1808 @@
+[
+  {
+    "id": "sympy",
+    "name": "SymPy",
+    "category": "math",
+    "repo": "https://github.com/sympy/sympy",
+    "license": "BSD-3-Clause",
+    "summary_zh": "以符號運算化簡、微積分與解方程；適合把論文中的小例子變成可重算的推導。",
+    "summary_en": "Symbolic algebra, calculus and equation solving for reproducible small examples from papers.",
+    "install_hint": "python -m pip install sympy",
+    "real_invocation": "import sympy as s; x=s.Symbol('x'); s.solve(x**2-2,x)",
+    "integration": "HTML 以係數表單提交固定題型；後端呼叫 SymPy 並返回精確解、LaTeX 與代回檢查。也可由 Pyodide 在瀏覽器執行。",
+    "limitations": "符號計算結果不是一般定理的形式化證明；需保留定義域和假設。伺服器勿對未信任字串直接 eval/sympify。",
+    "source_urls": [
+      "https://github.com/sympy/sympy",
+      "https://docs.sympy.org/latest/modules/solvers/solvers.html"
+    ],
+    "source_refs": [
+      "turn3view0",
+      "turn8view3",
+      "turn11view0"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "An HTML coefficient form submits a fixed problem type. The backend calls SymPy and returns exact solutions, LaTeX and substitution checks; Pyodide can also run it in the browser.",
+    "limitations_en": "Symbolic calculations are not formal proofs of general theorems. Preserve domains and assumptions. Never pass untrusted server input directly to eval or sympify.",
+    "quickstart_steps_zh": [
+      "在獨立 Python 環境執行 python -m pip install sympy。",
+      "先用 x²−2=0 範例；以 Symbol 定義 x，再呼叫 solve。",
+      "比較精確根 ±√2，並代回原式確認殘差為零。",
+      "透過可用的本機操作頁更改係數；保留定義域與假設後下載結果。"
+    ],
+    "quickstart_steps_en": [
+      "Install SymPy in an isolated Python environment.",
+      "Define x with Symbol and solve x²−2=0 using solve.",
+      "Inspect the exact roots ±√2 and check zero substitution residuals.",
+      "Use an available local operation page to change coefficients and export results with assumptions."
+    ],
+    "mode": "local",
+    "actual_invocation": "sympy.solve / diff / integrate / factor on a bounded AST-built expression"
+  },
+  {
+    "id": "scipy",
+    "name": "SciPy",
+    "category": "math",
+    "repo": "https://github.com/scipy/scipy",
+    "license": "BSD-3-Clause",
+    "summary_zh": "數值最佳化、積分、ODE 與訊號分析；先用阻尼振子理解誤差與步長，再比較模型。",
+    "summary_en": "Numerical optimization, integration, ODEs and signal processing; use a damped oscillator to study tolerances.",
+    "install_hint": "python -m pip install scipy",
+    "real_invocation": "from scipy.integrate import solve_ivp; solve_ivp(lambda t,y:[y[1],-y[0]-0.2*y[1]],(0,10),[1,0])",
+    "integration": "本頁提供 FFT、線性聯立方程與統計量 JSON 轉接器；不包含 ODE 圖形介面。",
+    "limitations": "數值解有誤差，收斂測試與物理量檢查仍必要；不以近似數值當證明。",
+    "source_urls": [
+      "https://github.com/scipy/scipy",
+      "https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html"
+    ],
+    "source_refs": [
+      "turn3view1",
+      "turn8view4",
+      "turn11view1"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "This adapter supports FFT, linear systems and summary statistics; an ODE plotting UI is not implemented.",
+    "limitations_en": "Numerical solutions have error. Check convergence and physical quantities; an approximate numerical result is not a proof.",
+    "quickstart_steps_zh": [
+      "安裝 SciPy，使用可執行 Python 的主機。",
+      "先選阻尼振子，設定初位移 1、初速度 0 與時間 0–10。",
+      "呼叫 solve_ivp，檢查成功旗標並繪製位移隨時間曲線。",
+      "縮小容許誤差重算，確認曲線穩定後匯出數值。"
+    ],
+    "quickstart_steps_en": [
+      "Install SciPy on a Python-capable host.",
+      "Choose a damped oscillator: displacement 1, velocity 0, time 0–10.",
+      "Run solve_ivp, inspect its success flag and plot displacement.",
+      "Tighten tolerances, compare solutions and export the numerical data."
+    ],
+    "mode": "local",
+    "actual_invocation": "scipy.fft.fft(values) / scipy.linalg.solve(matrix, vector)"
+  },
+  {
+    "id": "numpy",
+    "name": "NumPy",
+    "category": "math",
+    "repo": "https://github.com/numpy/numpy",
+    "license": "BSD-3-Clause",
+    "summary_zh": "多維陣列、矩陣與傅立葉運算；適合線性代數、QFT/FFT 與小型模擬入門。",
+    "summary_en": "N-dimensional arrays and numerical linear algebra for matrix, FFT and simulation exercises.",
+    "install_hint": "python -m pip install numpy",
+    "real_invocation": "import numpy as np; np.linalg.eig(np.array([[2.,1.],[1.,2.]]))",
+    "integration": "HTML 矩陣輸入轉為 JSON；NumPy 計算特徵值，前端展示向量與重建殘差。",
+    "limitations": "浮點精度與病態矩陣會影響結果；限制矩陣大小以照顧手機與服務記憶體。",
+    "source_urls": [
+      "https://github.com/numpy/numpy",
+      "https://numpy.org/doc/stable/reference/generated/numpy.linalg.eig.html",
+      "https://github.com/numpy/numpy/blob/main/LICENSE.txt"
+    ],
+    "source_refs": [
+      "turn3view2",
+      "turn11view2",
+      "turn12view0"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "An HTML matrix editor submits JSON. NumPy computes eigenvalues; the frontend shows eigenvectors and reconstruction residuals.",
+    "limitations_en": "Floating-point precision and ill-conditioned matrices affect results. Limit matrix sizes to fit phone and server memory.",
+    "quickstart_steps_zh": [
+      "在獨立環境安裝 NumPy。",
+      "輸入矩陣 [[2,1],[1,2]]，呼叫 numpy.linalg.eig。",
+      "確認特徵值為 1 與 3，檢查 Av−λv 殘差。",
+      "修改矩陣元素並重算；將矩陣、特徵值及精度一併保存。"
+    ],
+    "quickstart_steps_en": [
+      "Install NumPy in an isolated environment.",
+      "Enter [[2,1],[1,2]] and call numpy.linalg.eig.",
+      "Check eigenvalues 1 and 3 and inspect residuals Av−λv.",
+      "Modify entries, recompute and save the matrix, eigenvalues and precision."
+    ],
+    "mode": "local"
+  },
+  {
+    "id": "networkx",
+    "name": "NetworkX",
+    "category": "math",
+    "repo": "https://github.com/networkx/networkx",
+    "license": "BSD-3-Clause",
+    "summary_zh": "圖論與網路分析：最短路徑、連通性與節點關係，適合互連容錯練習。",
+    "summary_en": "Graph algorithms for shortest paths, connectivity and network resilience exercises.",
+    "install_hint": "python -m pip install networkx",
+    "real_invocation": "import networkx as nx; G=nx.path_graph(5); nx.shortest_path(G,0,4)",
+    "integration": "HTML 新增節點與邊；後端計算路徑；刪除一條邊後重算，觀察 N−1 連通性。",
+    "limitations": "一般 NetworkX 圖存於記憶體；大型圖需限制規模。邊權為負時須選合適演算法。",
+    "source_urls": [
+      "https://github.com/networkx/networkx",
+      "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.shortest_paths.generic.shortest_path.html"
+    ],
+    "source_refs": [
+      "turn3view3",
+      "turn8view6",
+      "turn11view3"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "HTML edits graph nodes and edges. The backend computes a route; remove an edge and recompute to inspect N−1 connectivity.",
+    "limitations_en": "Standard NetworkX graphs reside in memory, so limit large graphs. Negative edge weights require an appropriate algorithm.",
+    "quickstart_steps_zh": [
+      "安裝 NetworkX，先建立五節點路徑圖。",
+      "選起點 0 與終點 4，呼叫 shortest_path。",
+      "移除一條邊後重算，觀察無路徑狀態或另一路徑。",
+      "再加入備援邊，保存前後圖與路徑比較。"
+    ],
+    "quickstart_steps_en": [
+      "Install NetworkX and create a five-node path graph.",
+      "Select nodes 0 and 4 and call shortest_path.",
+      "Remove an edge and recompute; inspect disconnection or an alternative route.",
+      "Add a redundant edge and save the before/after graphs and routes."
+    ],
+    "mode": "local"
+  },
+  {
+    "id": "cadquery",
+    "name": "CadQuery",
+    "category": "cad",
+    "repo": "https://github.com/CadQuery/cadquery",
+    "license": "Apache-2.0",
+    "summary_zh": "Python 參數化 CAD；以長寬高與孔徑生成可製造的幾何模型，匯出 STEP/STL。",
+    "summary_en": "Python parametric CAD that exports STEP/STL from dimension-controlled models.",
+    "install_hint": "python -m pip install cadquery",
+    "real_invocation": "import cadquery as cq; p=cq.Workplane('XY').box(30,20,5); cq.exporters.export(p,'part.step')",
+    "integration": "本頁為有界長方體與選用圓孔參數設計，輸出STEP；不是任意Python程式執行器。",
+    "limitations": "OCCT 二進位套件與 Python/作業系統須相容；這是後端幾何引擎，並非任意手機上的原生 CAD。",
+    "source_urls": [
+      "https://github.com/CadQuery/cadquery",
+      "https://cadquery.readthedocs.io/en/latest/importexport.html"
+    ],
+    "source_refs": [
+      "turn6view0",
+      "turn11view7"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "A bounded box with optional cylindrical hole exports STEP; this is not an arbitrary Python runner.",
+    "limitations_en": "OCCT binary packages must match Python and the host OS. This is a backend geometry engine, not native CAD running on every phone.",
+    "quickstart_steps_zh": [
+      "安裝相容 Python 與 CadQuery；若 pip 不相容，依官方指引使用 Conda。",
+      "先用長 30、寬 20、高 5 的固定方盒模板。",
+      "執行 CadQuery 產生幾何，匯出 STEP 與 STL。",
+      "用模型檢視器檢查尺寸，再修改一個參數並重新輸出。"
+    ],
+    "quickstart_steps_en": [
+      "Install compatible Python and CadQuery; use official Conda guidance if needed.",
+      "Start with a fixed box template measuring 30×20×5.",
+      "Execute CadQuery and export STEP and STL.",
+      "Inspect dimensions in a viewer, change one parameter and regenerate."
+    ],
+    "mode": "local",
+    "actual_invocation": "cq.Workplane(\"XY\").box(...).faces(\">Z\").workplane().hole(...); export STEP"
+  },
+  {
+    "id": "freecad",
+    "name": "FreeCAD",
+    "category": "cad",
+    "repo": "https://github.com/FreeCAD/FreeCAD",
+    "license": "LGPL-2.1 (see component notices)",
+    "summary_zh": "跨平台參數化 3D 設計工具；可由尺寸、草圖與建模歷史學習工程零件。",
+    "summary_en": "Cross-platform parametric 3D modeler with editable design history and Python scripting.",
+    "install_hint": "Install an official FreeCAD release for the host OS; retain its Python runtime.",
+    "real_invocation": "import FreeCAD, Part; doc=FreeCAD.newDocument('Lesson'); obj=doc.addObject('Part::Box','Box'); doc.recompute()",
+    "integration": "HTML 提交尺寸給主機上的固定 FreeCAD 巨集，匯出 STEP/STL；複雜修改在 FreeCAD 桌面開啟。",
+    "limitations": "FreeCAD 的 Python 模組通常跟隨其安裝，不應假設 pip install FreeCAD 可用。手機僅作操作介面。",
+    "source_urls": [
+      "https://github.com/FreeCAD/FreeCAD"
+    ],
+    "source_refs": [
+      "turn6view1",
+      "turn8view7"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "HTML submits dimensions to a fixed FreeCAD macro on the host, which exports STEP/STL. Open complex edits in the FreeCAD desktop application.",
+    "limitations_en": "FreeCAD Python modules usually belong to its installation; do not assume pip install FreeCAD works. Phones operate the interface.",
+    "quickstart_steps_zh": [
+      "安裝符合主機作業系統的官方 FreeCAD。",
+      "開啟 Python 主控台或固定巨集，新增文件及 Part::Box。",
+      "設定尺寸並重新計算，檢查模型樹與實體。",
+      "匯出 STEP/STL；僅在已連接主機服務後由 HTML 送出參數。"
+    ],
+    "quickstart_steps_en": [
+      "Install an official FreeCAD release for the host OS.",
+      "Use its Python console or a fixed macro to create a document and Part::Box.",
+      "Set dimensions, recompute and inspect the model tree and solid.",
+      "Export STEP/STL; submit HTML parameters only after connecting a host service."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "openscad",
+    "name": "OpenSCAD",
+    "category": "cad",
+    "repo": "https://github.com/openscad/openscad",
+    "license": "GPL-2.0-or-later; bundled-component exceptions/notices apply",
+    "summary_zh": "以程式描述實體幾何；用差集、聯集與參數建立可重現模型。",
+    "summary_en": "Script-based solid modeling using constructive geometry and reproducible parameters.",
+    "install_hint": "Install the official OpenSCAD package for your OS.",
+    "real_invocation": "openscad -o output.stl model.scad",
+    "integration": "本頁僅以固定長方體與圓孔模板輸出STL，不接受任意SCAD程式。",
+    "limitations": "布林幾何運算可能耗時；後端設逾時並隔離檔案存取。瀏覽器檢視器本身不等於 OpenSCAD 引擎。",
+    "source_urls": [
+      "https://github.com/openscad/openscad",
+      "https://github.com/openscad/openscad/blob/master/COPYING"
+    ],
+    "source_refs": [
+      "turn6view2",
+      "turn12view1",
+      "turn16view8"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "A fixed box/hole template exports STL; arbitrary SCAD programs are not accepted.",
+    "limitations_en": "Boolean geometry can be expensive. Apply backend timeouts and isolate file access. A browser mesh viewer is not the OpenSCAD engine.",
+    "quickstart_steps_zh": [
+      "安裝官方 OpenSCAD 並確認 CLI 可啟動。",
+      "建立 model.scad，先以 cube([30,20,5]) 描述方盒。",
+      "執行 openscad -o output.stl model.scad。",
+      "檢查輸出後修改尺寸；同時保存 SCAD 原始碼與 STL。"
+    ],
+    "quickstart_steps_en": [
+      "Install official OpenSCAD and check that its CLI starts.",
+      "Create model.scad with cube([30,20,5]).",
+      "Run openscad -o output.stl model.scad.",
+      "Inspect the output, edit dimensions and retain both SCAD and STL files."
+    ],
+    "mode": "local",
+    "actual_invocation": "openscad -o output.stl fixed-parameter-template.scad"
+  },
+  {
+    "id": "threejs",
+    "name": "Three.js",
+    "category": "cad",
+    "repo": "https://github.com/mrdoob/three.js",
+    "license": "MIT",
+    "summary_zh": "JavaScript 3D 顯示函式庫；支援互動旋轉、光照與工程模型預覽。",
+    "summary_en": "JavaScript 3D rendering for interactive model inspection, lighting and camera controls.",
+    "install_hint": "npm install three",
+    "real_invocation": "import * as THREE from \"three\"; const scene = new THREE.Scene();",
+    "integration": "本頁提供可調圓環半徑、旋轉與線框；需WebGL2。",
+    "limitations": "顯示三角網格不等於精確 CAD 求解；低階裝置需降低像素比、面數與陰影。",
+    "source_urls": [
+      "https://github.com/mrdoob/three.js",
+      "https://threejs.org/docs/"
+    ],
+    "source_refs": [
+      "turn6view3",
+      "turn8view9"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "Adjust a torus radius, rotation and wireframe; WebGL2 is required.",
+    "limitations_en": "Rendering a triangle mesh is not exact CAD solving. Reduce pixel ratio, polygon counts and shadows on low-end devices.",
+    "quickstart_steps_zh": [
+      "以 npm install three 安裝並由本機 HTTP 伺服器提供頁面。",
+      "建立場景、相機與渲染器，先顯示簡單方盒。",
+      "載入自己的 STL/glTF，提供旋轉、縮放及重設視角。",
+      "手機若變慢，降低像素比與模型面數再比較。"
+    ],
+    "quickstart_steps_en": [
+      "Install three with npm and serve the page over local HTTP.",
+      "Create a scene, camera and renderer; display a simple box.",
+      "Load your STL/glTF and add rotation, zoom and camera reset.",
+      "If a phone slows down, reduce pixel ratio and polygon count."
+    ],
+    "mode": "browser",
+    "actual_invocation": "THREE.TorusGeometry / THREE.WebGLRenderer / scene.render",
+    "direct_file": true,
+    "offline": true
+  },
+  {
+    "id": "llamacpp",
+    "name": "llama.cpp",
+    "category": "llm",
+    "repo": "https://github.com/ggml-org/llama.cpp",
+    "license": "MIT; model licenses separate",
+    "summary_zh": "C/C++ 本機 LLM 推論；可載入 GGUF 權重，以 CPU 或支援的 GPU 回覆學徒問題。",
+    "summary_en": "Local C/C++ inference for GGUF language models with a server interface.",
+    "install_hint": "Build or install the official release; download a compatible, licensed GGUF model.",
+    "real_invocation": "llama-server -m models/model.gguf --host 127.0.0.1 --port 8080",
+    "integration": "HTML 問答 → 同源後端代理 → llama-server /v1/chat/completions；加入目前教材與來源。",
+    "limitations": "權重另需下載與授權；速度取決於模型、記憶體與硬體。回覆不能自動視為已驗證證明。",
+    "source_urls": [
+      "https://github.com/ggml-org/llama.cpp",
+      "https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md"
+    ],
+    "source_refs": [
+      "turn6view4",
+      "turn8view10",
+      "turn13view3"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "HTML questions pass through a same-origin backend proxy to llama-server /v1/chat/completions, with the current lesson and source context.",
+    "limitations_en": "Model weights require a separate download and license review. Speed depends on model, memory and hardware. Generated answers are not verified proofs.",
+    "quickstart_steps_zh": [
+      "安裝或建置 llama.cpp，準備相容且授權允許的 GGUF 權重。",
+      "以 llama-server -m models/model.gguf --host 127.0.0.1 --port 8080 啟動。",
+      "確認服務可用，再透過本機代理送出教材段落與問題。",
+      "核對回答引用與實際計算輸出；記錄模型名稱及設定。"
+    ],
+    "quickstart_steps_en": [
+      "Install/build llama.cpp and obtain a compatible, appropriately licensed GGUF model.",
+      "Start llama-server with the model, loopback host and port 8080.",
+      "Check availability, then submit a lesson passage and question through a local proxy.",
+      "Check claims against sources and calculations; record the model and settings."
+    ],
+    "mode": "local"
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "category": "llm",
+    "repo": "https://github.com/ollama/ollama",
+    "license": "MIT; model licenses separate",
+    "summary_zh": "管理與執行本機模型，提供聊天 API；適合教學助理與文件問答。",
+    "summary_en": "Local model management and chat APIs for a teaching assistant and document Q&A.",
+    "install_hint": "Install the official application; ollama pull <compatible-model>; ollama serve",
+    "real_invocation": "POST http://127.0.0.1:11434/api/chat with model, messages, stream:false",
+    "integration": "本機服務將問題與選定的論文脈絡送至您電腦上的 Ollama。",
+    "limitations": "不要把雲端服務模式寫成完全離線；Intel Mac 應確認當前安裝支援，必要時改用 llama.cpp。",
+    "source_urls": [
+      "https://github.com/ollama/ollama",
+      "https://docs.ollama.com/api/chat"
+    ],
+    "source_refs": [
+      "turn6view5",
+      "turn8view11",
+      "turn11view5"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "The local service sends the question and selected paper context to Ollama on your computer.",
+    "limitations_en": "Do not describe cloud mode as fully offline. Check current Intel Mac installation support; use llama.cpp if appropriate.",
+    "quickstart_steps_zh": [
+      "確認主機支援目前官方 Ollama 版本後安裝。",
+      "下載選定且授權合適的本機模型，啟動 ollama serve。",
+      "向 /api/chat 指定 model、messages 與 stream:false 做短問答。",
+      "確認連接的是本機模型，再讓入口頁透過後端使用相同服務。"
+    ],
+    "quickstart_steps_en": [
+      "Check host compatibility and install the official Ollama release.",
+      "Download a suitable licensed local model and start ollama serve.",
+      "Test /api/chat with model, messages and stream:false.",
+      "Confirm local execution, then connect the portal through its backend."
+    ],
+    "mode": "local",
+    "actual_invocation": "HTTP POST http://127.0.0.1:11434/api/chat"
+  },
+  {
+    "id": "searxng",
+    "name": "SearXNG",
+    "category": "automation",
+    "repo": "https://github.com/searxng/searxng",
+    "license": "AGPL-3.0",
+    "summary_zh": "可自行部署的中繼搜尋引擎，把多來源搜尋結果整合供學習查證。",
+    "summary_en": "Self-hosted metasearch that aggregates search results from multiple engines.",
+    "install_hint": "Deploy using the official installation guide and enable JSON in search.formats.",
+    "real_invocation": "GET /search?q=QUERY&format=json",
+    "integration": "HTML 搜尋欄經同源代理呼叫自架 SearXNG，保留各結果原始網址。",
+    "limitations": "需要網路；搜尋引擎可能封鎖或限流；公開實例不保證開放 JSON API。",
+    "source_urls": [
+      "https://github.com/searxng/searxng",
+      "https://docs.searxng.org/dev/search_api.html"
+    ],
+    "source_refs": [
+      "turn6view6",
+      "turn8view12",
+      "turn11view4"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "An HTML search field calls a self-hosted SearXNG instance through a same-origin proxy and retains original result URLs.",
+    "limitations_en": "Network access is required. Search providers may block or rate-limit requests. Public instances do not necessarily expose the JSON API.",
+    "quickstart_steps_zh": [
+      "依官方指引部署自己的 SearXNG，先確認原生搜尋頁可用。",
+      "在設定的 search.formats 啟用 JSON。",
+      "用 /search?q=測試詞&format=json 檢查真實結果。",
+      "將入口頁代理接到該服務，保留每則結果原始網址與日期。"
+    ],
+    "quickstart_steps_en": [
+      "Deploy SearXNG following official guidance and test its native search page.",
+      "Enable JSON in search.formats.",
+      "Test /search?q=example&format=json and inspect actual results.",
+      "Connect the portal proxy and retain original result URLs and dates."
+    ],
+    "mode": "local"
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright",
+    "category": "automation",
+    "repo": "https://github.com/microsoft/playwright",
+    "license": "Apache-2.0",
+    "summary_zh": "以同一 API 驅動多種瀏覽器，實際驗證教材網站的按鈕、流程與版面。",
+    "summary_en": "Browser automation and testing across Chromium, Firefox and WebKit.",
+    "install_hint": "npm install playwright; npx playwright install chromium",
+    "real_invocation": "const {chromium}=require('playwright'); const browser=await chromium.launch();",
+    "integration": "HTML 觸發預先定義的本站測試；後端執行 Playwright，返回截圖和成功/失敗報告。",
+    "limitations": "瀏覽器自動化在主機執行；不可把任意訪客腳本當作可信任測試。登入與網站限制仍存在。",
+    "source_urls": [
+      "https://github.com/microsoft/playwright",
+      "https://playwright.dev/docs/intro"
+    ],
+    "source_refs": [
+      "turn6view7",
+      "turn8view13"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "HTML triggers predefined tests of this site. The backend runs Playwright and returns screenshots and pass/fail reports.",
+    "limitations_en": "Browser automation runs on the host. Do not treat arbitrary visitor code as trusted tests. Authentication and website restrictions still apply.",
+    "quickstart_steps_zh": [
+      "安裝 Playwright 及 Chromium 瀏覽器套件。",
+      "選擇自己的本機網站與預先定義的測試流程。",
+      "開啟頁面、點擊指定控制項並驗證可觀察的結果。",
+      "保存截圖與通過／失敗紀錄；修正問題後只重測相關流程。"
+    ],
+    "quickstart_steps_en": [
+      "Install Playwright and its Chromium browser package.",
+      "Choose your local site and a predefined test workflow.",
+      "Open the page, activate specified controls and assert observable outcomes.",
+      "Save screenshots and pass/fail results; rerun relevant checks after fixes."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "pyodide",
+    "name": "Pyodide",
+    "category": "math",
+    "repo": "https://github.com/pyodide/pyodide",
+    "license": "MPL-2.0; Python/package notices separate",
+    "summary_zh": "把 Python 編譯為 WebAssembly，讓小型數學計算在使用者瀏覽器執行。",
+    "summary_en": "WebAssembly Python runtime for browser-side scientific exercises.",
+    "install_hint": "Bundle a versioned Pyodide distribution and required package files.",
+    "real_invocation": "const py = await loadPyodide(); await py.loadPackage(\"sympy\"); await py.runPythonAsync(\"import sympy\");",
+    "integration": "HTML 使用 Worker 載入 Pyodide；執行固定教學程式，回傳文字與圖形。",
+    "limitations": "首次下載及記憶體較大；非所有 Python 原生擴充套件可用。快取完成前不宣稱離線可用。",
+    "source_urls": [
+      "https://github.com/pyodide/pyodide",
+      "https://pyodide.org/en/stable/usage/quickstart.html"
+    ],
+    "source_refs": [
+      "turn6view8",
+      "turn8view14",
+      "turn12view3"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "HTML loads Pyodide in a Worker, executes fixed lesson programs and returns text or graphics.",
+    "limitations_en": "Initial downloads and memory use can be substantial. Not all native Python extensions work. Do not claim offline availability before required files are cached.",
+    "quickstart_steps_zh": [
+      "準備固定版本的 Pyodide 與所需套件檔案，使用 HTTP 提供頁面。",
+      "在 Web Worker 載入執行環境及 SymPy 等相容套件。",
+      "先執行固定小範例，等待完成後顯示輸出。",
+      "再測試較大問題與中止功能；快取齊備後才測試離線使用。"
+    ],
+    "quickstart_steps_en": [
+      "Prepare versioned Pyodide/package files and serve the page over HTTP.",
+      "Load the runtime and compatible packages in a Web Worker.",
+      "Execute a small fixed example and display its completed output.",
+      "Test larger inputs and cancellation; test offline use only after caching dependencies."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "jupyterlite",
+    "name": "JupyterLite",
+    "category": "math",
+    "repo": "https://github.com/jupyterlite/jupyterlite",
+    "license": "BSD-3-Clause",
+    "summary_zh": "在瀏覽器執行 Notebook；將教材的範例與學徒練習保留為可下載筆記本。",
+    "summary_en": "Browser-hosted notebooks for editable lessons and downloadable experiments.",
+    "install_hint": "python -m pip install jupyterlite-core jupyterlite-pyodide-kernel; jupyter lite build",
+    "real_invocation": "jupyter lite build --contents notebooks --output-dir lite",
+    "integration": "總入口開啟本地建置的 lite/lab，真實 Notebook 核心在瀏覽器執行。",
+    "limitations": "瀏覽器儲存可能被清除，需匯出作業；核心套件受 WebAssembly 支援限制。",
+    "source_urls": [
+      "https://github.com/jupyterlite/jupyterlite",
+      "https://jupyterlite.readthedocs.io/en/stable/quickstart/deploy.html"
+    ],
+    "source_refs": [
+      "turn6view9",
+      "turn8view15",
+      "turn12view4"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "The portal opens the locally built lite/lab site, whose actual notebook kernel runs in the browser.",
+    "limitations_en": "Browser storage may be cleared, so export assignments. Kernel packages depend on WebAssembly compatibility.",
+    "quickstart_steps_zh": [
+      "安裝 jupyterlite-core 與 jupyterlite-pyodide-kernel。",
+      "把教學 Notebook 放入 notebooks 資料夾。",
+      "執行 jupyter lite build --contents notebooks --output-dir lite，再以 HTTP 提供 lite。",
+      "在瀏覽器逐格執行；離開前匯出已完成的 .ipynb。"
+    ],
+    "quickstart_steps_en": [
+      "Install jupyterlite-core and jupyterlite-pyodide-kernel.",
+      "Place lesson notebooks in a notebooks directory.",
+      "Build with jupyter lite build --contents notebooks --output-dir lite and serve lite over HTTP.",
+      "Execute cells in the browser and export your completed .ipynb before leaving."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "pdfjs",
+    "name": "PDF.js",
+    "category": "documents",
+    "repo": "https://github.com/mozilla/pdf.js",
+    "license": "Apache-2.0",
+    "summary_zh": "在網頁顯示 PDF 原文與頁碼；讓導讀與論文來源並排閱讀。",
+    "summary_en": "Browser PDF rendering with page navigation for side-by-side source reading.",
+    "install_hint": "npm install pdfjs-dist",
+    "real_invocation": "pdfjsLib.getDocument({data: pdfBytes}).promise",
+    "integration": "本頁繪製本機PDF第一頁並擷取前1至10頁文字，可下載PNG或TXT。",
+    "limitations": "掃描影像 PDF 不會自動變成準確文字；外部 PDF 下載須符合來源 CORS。",
+    "source_urls": [
+      "https://github.com/mozilla/pdf.js",
+      "https://mozilla.github.io/pdf.js/examples/"
+    ],
+    "source_refs": [
+      "turn8view0",
+      "turn12view5",
+      "turn12view7"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "Render the first page of a local PDF, extract text from1–10pages, and download PNG/TXT.",
+    "limitations_en": "Image-only scanned PDFs do not automatically become accurate text. Fetching external PDFs depends on the source CORS policy.",
+    "quickstart_steps_zh": [
+      "安裝 pdfjs-dist，配好相同版本的 PDF worker。",
+      "由使用者選取 PDF，以位元組呼叫 getDocument。",
+      "逐頁顯示到 canvas，保留頁碼與縮放控制。",
+      "抽查公式、頁序與掃描頁；文字辨識需求另交 OCR。"
+    ],
+    "quickstart_steps_en": [
+      "Install pdfjs-dist and configure its matching PDF worker.",
+      "Select a PDF and pass its bytes to getDocument.",
+      "Render pages to canvas with page numbers and zoom controls.",
+      "Check formulas, page order and scans; use separate OCR when needed."
+    ],
+    "mode": "browser",
+    "actual_invocation": "pdfjsLib.getDocument / getPage / render / getTextContent",
+    "direct_file": true,
+    "offline": true
+  },
+  {
+    "id": "tesseractjs",
+    "name": "Tesseract.js",
+    "category": "documents",
+    "repo": "https://github.com/naptha/tesseract.js",
+    "license": "Apache-2.0",
+    "summary_zh": "以 WebAssembly OCR 擷取圖片文字，讓掃描教材可搜尋與複製。",
+    "summary_en": "WebAssembly OCR for extracting searchable text from images.",
+    "install_hint": "npm install tesseract.js; bundle language traineddata for offline use",
+    "real_invocation": "const worker=await createWorker(\"eng\"); const result=await worker.recognize(image);",
+    "integration": "HTML 選圖片與語系 → OCR worker → 顯示文字與下載 TXT；PDF 需先逐頁轉圖。",
+    "limitations": "不直接支援 PDF；公式、手寫與低畫質辨識需人工校對；語言模型需另下載。",
+    "source_urls": [
+      "https://github.com/naptha/tesseract.js"
+    ],
+    "source_refs": [
+      "turn8view1",
+      "turn12view8"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "HTML selects an image and language, runs an OCR worker, and displays text for TXT download. Convert PDFs to page images first.",
+    "limitations_en": "PDF input is not directly supported. Review equations, handwriting and low-quality recognition. Language data requires separate downloads.",
+    "quickstart_steps_zh": [
+      "安裝 Tesseract.js 並準備欲辨識語言的 traineddata。",
+      "選取清晰圖片；PDF 先轉為逐頁影像。",
+      "建立對應語言 worker，執行 recognize 並等待結果。",
+      "校對文字後下載 TXT，完成批次後終止 worker。"
+    ],
+    "quickstart_steps_en": [
+      "Install Tesseract.js and obtain traineddata for the recognition language.",
+      "Select a clear image; render PDF pages to images first.",
+      "Create a language-matched worker and await recognize.",
+      "Correct errors, download TXT and terminate the worker after the batch."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "transformersjs",
+    "name": "Transformers.js",
+    "category": "llm",
+    "repo": "https://github.com/huggingface/transformers.js",
+    "license": "Apache-2.0; model licenses separate",
+    "summary_zh": "透過 ONNX Runtime 在瀏覽器執行小型 NLP、視覺與聲音模型。",
+    "summary_en": "Browser inference for compatible ONNX language, vision and audio models.",
+    "install_hint": "npm install @huggingface/transformers",
+    "real_invocation": "import {pipeline} from \"@huggingface/transformers\"; const task=await pipeline(\"sentiment-analysis\");",
+    "integration": "HTML 明確選任務及模型；pipeline 真實推論後呈現結果和模型識別。",
+    "limitations": "模型需相容且另有授權；WebGPU 與效能依裝置差異很大，應保留 WASM/後端方案。",
+    "source_urls": [
+      "https://github.com/huggingface/transformers.js",
+      "https://huggingface.co/docs/transformers.js/en/index"
+    ],
+    "source_refs": [
+      "turn8view2",
+      "turn12view6",
+      "turn12view9"
+    ],
+    "provenance": "curated-primary-source",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "HTML explicitly selects a task and model. The pipeline performs actual inference and displays the output and model identifier.",
+    "limitations_en": "Models must be compatible and have their own licenses. WebGPU support and performance vary widely; retain a WASM or backend option.",
+    "quickstart_steps_zh": [
+      "安裝 @huggingface/transformers，選定相容任務及授權合適的 ONNX 模型。",
+      "先確認模型與執行後端可在裝置載入。",
+      "用 pipeline 執行小型文字分類或其他已支援範例。",
+      "顯示模型 ID 與真實結果；量測記憶體和延遲再增加輸入。"
+    ],
+    "quickstart_steps_en": [
+      "Install @huggingface/transformers and choose a compatible, licensed ONNX model and task.",
+      "Check model loading and the execution backend on the device.",
+      "Run a small text-classification or other supported pipeline example.",
+      "Display the model ID and actual output; measure memory and latency before scaling inputs."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "markitdown",
+    "name": "MarkItDown",
+    "category": "documents",
+    "repo": "https://github.com/microsoft/markitdown",
+    "license": "MIT",
+    "summary_zh": "將文件轉為 Markdown，保留可供問答檢索使用的段落、表格與連結結構。",
+    "summary_en": "Convert office and other documents to Markdown for text analysis and retrieval.",
+    "install_hint": "python -m pip install \"markitdown[pdf,docx,pptx,xlsx]\"",
+    "real_invocation": "from markitdown import MarkItDown; result=MarkItDown(enable_plugins=False).convert_local(path)",
+    "integration": "HTML 上傳單一檔案；後端限檔案類型與大小，呼叫 convert_local，返回 Markdown 下載。",
+    "limitations": "不是高保真排版轉檔。OCR/影音/雲端擴充可能需要額外模型、工具或付費服務。",
+    "source_urls": [
+      "https://github.com/microsoft/markitdown",
+      "https://www.bilibili.com/video/BV1d1em62ENT/"
+    ],
+    "source_refs": [
+      "turn15view2",
+      "turn13search5"
+    ],
+    "provenance": "creator-name-match-indexed-bilibili-description; exact-youtube-linkage-unconfirmed",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "HTML uploads one file. The backend restricts file types and size, calls convert_local, and returns a Markdown download.",
+    "limitations_en": "This is not a high-fidelity layout converter. OCR, media and cloud extensions may require additional models, tools or paid services.",
+    "quickstart_steps_zh": [
+      "在獨立環境安裝需要的 markitdown 格式擴充，如 pdf、docx、pptx。",
+      "先選自己有權處理的小型文件。",
+      "以停用外掛的 MarkItDown 呼叫 convert_local，保存 Markdown。",
+      "比對標題、表格與原文件；掃描文字或影音另確認所需擴充。"
+    ],
+    "quickstart_steps_en": [
+      "Install MarkItDown with required format extras, such as pdf, docx and pptx.",
+      "Choose a small document you are authorized to process.",
+      "Call convert_local with plugins disabled and save Markdown.",
+      "Compare headings/tables with the source; check additional requirements for scans or media."
+    ],
+    "mode": "local"
+  },
+  {
+    "id": "deeptutor",
+    "name": "DeepTutor",
+    "category": "education",
+    "repo": "https://github.com/HKUDS/DeepTutor",
+    "license": "Apache-2.0",
+    "summary_zh": "可自行部署的個人化學習工作台；串接教材、練習及模型服務。",
+    "summary_en": "A self-hostable personalized tutoring workspace with learning resources and model providers.",
+    "install_hint": "docker run --rm --name deeptutor -p 127.0.0.1:3782:3782 -v deeptutor-data:/app/data ghcr.io/hkuds/deeptutor:latest",
+    "real_invocation": "Open http://127.0.0.1:3782; configure a provider and import learning material.",
+    "integration": "總入口一鍵開啟實際自架 DeepTutor 網頁；以它的原生教材索引與練習功能工作。",
+    "limitations": "需先設定模型供應者；免費程式碼不代表雲端模型免費；未部署時應顯示未安裝。",
+    "source_urls": [
+      "https://github.com/HKUDS/DeepTutor",
+      "https://www.bilibili.com/video/BV1jzb26PEan/"
+    ],
+    "source_refs": [
+      "turn15view3",
+      "turn16view0",
+      "turn16view1",
+      "turn13search6"
+    ],
+    "provenance": "creator-name-match-indexed-bilibili-description; exact-youtube-linkage-unconfirmed",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "The portal opens the actual self-hosted DeepTutor application, which performs its own document indexing and exercise workflows.",
+    "limitations_en": "Configure a model provider first. Free source code does not make cloud models free. Show an unavailable/not-installed status until deployed.",
+    "quickstart_steps_zh": [
+      "安裝 Docker，依官方方式啟動 DeepTutor 並保留資料卷。",
+      "開啟本機 3782 埠的原生介面。",
+      "設定自己的模型供應者，再匯入一份教材。",
+      "執行問答或練習並檢查來源；確認服務可用後才接總入口。"
+    ],
+    "quickstart_steps_en": [
+      "Install Docker, start DeepTutor using official guidance and retain its data volume.",
+      "Open its native interface on local port 3782.",
+      "Configure your model provider and import one lesson resource.",
+      "Run Q&A or exercises, inspect sources and connect the portal after service verification."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "opencodereview",
+    "name": "OpenCodeReview",
+    "category": "automation",
+    "repo": "https://github.com/alibaba/open-code-review",
+    "license": "Apache-2.0",
+    "summary_zh": "對 Git 差異與原始碼做結構化審查，將行號與建議保留給學徒修改。",
+    "summary_en": "CLI code review using Git context and a configurable LLM provider.",
+    "install_hint": "Install from official release instructions; run ocr config provider and ocr config model.",
+    "real_invocation": "ocr scan (see the installed version help for target/options)",
+    "integration": "HTML 選已授權的本機專案與審查範圍；後端呼叫 CLI，將結構化建議顯示在程式旁。",
+    "limitations": "需模型端點；審查可能漏報或誤報；不可自動把建議當作測試通過。",
+    "source_urls": [
+      "https://github.com/alibaba/open-code-review",
+      "https://www.bilibili.com/video/BV1d1em62ENT/"
+    ],
+    "source_refs": [
+      "turn15view4",
+      "turn16view3",
+      "turn16view4",
+      "turn13search5"
+    ],
+    "provenance": "creator-name-match-indexed-bilibili-description; exact-youtube-linkage-unconfirmed",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "HTML selects an authorized local project and review scope. A backend calls the CLI and displays structured suggestions alongside code.",
+    "limitations_en": "A model endpoint is required. Reviews can miss problems or flag correct code. Suggestions do not establish that tests pass.",
+    "quickstart_steps_zh": [
+      "依官方版本指引安裝 OpenCodeReview CLI。",
+      "執行 ocr config provider 與 ocr config model 設定自己的模型。",
+      "在有權審查的本機專案中，依 ocr scan --help 選定範圍。",
+      "閱讀帶行號建議並自行驗證；不要將建議自動視為已修復。"
+    ],
+    "quickstart_steps_en": [
+      "Install the OpenCodeReview CLI using its official release guidance.",
+      "Configure your model with ocr config provider and ocr config model.",
+      "In an authorized local project, use ocr scan --help to select scope.",
+      "Review line-specific suggestions and verify them; suggestions are not automatic fixes."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "weknora",
+    "name": "WeKnora",
+    "category": "education",
+    "repo": "https://github.com/Tencent/WeKnora",
+    "license": "MIT",
+    "summary_zh": "文件知識庫、RAG 問答、Agent 與 Wiki；適合讓學徒沿引用回到教材。",
+    "summary_en": "Document knowledge bases with retrieval, reasoning agents and a maintainable wiki.",
+    "install_hint": "Clone the official repo, copy .env.example to .env, configure it, then docker compose pull and docker compose up -d.",
+    "real_invocation": "Open the deployed web UI; import documents and configure language/embedding models.",
+    "integration": "總入口連到自架 WeKnora；由真實檢索與問答流程呈現來源，不用靜態假回覆。",
+    "limitations": "需要資料庫、模型和持續運作的後端；手機只作客戶端；資料與模型授權各自保留。",
+    "source_urls": [
+      "https://github.com/Tencent/WeKnora",
+      "https://www.bilibili.com/video/BV1d1em62ENT/"
+    ],
+    "source_refs": [
+      "turn15view5",
+      "turn16view5",
+      "turn16view6",
+      "turn13search5"
+    ],
+    "provenance": "creator-name-match-indexed-bilibili-description; exact-youtube-linkage-unconfirmed",
+    "verified_at": "2026-10-18",
+    "verification": "official-documentation-reviewed; runtime-not-tested",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "integration_en": "The portal opens a self-hosted WeKnora instance. Its actual retrieval and Q&A workflows display sources instead of static mock responses.",
+    "limitations_en": "A database, models and a continuously running backend are required. Phones act as clients. Data and model licenses remain separate.",
+    "quickstart_steps_zh": [
+      "複製官方 WeKnora 原始碼與 .env.example，填入必要本機設定。",
+      "依官方 Docker Compose 指引啟動核心服務。",
+      "開啟原生介面，設定語言與嵌入模型並匯入一份教材。",
+      "檢查檢索命中段落後提問；再將總入口連至已驗證的服務。"
+    ],
+    "quickstart_steps_en": [
+      "Clone official WeKnora sources, copy .env.example and configure the environment.",
+      "Start core services using official Docker Compose guidance.",
+      "Open the native UI, configure language/embedding models and import one resource.",
+      "Inspect retrieved passages before Q&A, then connect the portal to the verified service."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "ffmpeg",
+    "name": "FFmpeg",
+    "category": "media",
+    "repo": "https://github.com/FFmpeg/FFmpeg",
+    "license": "LGPL-2.1-or-later by default; optional GPL/nonfree components change redistribution conditions",
+    "source_urls": [
+      "https://github.com/FFmpeg/FFmpeg",
+      "https://github.com/FFmpeg/FFmpeg/blob/master/LICENSE.md",
+      "https://www.ffmpeg.org/legal.html"
+    ],
+    "summary_zh": "真正的音視訊轉檔、裁切、縮放、字幕與音軌處理引擎。適合把錄影轉成課程片段，或先轉換語音辨識需要的 WAV。",
+    "summary_en": "An actual audio/video conversion and filtering engine for lesson clips, subtitles, audio extraction and ASR preprocessing.",
+    "install_hint": "Install FFmpeg for the host OS and verify ffmpeg -version / ffprobe -version; CPU operation is available, hardware encoders depend on build and drivers.",
+    "integration": "Upload a media file to a local backend; run ffmpeg as a fixed argument array and return the output file.",
+    "limitations": "A static HTML page cannot directly launch the installed CLI; a local backend or separately built WebAssembly version is required. Do not advertise every binary build as LGPL: enabled codecs and external libraries matter. Large transcodes consume CPU, memory and disk; mobile browsers can operate the UI while the host processes media.",
+    "integration_details": {
+      "mode": "local_cli_adapter",
+      "route": "Upload a media file to a local backend; run ffmpeg as a fixed argument array and return the output file.",
+      "example_argv": [
+        "ffmpeg",
+        "-i",
+        "input.mp4",
+        "-vn",
+        "-ar",
+        "16000",
+        "-ac",
+        "1",
+        "-c:a",
+        "pcm_s16le",
+        "output.wav"
+      ],
+      "one_click_service": "Extract a mono 16 kHz WAV for speech recognition."
+    },
+    "real_invocation": "ffmpeg -i input.mp4 -vn -ar 16000 -ac 1 -c:a pcm_s16le output.wav",
+    "verified_at": "2026-10-18",
+    "verification": "official documentation reviewed; application not executed in this research task",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "provenance": "curated-primary-source",
+    "integration_en": "Upload a media file to a local backend; run ffmpeg as a fixed argument array and return the output file.",
+    "limitations_en": "A static HTML page cannot directly launch the installed CLI; a local backend or separately built WebAssembly version is required. Do not advertise every binary build as LGPL: enabled codecs and external libraries matter. Large transcodes consume CPU, memory and disk; mobile browsers can operate the UI while the host processes media.",
+    "quickstart_steps_zh": [
+      "安裝 FFmpeg 並確認 ffmpeg -version 與 ffprobe -version。",
+      "選取自己有權處理的小型音視訊檔。",
+      "依範例抽取單聲道 16 kHz PCM WAV，檢查程序退出碼。",
+      "播放結果並確認長度與聲音，再交語音辨識或下載。"
+    ],
+    "quickstart_steps_en": [
+      "Install FFmpeg and check ffmpeg -version and ffprobe -version.",
+      "Choose a small media file you are authorized to process.",
+      "Extract mono 16 kHz PCM WAV using the example command and check the exit code.",
+      "Listen and check duration before transcription or download."
+    ],
+    "mode": "local"
+  },
+  {
+    "id": "whisper-cpp",
+    "name": "whisper.cpp",
+    "category": "speech",
+    "repo": "https://github.com/ggml-org/whisper.cpp",
+    "license": "MIT (implementation); verify the selected model's license separately",
+    "source_urls": [
+      "https://github.com/ggml-org/whisper.cpp",
+      "https://github.com/ggml-org/whisper.cpp/blob/master/README.md"
+    ],
+    "summary_zh": "以 C/C++ 執行 Whisper 語音辨識，可在 CPU 離線轉錄，另支援多種硬體後端與 WebAssembly。適合 Intel Mac 的本機逐字稿。",
+    "summary_en": "C/C++ Whisper inference with CPU, multiple accelerator backends and WebAssembly support; useful for local transcription.",
+    "install_hint": "Clone the repository, download a multilingual base model, then cmake -B build and cmake --build build -j --config Release. Use a .en model only for English-only tasks.",
+    "integration": "Convert input into 16-bit mono WAV, invoke whisper-cli and return its transcript/subtitles.",
+    "limitations": "Models must be downloaded before offline use; the model is not embedded in ordinary HTML. Intel Macs can use CPU; Apple Silicon Metal/Core ML guidance does not imply the same acceleration on Intel Mac hardware. Recognition may omit or hallucinate words, especially with silence, music or uncommon vocabulary; transcripts need review.",
+    "integration_details": {
+      "mode": "local_cli_adapter",
+      "route": "Convert input into 16-bit mono WAV, invoke whisper-cli and return its transcript/subtitles.",
+      "example_argv": [
+        "./build/bin/whisper-cli",
+        "-m",
+        "models/ggml-base.bin",
+        "-f",
+        "input.wav",
+        "-l",
+        "auto",
+        "-osrt",
+        "-otxt"
+      ],
+      "one_click_service": "Upload an audio lesson and produce text plus SRT."
+    },
+    "real_invocation": "./build/bin/whisper-cli -m models/ggml-base.bin -f input.wav -l auto -osrt -otxt",
+    "verified_at": "2026-10-18",
+    "verification": "official documentation reviewed; application not executed in this research task",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "provenance": "curated-primary-source",
+    "integration_en": "Convert input into 16-bit mono WAV, invoke whisper-cli and return its transcript/subtitles.",
+    "limitations_en": "Models must be downloaded before offline use; the model is not embedded in ordinary HTML. Intel Macs can use CPU; Apple Silicon Metal/Core ML guidance does not imply the same acceleration on Intel Mac hardware. Recognition may omit or hallucinate words, especially with silence, music or uncommon vocabulary; transcripts need review.",
+    "quickstart_steps_zh": [
+      "依官方方式建置 whisper.cpp，下載合適的多語模型。",
+      "將自己的短錄音轉成符合要求的 16-bit 單聲道 WAV。",
+      "以 whisper-cli 指定模型、音檔及 -l auto，輸出 TXT/SRT。",
+      "抽查專有名詞、靜音段與時間戳，修正後保存。"
+    ],
+    "quickstart_steps_en": [
+      "Build whisper.cpp following official guidance and download a suitable multilingual model.",
+      "Convert your short recording to the required 16-bit mono WAV format.",
+      "Run whisper-cli with the model, audio and -l auto; export TXT/SRT.",
+      "Check technical terms, silent sections and timestamps before saving corrections."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "faster-whisper",
+    "name": "faster-whisper",
+    "category": "speech",
+    "repo": "https://github.com/SYSTRAN/faster-whisper",
+    "license": "MIT (implementation); selected model weights retain their own license",
+    "source_urls": [
+      "https://github.com/SYSTRAN/faster-whisper",
+      "https://github.com/SYSTRAN/faster-whisper/blob/master/LICENSE",
+      "https://huggingface.co/Systran/faster-whisper-base"
+    ],
+    "summary_zh": "透過 CTranslate2 執行 Whisper，提供 Python API、CPU INT8 與 NVIDIA GPU 推論。可回傳時間戳及語言辨識結果。",
+    "summary_en": "A CTranslate2 Whisper implementation with Python APIs, CPU INT8 and NVIDIA GPU execution, returning timed transcript segments.",
+    "install_hint": "Use Python 3.9+ and pip install faster-whisper. CPU: WhisperModel('base', device='cpu', compute_type='int8'). Current GPU instructions require CUDA 12 cuBLAS and cuDNN 9; match CTranslate2 versions.",
+    "integration": "A local upload endpoint calls WhisperModel.transcribe; consume the segments generator to execute inference and serialize segments as JSON/SRT.",
+    "limitations": "PyAV packages FFmpeg libraries, so a separate FFmpeg executable is not required for its normal audio decoding. GPU support here is NVIDIA/CUDA; do not promise Radeon or Apple Metal acceleration through this adapter. Performance benchmark claims depend on hardware, model, beam size and batching; no speed promise for the user's machine.",
+    "integration_details": {
+      "mode": "python_adapter",
+      "route": "A local upload endpoint calls WhisperModel.transcribe; consume the segments generator to execute inference and serialize segments as JSON/SRT.",
+      "one_click_service": "Transcribe a recording with timestamps and download subtitles."
+    },
+    "real_invocation": "A local upload endpoint calls WhisperModel.transcribe; consume the segments generator to execute inference and serialize segments as JSON/SRT.",
+    "verified_at": "2026-10-18",
+    "verification": "official documentation reviewed; application not executed in this research task",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "provenance": "curated-primary-source",
+    "integration_en": "A local upload endpoint calls WhisperModel.transcribe; consume the segments generator to execute inference and serialize segments as JSON/SRT.",
+    "limitations_en": "PyAV packages FFmpeg libraries, so a separate FFmpeg executable is not required for its normal audio decoding. GPU support here is NVIDIA/CUDA; do not promise Radeon or Apple Metal acceleration through this adapter. Performance benchmark claims depend on hardware, model, beam size and batching; no speed promise for the user's machine.",
+    "quickstart_steps_zh": [
+      "在相容 Python 環境安裝 faster-whisper。",
+      "先用 base 模型、CPU、int8 設定做小檔測試。",
+      "呼叫 transcribe 並迭代 segments，取得真正的推論段落與時間戳。",
+      "核對辨識文字後匯出；需要 GPU 時另核對 CUDA/CTranslate2 版本。"
+    ],
+    "quickstart_steps_en": [
+      "Install faster-whisper in a compatible Python environment.",
+      "Test a small file using the base model, CPU and int8.",
+      "Call transcribe and iterate segments to execute inference and obtain timestamps.",
+      "Review and export text; check CUDA/CTranslate2 compatibility separately for GPU use."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "kokoro",
+    "name": "Kokoro",
+    "category": "speech",
+    "repo": "https://github.com/hexgrad/kokoro",
+    "license": "Apache-2.0 for the inference library and official Kokoro-82M weights",
+    "source_urls": [
+      "https://github.com/hexgrad/kokoro",
+      "https://huggingface.co/hexgrad/Kokoro-82M"
+    ],
+    "summary_zh": "82M 參數的開放權重文字轉語音模型，可把導讀合成可下載音訊；官方範例包含英、日、華語與數種歐洲及印度語言。",
+    "summary_en": "An 82-million-parameter open-weight text-to-speech model for downloadable lesson narration in its supported languages.",
+    "install_hint": "Install kokoro and soundfile in an isolated Python environment; install espeak-ng when required. Add misaki[zh] for Mandarin or misaki[ja] for Japanese. PyTorch wheel availability must be checked on Intel macOS.",
+    "integration": "Call KPipeline with the matching language/voice, combine returned audio segments, write a 24 kHz WAV and serve it through an audio element.",
+    "limitations": "Kokoro is not a universal-language model; language and voice must match. Download model and voice assets before offline use; browser speechSynthesis is a separate fallback, not Kokoro inference. An open-weight inference release does not establish that all training code or the full training dataset is released.",
+    "integration_details": {
+      "mode": "python_adapter",
+      "route": "Call KPipeline with the matching language/voice, combine returned audio segments, write a 24 kHz WAV and serve it through an audio element.",
+      "one_click_service": "Enter text, select an installed matching voice and synthesize narration."
+    },
+    "real_invocation": "Call KPipeline with the matching language/voice, combine returned audio segments, write a 24 kHz WAV and serve it through an audio element.",
+    "verified_at": "2026-10-18",
+    "verification": "official documentation reviewed; application not executed in this research task",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "provenance": "curated-primary-source",
+    "integration_en": "Call KPipeline with the matching language/voice, combine returned audio segments, write a 24 kHz WAV and serve it through an audio element.",
+    "limitations_en": "Kokoro is not a universal-language model; language and voice must match. Download model and voice assets before offline use; browser speechSynthesis is a separate fallback, not Kokoro inference. An open-weight inference release does not establish that all training code or the full training dataset is released.",
+    "quickstart_steps_zh": [
+      "安裝相容的 Kokoro、soundfile 與必要發音依賴。",
+      "下載模型及聲音資產，選擇一致的語言與 voice。",
+      "用 KPipeline 合成短段落，將音訊段保存成 24 kHz WAV。",
+      "按播放鍵實際聆聽與校對發音，再增加段落長度。"
+    ],
+    "quickstart_steps_en": [
+      "Install compatible Kokoro, soundfile and required phonemization dependencies.",
+      "Download model/voice assets and select a matching language and voice.",
+      "Synthesize a short paragraph with KPipeline and save 24 kHz WAV segments.",
+      "Play and check pronunciation before increasing text length."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "piper",
+    "name": "Piper",
+    "category": "speech",
+    "repo": "https://github.com/OHF-Voice/piper1-gpl",
+    "license": "GPL-3.0 for the current engine; each voice has an independent MODEL_CARD license",
+    "source_urls": [
+      "https://github.com/OHF-Voice/piper1-gpl",
+      "https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/VOICES.md",
+      "https://github.com/OHF-Voice/piper1-gpl/blob/main/docs/API_HTTP.md"
+    ],
+    "summary_zh": "適合本機的神經網路文字轉語音引擎，提供 ONNX 語音模型與 HTTP/Python/C++ 介面。可作為學院網頁的離線朗讀服務。",
+    "summary_en": "A local neural TTS engine with ONNX voices and HTTP, Python and C++ interfaces for offline lesson narration.",
+    "install_hint": "pip install 'piper-tts[http]'; python -m piper.download_voices en_US-lessac-medium; python -m piper.http_server -m en_US-lessac-medium.",
+    "integration": "Use GET /info to inspect the voice, POST JSON {text: ...} to /synthesize and play the returned WAV. The documented server defaults to port 5000.",
+    "limitations": "The maintained OHF engine is GPL-3.0; do not confuse it with older archived Piper licensing. Every voice needs both .onnx and .onnx.json files; review its MODEL_CARD before redistribution or commercial use. A language in the interface does not guarantee a matching installed Piper voice.",
+    "integration_details": {
+      "mode": "http_adapter",
+      "route": "Use GET /info to inspect the voice, POST JSON {text: ...} to /synthesize and play the returned WAV. The documented server defaults to port 5000.",
+      "one_click_service": "Speak a lesson paragraph through the installed local voice."
+    },
+    "real_invocation": "Use GET /info to inspect the voice, POST JSON {text: ...} to /synthesize and play the returned WAV. The documented server defaults to port 5000.",
+    "verified_at": "2026-10-18",
+    "verification": "official documentation reviewed; application not executed in this research task",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "provenance": "curated-primary-source",
+    "integration_en": "Use GET /info to inspect the voice, POST JSON {text: ...} to /synthesize and play the returned WAV. The documented server defaults to port 5000.",
+    "limitations_en": "The maintained OHF engine is GPL-3.0; do not confuse it with older archived Piper licensing. Every voice needs both .onnx and .onnx.json files; review its MODEL_CARD before redistribution or commercial use. A language in the interface does not guarantee a matching installed Piper voice.",
+    "quickstart_steps_zh": [
+      "安裝 piper-tts[http]，檢查選定聲音的 MODEL_CARD 授權。",
+      "下載該聲音的 .onnx 與 .onnx.json，啟動 Piper HTTP 服務。",
+      "先以 /info 確認聲音，再向 /synthesize 傳送短文字。",
+      "播放回傳 WAV，確認語言與發音後才接教材朗讀按鈕。"
+    ],
+    "quickstart_steps_en": [
+      "Install piper-tts[http] and review the selected voice MODEL_CARD license.",
+      "Download its .onnx and .onnx.json files and start the Piper HTTP server.",
+      "Inspect /info, then POST a short text to /synthesize.",
+      "Play the WAV and verify language/pronunciation before connecting lesson narration."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "comfyui",
+    "name": "ComfyUI",
+    "category": "generative-media",
+    "repo": "https://github.com/Comfy-Org/ComfyUI",
+    "license": "GPL-3.0 for core; model weights and custom nodes have independent licenses",
+    "source_urls": [
+      "https://github.com/Comfy-Org/ComfyUI",
+      "https://github.com/Comfy-Org/ComfyUI/blob/master/script_examples/websockets_api_example.py"
+    ],
+    "summary_zh": "查詢本機ComfyUI系統與裝置狀態；本頁不生成圖片。",
+    "summary_en": "Inspect local ComfyUI system/device status; this page does not generate images.",
+    "install_hint": "Use the official desktop/manual instructions with a compatible PyTorch build; install the exact checkpoints and nodes required by a saved API workflow. CPU mode is possible but model-dependent and often slow.",
+    "integration": "本頁僅查詢真實ComfyUI服務狀態，尚未提供圖片生成工作流程。",
+    "limitations": "Requires an inference host; static GitHub Pages alone cannot execute PyTorch workflows. No generic promise that any workflow fits any GPU; memory depends on model and settings. Paid partner/API nodes exist; a free local service should use local nodes and separately licensed weights. Unknown custom nodes execute host code and need independent review before installation.",
+    "integration_details": {
+      "mode": "http_websocket_adapter",
+      "route": "POST an API-format workflow to /prompt on the local server, track /ws, inspect /history/{prompt_id}, and retrieve outputs from /view; default address is 127.0.0.1:8188.",
+      "one_click_service": "Run a preconfigured, locally installed image-generation workflow and download the actual output."
+    },
+    "real_invocation": "POST an API-format workflow to /prompt on the local server, track /ws, inspect /history/{prompt_id}, and retrieve outputs from /view; default address is 127.0.0.1:8188.",
+    "verified_at": "2026-10-18",
+    "verification": "official documentation reviewed; application not executed in this research task",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "provenance": "curated-primary-source",
+    "integration_en": "This adapter queries actual ComfyUI service status only; image-generation workflow execution is not implemented.",
+    "limitations_en": "Requires an inference host; static GitHub Pages alone cannot execute PyTorch workflows. No generic promise that any workflow fits any GPU; memory depends on model and settings. Paid partner/API nodes exist; a free local service should use local nodes and separately licensed weights. Unknown custom nodes execute host code and need independent review before installation.",
+    "quickstart_steps_zh": [
+      "依官方指引安裝 ComfyUI 與相容 PyTorch，準備流程所需模型與節點。",
+      "先在原生介面完成一次小型本機工作流程。",
+      "匯出 API 格式流程，向 /prompt 提交並追蹤工作狀態。",
+      "由 /history 與 /view 取得實際輸出；確認成功後再接簡化 HTML。"
+    ],
+    "quickstart_steps_en": [
+      "Install ComfyUI with compatible PyTorch and the models/nodes required by the workflow.",
+      "Complete a small local workflow in its native UI first.",
+      "Export API-format workflow JSON, submit it to /prompt and track progress.",
+      "Retrieve actual output through /history and /view before connecting simplified HTML."
+    ],
+    "mode": "local",
+    "actual_invocation": "HTTP GET http://127.0.0.1:8188/system_stats"
+  },
+  {
+    "id": "liveportrait",
+    "name": "LivePortrait",
+    "category": "generative-media",
+    "repo": "https://github.com/KlingAIResearch/LivePortrait",
+    "license": "MIT for project code; bundled InsightFace detection models are restricted to noncommercial research",
+    "source_urls": [
+      "https://github.com/KlingAIResearch/LivePortrait",
+      "https://github.com/KlingAIResearch/LivePortrait/blob/main/LICENSE",
+      "https://huggingface.co/KlingTeam/LivePortrait"
+    ],
+    "summary_zh": "使用驅動影像或影片的表情與姿態，讓來源人像產生動畫；可接入您的人像博物館與示範老師。它不是單靠文字就能生成完整講課影片。",
+    "summary_en": "Animates a source portrait using motion from a driving image or video, suitable for interactive museum or instructor demonstrations.",
+    "install_hint": "Create the documented Python 3.10 environment, install matching PyTorch/dependencies and FFmpeg, download the expected pretrained_weights tree, then run inference.py or app.py. The old KlingTeam repository URL redirects to KlingAIResearch.",
+    "integration": "Upload source portrait and driving video; run python inference.py -s source.jpg -d driving.mp4 in the installed project and return the generated MP4. Alternatively launch the official Gradio UI.",
+    "limitations": "Official macOS guidance targets Apple Silicon; Intel Mac is not a supported/tested equivalent. Use a separate compatible inference host for that machine. Animals mode has additional CUDA/X-Pose constraints. Commercial use needs replacement or proper authorization for InsightFace detection models; MIT code alone does not remove model restrictions.",
+    "integration_details": {
+      "mode": "local_cli_or_gradio_adapter",
+      "route": "Upload source portrait and driving video; run python inference.py -s source.jpg -d driving.mp4 in the installed project and return the generated MP4. Alternatively launch the official Gradio UI.",
+      "one_click_service": "Animate a supplied portrait with a supplied motion recording."
+    },
+    "real_invocation": "Upload source portrait and driving video; run python inference.py -s source.jpg -d driving.mp4 in the installed project and return the generated MP4. Alternatively launch the official Gradio UI.",
+    "verified_at": "2026-10-18",
+    "verification": "official documentation reviewed; application not executed in this research task",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "provenance": "curated-primary-source",
+    "integration_en": "Upload source portrait and driving video; run python inference.py -s source.jpg -d driving.mp4 in the installed project and return the generated MP4. Alternatively launch the official Gradio UI.",
+    "limitations_en": "Official macOS guidance targets Apple Silicon; Intel Mac is not a supported/tested equivalent. Use a separate compatible inference host for that machine. Animals mode has additional CUDA/X-Pose constraints. Commercial use needs replacement or proper authorization for InsightFace detection models; MIT code alone does not remove model restrictions.",
+    "quickstart_steps_zh": [
+      "在官方支援的主機建立相容環境並安裝 FFmpeg。",
+      "依官方目錄下載權重，逐項確認模型授權。",
+      "提供有權使用的來源人像與驅動影片，執行 inference.py。",
+      "檢查生成 MP4 的表情與姿態；Intel Mac 可改作相容推論主機的客戶端。"
+    ],
+    "quickstart_steps_en": [
+      "Prepare a compatible environment on an officially supported host and install FFmpeg.",
+      "Download weights into the documented directories and review each model license.",
+      "Provide an authorized source portrait and driving video, then run inference.py.",
+      "Inspect the generated MP4; use an Intel Mac as a client if a separate host is needed."
+    ],
+    "mode": "guide"
+  },
+  {
+    "id": "opencv",
+    "name": "OpenCV",
+    "category": "vision",
+    "repo": "https://github.com/opencv/opencv",
+    "license": "Apache-2.0 for current OpenCV; bundled third-party components and imported models may differ",
+    "source_urls": [
+      "https://github.com/opencv/opencv",
+      "https://docs.opencv.org/4.13.0/d0/d84/tutorial_js_usage.html"
+    ],
+    "summary_zh": "提供影像濾波、邊緣、輪廓、幾何轉換等真正的視覺計算。OpenCV.js 可直接在瀏覽器將上傳圖片轉成灰階或邊緣圖。",
+    "summary_en": "A computer-vision library for filtering, contours and geometric transforms; OpenCV.js runs actual image processing in a browser.",
+    "install_hint": "Load a pinned compatible OpenCV.js build and wait for runtime initialization. A Python backend may instead install opencv-python-headless; ordinary binary wheels do not imply CUDA support.",
+    "integration": "本頁僅提供灰階與Canny邊緣，不包含人臉辨識或影片追蹤。",
+    "limitations": "OpenCV.js and native OpenCV expose different subsets; check the chosen build for each API. Large images should be resized on phones to avoid browser memory exhaustion. Neural inference requires separately downloaded models with their own licenses; basic filters do not need model weights.",
+    "integration_details": {
+      "mode": "browser_wasm",
+      "route": "Read a selected image with cv.imread, apply cv.cvtColor / cv.Canny, show with cv.imshow and delete Mat objects to release WebAssembly memory.",
+      "one_click_service": "Upload a photo and immediately calculate edge or grayscale output locally."
+    },
+    "real_invocation": "Read a selected image with cv.imread, apply cv.cvtColor / cv.Canny, show with cv.imshow and delete Mat objects to release WebAssembly memory.",
+    "verified_at": "2026-10-18",
+    "verification": "official documentation reviewed; application not executed in this research task",
+    "integration_status": "proposed-adapter-not-yet-implemented",
+    "provenance": "curated-primary-source",
+    "integration_en": "This page supports grayscale and Canny edges, not facial recognition or video tracking.",
+    "limitations_en": "OpenCV.js and native OpenCV expose different subsets; check the chosen build for each API. Large images should be resized on phones to avoid browser memory exhaustion. Neural inference requires separately downloaded models with their own licenses; basic filters do not need model weights.",
+    "quickstart_steps_zh": [
+      "載入固定版本 OpenCV.js 並等待執行環境就緒。",
+      "選取圖片；手機先縮至適當尺寸。",
+      "以 cv.imread 讀取，再執行 cv.cvtColor 或 cv.Canny。",
+      "用 cv.imshow 顯示真正輸出，完成後 delete 所有 Mat。"
+    ],
+    "quickstart_steps_en": [
+      "Load a pinned OpenCV.js build and await runtime initialization.",
+      "Select an image; resize it first on memory-limited phones.",
+      "Read with cv.imread and run cv.cvtColor or cv.Canny.",
+      "Display actual output using cv.imshow, then delete all Mat objects."
+    ],
+    "mode": "local",
+    "actual_invocation": "cv2.cvtColor / cv2.Canny on bounded image input"
+  },
+  {
+    "id": "mathjs",
+    "name": "math.js",
+    "category": "math",
+    "repo": "https://github.com/josdejong/mathjs",
+    "license": "Apache-2.0",
+    "summary_zh": "直接計算矩陣、數值算式與符號微分，保留真實運算結果。",
+    "summary_en": "Evaluate matrices, numerical expressions and symbolic derivatives.",
+    "actual_invocation": "math.evaluate(expression) / math.derivative(expression, \"x\")",
+    "real_invocation": "math.evaluate(expression) / math.derivative(expression, \"x\")",
+    "mode": "browser",
+    "limitations": "Bundled version 14.8.1; 500-character expression and 3-second worker limit. Floating-point output is not a proof.",
+    "limitations_en": "Bundled version 14.8.1; 500-character expression and 3-second worker limit. Floating-point output is not a proof.",
+    "integration": "直接呼叫開源函式庫；原始碼與授權詳見下列來源。",
+    "install_hint": "",
+    "source_urls": [
+      "https://github.com/josdejong/mathjs"
+    ]
+  },
+  {
+    "id": "papaparse",
+    "name": "Papa Parse",
+    "category": "data",
+    "repo": "https://github.com/mholt/PapaParse",
+    "license": "MIT",
+    "summary_zh": "將 CSV／TSV 轉為 JSON，檢查欄位與解析錯誤。",
+    "summary_en": "Convert CSV/TSV to JSON and inspect fields and parsing errors.",
+    "actual_invocation": "Papa.parse(csv, {header:true,dynamicTyping:true})",
+    "real_invocation": "Papa.parse(csv, {header:true,dynamicTyping:true})",
+    "mode": "browser",
+    "limitations": "Bundled 5.5.3. Maximum input 2 MB; values may be converted to JavaScript numbers.",
+    "limitations_en": "Bundled 5.5.3. Maximum input 2 MB; values may be converted to JavaScript numbers.",
+    "integration": "直接呼叫開源函式庫；原始碼與授權詳見下列來源。",
+    "install_hint": "",
+    "source_urls": [
+      "https://github.com/mholt/PapaParse"
+    ]
+  },
+  {
+    "id": "marked",
+    "name": "Marked + DOMPurify",
+    "category": "documents",
+    "repo": "https://github.com/markedjs/marked",
+    "license": "MIT + Apache-2.0/MPL-2.0",
+    "summary_zh": "將 Markdown 轉為清理後的 HTML，可預覽與下載。",
+    "summary_en": "Convert Markdown to sanitized HTML, preview it and download.",
+    "actual_invocation": "DOMPurify.sanitize(marked.parse(markdown))",
+    "real_invocation": "DOMPurify.sanitize(marked.parse(markdown))",
+    "mode": "browser",
+    "limitations": "Marked17.0.5 + DOMPurify3.2.7; HTML preview runs in a sandbox. Images and active content are removed.",
+    "limitations_en": "Marked17.0.5 + DOMPurify3.2.7; HTML preview runs in a sandbox. Images and active content are removed.",
+    "integration": "直接呼叫開源函式庫；原始碼與授權詳見下列來源。",
+    "install_hint": "",
+    "source_urls": [
+      "https://github.com/markedjs/marked"
+    ]
+  },
+  {
+    "id": "jszip",
+    "name": "JSZip",
+    "category": "files",
+    "repo": "https://github.com/Stuk/jszip",
+    "license": "MIT / GPL-3.0 dual",
+    "summary_zh": "在裝置內將多個檔案打包為 ZIP，不必上傳個人檔案。",
+    "summary_en": "Package local files into a ZIP without uploading them.",
+    "actual_invocation": "new JSZip().file(name, bytes); zip.generateAsync({type:\"blob\"})",
+    "real_invocation": "new JSZip().file(name, bytes); zip.generateAsync({type:\"blob\"})",
+    "mode": "browser",
+    "limitations": "Bundled3.10.1; maximum100 files and40MB total. No archive extraction is exposed.",
+    "limitations_en": "Bundled3.10.1; maximum100 files and40MB total. No archive extraction is exposed.",
+    "integration": "直接呼叫開源函式庫；原始碼與授權詳見下列來源。",
+    "install_hint": "",
+    "source_urls": [
+      "https://github.com/Stuk/jszip"
+    ]
+  },
+  {
+    "id": "pdf-lib",
+    "name": "pdf-lib",
+    "category": "documents",
+    "repo": "https://github.com/Hopding/pdf-lib",
+    "license": "MIT",
+    "summary_zh": "在裝置內合併 PDF，使用真正的 PDF 頁面複製功能。",
+    "summary_en": "Merge PDF pages locally using the actual PDF document library.",
+    "actual_invocation": "PDFDocument.create(); copyPages(source, source.getPageIndices())",
+    "real_invocation": "PDFDocument.create(); copyPages(source, source.getPageIndices())",
+    "mode": "browser",
+    "limitations": "Bundled1.17.1; maximum10 files/40MB/500pages; encrypted PDFs unsupported.",
+    "limitations_en": "Bundled1.17.1; maximum10 files/40MB/500pages; encrypted PDFs unsupported.",
+    "integration": "直接呼叫開源函式庫；原始碼與授權詳見下列來源。",
+    "install_hint": "",
+    "source_urls": [
+      "https://github.com/Hopding/pdf-lib"
+    ]
+  },
+  {
+    "id": "katex",
+    "name": "KaTeX",
+    "category": "math",
+    "repo": "https://github.com/KaTeX/KaTeX",
+    "license": "MIT",
+    "summary_zh": "輸入 LaTeX 立即排版公式，保留原始數學語法。",
+    "summary_en": "Typeset a LaTeX expression and download its source.",
+    "actual_invocation": "katex.renderToString(tex, {displayMode:true,trust:false})",
+    "real_invocation": "katex.renderToString(tex, {displayMode:true,trust:false})",
+    "mode": "browser",
+    "limitations": "Bundled0.16.22;10,000-character limit. Manuscript-specific macros may be unsupported.",
+    "limitations_en": "Bundled0.16.22;10,000-character limit. Manuscript-specific macros may be unsupported.",
+    "integration": "直接呼叫開源函式庫；原始碼與授權詳見下列來源。",
+    "install_hint": "",
+    "source_urls": [
+      "https://github.com/KaTeX/KaTeX"
+    ]
+  },
+  {
+    "id": "pillow",
+    "name": "Pillow",
+    "category": "image",
+    "repo": "https://github.com/python-pillow/Pillow",
+    "license": "HPND",
+    "summary_zh": "以真正 Pillow 處理縮放、灰階與旋轉。",
+    "summary_en": "Resize, grayscale and rotate images through Pillow.",
+    "actual_invocation": "PIL.Image.open(...).resize(...)",
+    "real_invocation": "PIL.Image.open(...).resize(...)",
+    "mode": "local",
+    "limitations": "Requires local Python service; decoded image and request size limits apply.",
+    "limitations_en": "Requires local Python service; decoded image and request size limits apply.",
+    "integration": "透過隨附的本機服務呼叫已安裝工具。",
+    "install_hint": "python -m pip install Pillow",
+    "source_urls": [
+      "https://github.com/python-pillow/Pillow"
+    ]
+  },
+  {
+    "id": "yt_dlp",
+    "name": "yt-dlp",
+    "category": "media",
+    "repo": "https://github.com/yt-dlp/yt-dlp",
+    "license": "Unlicense",
+    "summary_zh": "取得影片標題與公開中繼資料；此轉接器不下載影片。",
+    "summary_en": "Retrieve public video metadata; this adapter does not download media.",
+    "actual_invocation": "yt_dlp.YoutubeDL(...).extract_info(url, download=False)",
+    "real_invocation": "yt_dlp.YoutubeDL(...).extract_info(url, download=False)",
+    "mode": "local",
+    "limitations": "Network access required. Provider throttling or authentication may prevent retrieval; use content you are authorized to access.",
+    "limitations_en": "Network access required. Provider throttling or authentication may prevent retrieval; use content you are authorized to access.",
+    "integration": "透過隨附的本機服務呼叫已安裝工具。",
+    "install_hint": "python -m pip install yt-dlp",
+    "source_urls": [
+      "https://github.com/yt-dlp/yt-dlp"
+    ]
+  },
+  {
+    "id": "argos_translate",
+    "name": "Argos Translate",
+    "category": "language",
+    "repo": "https://github.com/argosopentech/argos-translate",
+    "license": "MIT / CC0",
+    "summary_zh": "使用已安裝的語言模型在本機翻譯，不傳送文字至雲端。",
+    "summary_en": "Translate locally with installed language-pair models.",
+    "actual_invocation": "argostranslate.translate.translate(text, source, target)",
+    "real_invocation": "argostranslate.translate.translate(text, source, target)",
+    "mode": "local",
+    "limitations": "Language models must be installed separately. Availability and quality vary by language pair.",
+    "limitations_en": "Language models must be installed separately. Availability and quality vary by language pair.",
+    "integration": "透過隨附的本機服務呼叫已安裝工具。",
+    "install_hint": "python -m pip install argostranslate",
+    "source_urls": [
+      "https://github.com/argosopentech/argos-translate"
+    ]
+  },
+  {
+    "id": "cad-1000-hours",
+    "name": "CAD-1000-Hours",
+    "category": "dataset",
+    "repo": "https://huggingface.co/datasets/markov-ai/cad-1000-hours",
+    "license": "License not specified / 待確認",
+    "summary_zh": "CAD 操作示範資料集，包含任務、評分準則、錄影、操作事件與輸入/輸出檔案。它不是可以直接用 HTML 執行的 CAD 引擎。",
+    "summary_en": "A dataset of CAD tasks, recordings, event traces, rubrics and input/output artifacts; it is not a browser CAD engine.",
+    "mode": "guide",
+    "real_invocation": "Dataset files: task_desc.json / rubrics.json / frame_events.json / narration.json",
+    "integration": "資料集可支援逐步 CAD 教學播放器；目前未完成資料集執行器，也不是 CAD 引擎。",
+    "integration_en": "A lesson player can load locally supplied task_desc/rubrics/narration and a licensed task clip, synchronize events, and link a CadQuery exercise. This is an integration proposal, not a validated dataset-derived CAD agent.",
+    "limitations": "發布者列509項任務、約1018小時、207.18GiB；尚未確認授權，未重散布資料或訓練模型。部分檔案需要商用CAD軟體。",
+    "limitations_en": "Publisher reports509 tasks, about1018hours and207.18GiB. License was not specified in the reviewed card. Data and trained weights are not redistributed; native CAD files may require commercial software.",
+    "source_urls": [
+      "https://huggingface.co/datasets/markov-ai/cad-1000-hours",
+      "https://huggingface.co/datasets/markov-ai/cad-1000-hours/raw/main/README.md"
+    ]
+  },
+  {
+    "id": "fuse",
+    "name": "Fuse.js",
+    "category": "search",
+    "repo": "https://github.com/krisk/Fuse",
+    "license": "Apache-2.0",
+    "version": "7.1.0",
+    "summary_zh": "容許錯字的 JSON 資料搜尋，輸出排名、原記錄與匹配分數。",
+    "summary_en": "Typo-tolerant JSON search returning ranked records and scores.",
+    "mode": "browser",
+    "install_hint": "No installation required; open the packaged index.html.",
+    "actual_invocation": "new Fuse(records,{keys,includeScore:true}).search(query)",
+    "real_invocation": "new Fuse(records,{keys,includeScore:true}).search(query)",
+    "integration": "隨套件附 classic IIFE 開源函式庫；直接 HTML 表單呼叫，資料留在裝置內。",
+    "integration_en": "Bundled classic-IIFE open-source libraries called by a local HTML form; data stays on-device.",
+    "limitations": "字串近似，不是語意 AI；最多 2,000 筆、回傳 30 筆。",
+    "limitations_en": "String similarity, not semantic AI; up to 2,000 records and 30 results.",
+    "source_urls": [
+      "https://github.com/krisk/Fuse",
+      "https://www.npmjs.com/package/fuse.js/v/7.1.0"
+    ],
+    "source_refs": [],
+    "provenance": "official-npm-package-pinned-and-tested",
+    "verified_at": "2026-10-18",
+    "verification": "real-bundled-library-node-vm-tests-passed; full-browser-ui-unverified",
+    "integration_status": "implemented-browser-adapter",
+    "offline": true,
+    "direct_file": true,
+    "quickstart_steps_zh": [
+      "直接雙擊完整套件的 index.html，開啟此工具。",
+      "先執行範例，再修改資料與參數；所有處理在本機。",
+      "檢查實際結果並下載，保留原資料以供重算。"
+    ],
+    "quickstart_steps_en": [
+      "Double-click the complete package index.html and open this tool.",
+      "Run the example, then edit inputs and options; processing stays local.",
+      "Inspect and download the actual output, retaining your input for reproduction."
+    ]
+  },
+  {
+    "id": "yaml",
+    "name": "js-yaml",
+    "category": "data",
+    "repo": "https://github.com/nodeca/js-yaml",
+    "license": "MIT",
+    "version": "4.1.0",
+    "summary_zh": "YAML 與 JSON 雙向轉換，適用設定檔、研究參數與資料交換。",
+    "summary_en": "Convert YAML and JSON for configuration, research parameters and data exchange.",
+    "mode": "browser",
+    "install_hint": "No installation required; open the packaged index.html.",
+    "actual_invocation": "yaml.load(input,{schema:yaml.JSON_SCHEMA}); yaml.dump(object)",
+    "real_invocation": "yaml.load(input,{schema:yaml.JSON_SCHEMA}); yaml.dump(object)",
+    "integration": "隨套件附 classic IIFE 開源函式庫；直接 HTML 表單呼叫，資料留在裝置內。",
+    "integration_en": "Bundled classic-IIFE open-source libraries called by a local HTML form; data stays on-device.",
+    "limitations": "不執行自訂標籤；轉 JSON 不保留註解，長整數應以字串表示。",
+    "limitations_en": "No executable custom tags; JSON loses comments. Represent very large integers as strings.",
+    "source_urls": [
+      "https://github.com/nodeca/js-yaml",
+      "https://www.npmjs.com/package/js-yaml/v/4.1.0"
+    ],
+    "source_refs": [],
+    "provenance": "official-npm-package-pinned-and-tested",
+    "verified_at": "2026-10-18",
+    "verification": "real-bundled-library-node-vm-tests-passed; full-browser-ui-unverified",
+    "integration_status": "implemented-browser-adapter",
+    "offline": true,
+    "direct_file": true,
+    "quickstart_steps_zh": [
+      "直接雙擊完整套件的 index.html，開啟此工具。",
+      "先執行範例，再修改資料與參數；所有處理在本機。",
+      "檢查實際結果並下載，保留原資料以供重算。"
+    ],
+    "quickstart_steps_en": [
+      "Double-click the complete package index.html and open this tool.",
+      "Run the example, then edit inputs and options; processing stays local.",
+      "Inspect and download the actual output, retaining your input for reproduction."
+    ]
+  },
+  {
+    "id": "diff",
+    "name": "jsdiff",
+    "category": "developer",
+    "repo": "https://github.com/kpdecker/jsdiff",
+    "license": "BSD-3-Clause",
+    "version": "8.0.2",
+    "summary_zh": "逐行比較兩份文字，清楚標示新增、刪除與未變內容。",
+    "summary_en": "Compare two texts line by line, marking additions, deletions and unchanged content.",
+    "mode": "browser",
+    "install_hint": "No installation required; open the packaged index.html.",
+    "actual_invocation": "diffLines(before,after,{timeout:1000,maxEditLength:2000})",
+    "real_invocation": "diffLines(before,after,{timeout:1000,maxEditLength:2000})",
+    "integration": "隨套件附 classic IIFE 開源函式庫；直接 HTML 表單呼叫，資料留在裝置內。",
+    "integration_en": "Bundled classic-IIFE open-source libraries called by a local HTML form; data stays on-device.",
+    "limitations": "每側最多 20,000 字元，計算超出預算會回報；不是語意等價檢查。",
+    "limitations_en": "20,000 characters per side with a bounded budget; not semantic equivalence checking.",
+    "source_urls": [
+      "https://github.com/kpdecker/jsdiff",
+      "https://www.npmjs.com/package/diff/v/8.0.2"
+    ],
+    "source_refs": [],
+    "provenance": "official-npm-package-pinned-and-tested",
+    "verified_at": "2026-10-18",
+    "verification": "real-bundled-library-node-vm-tests-passed; full-browser-ui-unverified",
+    "integration_status": "implemented-browser-adapter",
+    "offline": true,
+    "direct_file": true,
+    "quickstart_steps_zh": [
+      "直接雙擊完整套件的 index.html，開啟此工具。",
+      "先執行範例，再修改資料與參數；所有處理在本機。",
+      "檢查實際結果並下載，保留原資料以供重算。"
+    ],
+    "quickstart_steps_en": [
+      "Double-click the complete package index.html and open this tool.",
+      "Run the example, then edit inputs and options; processing stays local.",
+      "Inspect and download the actual output, retaining your input for reproduction."
+    ]
+  },
+  {
+    "id": "qrcode",
+    "name": "node-qrcode",
+    "category": "media",
+    "repo": "https://github.com/soldair/node-qrcode",
+    "license": "MIT",
+    "version": "1.5.4",
+    "summary_zh": "離線將網址或文字產生可下載 SVG QR Code，可選錯誤更正等級。",
+    "summary_en": "Generate downloadable SVG QR codes from URLs or text, with selectable error correction.",
+    "mode": "browser",
+    "install_hint": "No installation required; open the packaged index.html.",
+    "actual_invocation": "QRCode.toString(text,{type:\"svg\",errorCorrectionLevel:\"M\"})",
+    "real_invocation": "QRCode.toString(text,{type:\"svg\",errorCorrectionLevel:\"M\"})",
+    "integration": "隨套件附 classic IIFE 開源函式庫；直接 HTML 表單呼叫，資料留在裝置內。",
+    "integration_en": "Bundled classic-IIFE open-source libraries called by a local HTML form; data stays on-device.",
+    "limitations": "最多 1,500 字元；QR 不代表網址可信或資料已加密。",
+    "limitations_en": "Up to 1,500 characters; a QR symbol does not certify its URL or encrypt its content.",
+    "source_urls": [
+      "https://github.com/soldair/node-qrcode",
+      "https://www.npmjs.com/package/qrcode/v/1.5.4"
+    ],
+    "source_refs": [],
+    "provenance": "official-npm-package-pinned-and-tested",
+    "verified_at": "2026-10-18",
+    "verification": "real-bundled-library-node-vm-tests-passed; full-browser-ui-unverified",
+    "integration_status": "implemented-browser-adapter",
+    "offline": true,
+    "direct_file": true,
+    "quickstart_steps_zh": [
+      "直接雙擊完整套件的 index.html，開啟此工具。",
+      "先執行範例，再修改資料與參數；所有處理在本機。",
+      "檢查實際結果並下載，保留原資料以供重算。"
+    ],
+    "quickstart_steps_en": [
+      "Double-click the complete package index.html and open this tool.",
+      "Run the example, then edit inputs and options; processing stays local.",
+      "Inspect and download the actual output, retaining your input for reproduction."
+    ]
+  },
+  {
+    "id": "uuid",
+    "name": "UUID",
+    "category": "developer",
+    "repo": "https://github.com/uuidjs/uuid",
+    "license": "MIT",
+    "version": "11.1.0",
+    "summary_zh": "以安全亂數產生 UUID v4，或檢查既有識別碼格式與版本。",
+    "summary_en": "Generate cryptographically random UUID v4 identifiers or check existing UUID format and version.",
+    "mode": "browser",
+    "install_hint": "No installation required; open the packaged index.html.",
+    "actual_invocation": "uuid.v4(); uuid.validate(text); uuid.version(text)",
+    "real_invocation": "uuid.v4(); uuid.validate(text); uuid.version(text)",
+    "integration": "隨套件附 classic IIFE 開源函式庫；直接 HTML 表單呼叫，資料留在裝置內。",
+    "integration_en": "Bundled classic-IIFE open-source libraries called by a local HTML form; data stays on-device.",
+    "limitations": "最多一次 100 個；有效格式不代表識別碼的存在、權限或零碰撞保證。",
+    "limitations_en": "Up to 100 per run; valid syntax does not prove existence, permission or impossible collisions.",
+    "source_urls": [
+      "https://github.com/uuidjs/uuid",
+      "https://www.npmjs.com/package/uuid/v/11.1.0"
+    ],
+    "source_refs": [],
+    "provenance": "official-npm-package-pinned-and-tested",
+    "verified_at": "2026-10-18",
+    "verification": "real-bundled-library-node-vm-tests-passed; full-browser-ui-unverified",
+    "integration_status": "implemented-browser-adapter",
+    "offline": true,
+    "direct_file": true,
+    "quickstart_steps_zh": [
+      "直接雙擊完整套件的 index.html，開啟此工具。",
+      "先執行範例，再修改資料與參數；所有處理在本機。",
+      "檢查實際結果並下載，保留原資料以供重算。"
+    ],
+    "quickstart_steps_en": [
+      "Double-click the complete package index.html and open this tool.",
+      "Run the example, then edit inputs and options; processing stays local.",
+      "Inspect and download the actual output, retaining your input for reproduction."
+    ]
+  },
+  {
+    "id": "ajv",
+    "name": "Ajv JSON Schema",
+    "category": "data",
+    "repo": "https://github.com/ajv-validator/ajv",
+    "license": "MIT",
+    "version": "8.17.1",
+    "summary_zh": "以 JSON Schema 檢查資料型別、必填欄位與數值條件，回傳可定位錯誤。",
+    "summary_en": "Validate types, required fields and numeric constraints with JSON Schema, returning structured errors.",
+    "mode": "browser",
+    "install_hint": "No installation required; open the packaged index.html.",
+    "actual_invocation": "new Ajv({strict:true,allErrors:true}).compile(schema)(data)",
+    "real_invocation": "new Ajv({strict:true,allErrors:true}).compile(schema)(data)",
+    "integration": "隨套件附 classic IIFE 開源函式庫；直接 HTML 表單呼叫，資料留在裝置內。",
+    "integration_en": "Bundled classic-IIFE open-source libraries called by a local HTML form; data stays on-device.",
+    "limitations": "draft-07 有界子集；停用 references、pattern 與 format 檢查，不載入外部 schema。",
+    "limitations_en": "Bounded draft-07 subset; references, patterns and format checks disabled; no remote schemas.",
+    "source_urls": [
+      "https://github.com/ajv-validator/ajv",
+      "https://www.npmjs.com/package/ajv/v/8.17.1"
+    ],
+    "source_refs": [],
+    "provenance": "official-npm-package-pinned-and-tested",
+    "verified_at": "2026-10-18",
+    "verification": "real-bundled-library-node-vm-tests-passed; full-browser-ui-unverified",
+    "integration_status": "implemented-browser-adapter",
+    "offline": true,
+    "direct_file": true,
+    "quickstart_steps_zh": [
+      "直接雙擊完整套件的 index.html，開啟此工具。",
+      "先執行範例，再修改資料與參數；所有處理在本機。",
+      "檢查實際結果並下載，保留原資料以供重算。"
+    ],
+    "quickstart_steps_en": [
+      "Double-click the complete package index.html and open this tool.",
+      "Run the example, then edit inputs and options; processing stays local.",
+      "Inspect and download the actual output, retaining your input for reproduction."
+    ]
+  },
+  {
+    "id": "decimal",
+    "name": "Decimal.js",
+    "category": "math",
+    "repo": "https://github.com/MikeMcl/decimal.js",
+    "license": "MIT",
+    "version": "10.6.0",
+    "summary_zh": "高精度十進位四則與整數次方，可直接看見 0.1+0.2=0.3。",
+    "summary_en": "High-precision decimal arithmetic and integer powers, including exact decimal 0.1+0.2=0.3.",
+    "mode": "browser",
+    "install_hint": "No installation required; open the packaged index.html.",
+    "actual_invocation": "Decimal.clone({precision:40}); new Decimal(a).plus(b)",
+    "real_invocation": "Decimal.clone({precision:40}); new Decimal(a).plus(b)",
+    "integration": "隨套件附 classic IIFE 開源函式庫；直接 HTML 表單呼叫，資料留在裝置內。",
+    "integration_en": "Bundled classic-IIFE open-source libraries called by a local HTML form; data stays on-device.",
+    "limitations": "有效位數 5–100；小數仍依所選精度捨入，不是符號或無限精度證明。",
+    "limitations_en": "5–100 significant digits; results are rounded to the chosen precision, not symbolic proof.",
+    "source_urls": [
+      "https://github.com/MikeMcl/decimal.js",
+      "https://www.npmjs.com/package/decimal.js/v/10.6.0"
+    ],
+    "source_refs": [],
+    "provenance": "official-npm-package-pinned-and-tested",
+    "verified_at": "2026-10-18",
+    "verification": "real-bundled-library-node-vm-tests-passed; full-browser-ui-unverified",
+    "integration_status": "implemented-browser-adapter",
+    "offline": true,
+    "direct_file": true,
+    "quickstart_steps_zh": [
+      "直接雙擊完整套件的 index.html，開啟此工具。",
+      "先執行範例，再修改資料與參數；所有處理在本機。",
+      "檢查實際結果並下載，保留原資料以供重算。"
+    ],
+    "quickstart_steps_en": [
+      "Double-click the complete package index.html and open this tool.",
+      "Run the example, then edit inputs and options; processing stays local.",
+      "Inspect and download the actual output, retaining your input for reproduction."
+    ]
+  },
+  {
+    "id": "fflate",
+    "name": "fflate GZIP",
+    "category": "data",
+    "repo": "https://github.com/101arrowz/fflate",
+    "license": "MIT",
+    "version": "0.8.2",
+    "summary_zh": "真正離線 gzip 壓縮文字並解壓選取的 .gz，顯示壓縮率並下載結果。",
+    "summary_en": "Actually gzip text or decompress a selected .gz locally, with compression statistics and downloads.",
+    "mode": "browser",
+    "install_hint": "No installation required; open the packaged index.html.",
+    "actual_invocation": "fflate.gzipSync(strToU8(text)); fflate.gunzipSync(bytes)",
+    "real_invocation": "fflate.gzipSync(strToU8(text)); fflate.gunzipSync(bytes)",
+    "integration": "隨套件附 classic IIFE 開源函式庫；直接 HTML 表單呼叫，資料留在裝置內。",
+    "integration_en": "Bundled classic-IIFE open-source libraries called by a local HTML form; data stays on-device.",
+    "limitations": "輸入壓縮檔≤2 MiB，宣告解壓文字≤8 MiB；不是一般 ZIP/RAR 檔案管理器。",
+    "limitations_en": "Gzip input ≤2 MiB, declared expanded text ≤8 MiB; not a general ZIP/RAR manager.",
+    "source_urls": [
+      "https://github.com/101arrowz/fflate",
+      "https://www.npmjs.com/package/fflate/v/0.8.2"
+    ],
+    "source_refs": [],
+    "provenance": "official-npm-package-pinned-and-tested",
+    "verified_at": "2026-10-18",
+    "verification": "real-bundled-library-node-vm-tests-passed; full-browser-ui-unverified",
+    "integration_status": "implemented-browser-adapter",
+    "offline": true,
+    "direct_file": true,
+    "quickstart_steps_zh": [
+      "直接雙擊完整套件的 index.html，開啟此工具。",
+      "先執行範例，再修改資料與參數；所有處理在本機。",
+      "檢查實際結果並下載，保留原資料以供重算。"
+    ],
+    "quickstart_steps_en": [
+      "Double-click the complete package index.html and open this tool.",
+      "Run the example, then edit inputs and options; processing stays local.",
+      "Inspect and download the actual output, retaining your input for reproduction."
+    ]
+  },
+  {
+    "id": "dayjs",
+    "name": "Day.js UTC",
+    "category": "data",
+    "repo": "https://github.com/iamkun/dayjs",
+    "license": "MIT",
+    "version": "1.11.13",
+    "summary_zh": "嚴格解析 UTC 日期，計算兩日期差與增加天數，回傳 ISO 時間。",
+    "summary_en": "Strictly parse UTC dates, calculate intervals and add days with ISO output.",
+    "mode": "browser",
+    "install_hint": "No installation required; open the packaged index.html.",
+    "actual_invocation": "dayjs.utc(text,\"YYYY-MM-DD HH:mm:ss\",true).diff(other); .add(days,\"day\")",
+    "real_invocation": "dayjs.utc(text,\"YYYY-MM-DD HH:mm:ss\",true).diff(other); .add(days,\"day\")",
+    "integration": "隨套件附 classic IIFE 開源函式庫；直接 HTML 表單呼叫，資料留在裝置內。",
+    "integration_en": "Bundled classic-IIFE open-source libraries called by a local HTML form; data stays on-device.",
+    "limitations": "輸入為 UTC；不包含地區 DST、工作天、假日與排程服務。",
+    "limitations_en": "UTC only; no local DST, business-day, holiday or scheduling service.",
+    "source_urls": [
+      "https://github.com/iamkun/dayjs",
+      "https://www.npmjs.com/package/dayjs/v/1.11.13"
+    ],
+    "source_refs": [],
+    "provenance": "official-npm-package-pinned-and-tested",
+    "verified_at": "2026-10-18",
+    "verification": "real-bundled-library-node-vm-tests-passed; full-browser-ui-unverified",
+    "integration_status": "implemented-browser-adapter",
+    "offline": true,
+    "direct_file": true,
+    "quickstart_steps_zh": [
+      "直接雙擊完整套件的 index.html，開啟此工具。",
+      "先執行範例，再修改資料與參數；所有處理在本機。",
+      "檢查實際結果並下載，保留原資料以供重算。"
+    ],
+    "quickstart_steps_en": [
+      "Double-click the complete package index.html and open this tool.",
+      "Run the example, then edit inputs and options; processing stays local.",
+      "Inspect and download the actual output, retaining your input for reproduction."
+    ]
+  },
+  {
+    "id": "validator",
+    "name": "validator.js",
+    "category": "developer",
+    "repo": "https://github.com/validatorjs/validator.js",
+    "license": "MIT",
+    "version": "13.15.23",
+    "summary_zh": "批次檢查 email、HTTP(S) URL、IP、ISO 日期與數字的文字格式。",
+    "summary_en": "Batch-check email, HTTP(S) URL, IP, ISO date and numeric string formats.",
+    "mode": "browser",
+    "install_hint": "No installation required; open the packaged index.html.",
+    "actual_invocation": "validator.isEmail / isURL / isIP / isISO8601 / isNumeric",
+    "real_invocation": "validator.isEmail / isURL / isIP / isISO8601 / isNumeric",
+    "integration": "隨套件附 classic IIFE 開源函式庫；直接 HTML 表單呼叫，資料留在裝置內。",
+    "integration_en": "Bundled classic-IIFE open-source libraries called by a local HTML form; data stays on-device.",
+    "limitations": "最多 500 行；不連網確認地址存在，不判斷來源是否安全。",
+    "limitations_en": "Up to 500 lines; no network availability, existence or safety checks.",
+    "source_urls": [
+      "https://github.com/validatorjs/validator.js",
+      "https://www.npmjs.com/package/validator/v/13.15.23"
+    ],
+    "source_refs": [],
+    "provenance": "official-npm-package-pinned-and-tested",
+    "verified_at": "2026-10-18",
+    "verification": "real-bundled-library-node-vm-tests-passed; full-browser-ui-unverified",
+    "integration_status": "implemented-browser-adapter",
+    "offline": true,
+    "direct_file": true,
+    "quickstart_steps_zh": [
+      "直接雙擊完整套件的 index.html，開啟此工具。",
+      "先執行範例，再修改資料與參數；所有處理在本機。",
+      "檢查實際結果並下載，保留原資料以供重算。"
+    ],
+    "quickstart_steps_en": [
+      "Double-click the complete package index.html and open this tool.",
+      "Run the example, then edit inputs and options; processing stays local.",
+      "Inspect and download the actual output, retaining your input for reproduction."
+    ]
+  }
+]

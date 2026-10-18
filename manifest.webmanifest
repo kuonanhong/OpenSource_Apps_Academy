@@ -1,0 +1,17 @@
+{
+  "name": "OpenSource Apps Academy",
+  "short_name": "OSS Academy",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5ed",
+  "theme_color": "#244b3f",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

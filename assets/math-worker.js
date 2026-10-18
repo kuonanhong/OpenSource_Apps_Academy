@@ -1,0 +1,2 @@
+importScripts('../vendor/mathjs/lib/browser/math.js');
+onmessage=({data})=>{try{const {expression,operation,variable}=data;if(expression.length>500)throw Error('Expression too long');const result=operation==='derivative'?math.derivative(expression,variable||'x').toString():math.format(math.evaluate(expression),{precision:14});postMessage({ok:true,result});}catch(e){postMessage({ok:false,error:String(e.message)});}};
