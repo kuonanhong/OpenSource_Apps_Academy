@@ -1,0 +1,491 @@
+[
+  {
+    "id": "repo:awesome-dsh-plugin/awesome-dsh-plugin",
+    "name": "awesome-dsh-plugin",
+    "repository": "awesome-dsh-plugin/awesome-dsh-plugin",
+    "repositoryUrl": "https://github.com/awesome-dsh-plugin/awesome-dsh-plugin",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "pJWK-ZEy5_A",
+        "url": "https://www.youtube.com/shorts/pJWK-ZEy5_A",
+        "evidenceKind": "explicit_description_url"
+      },
+      {
+        "videoId": "F4mIdxeThYo",
+        "url": "https://www.youtube.com/shorts/F4mIdxeThYo",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:public-apis/public-apis",
+    "name": "public-apis",
+    "repository": "public-apis/public-apis",
+    "repositoryUrl": "https://github.com/public-apis/public-apis",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "pJWK-ZEy5_A",
+        "url": "https://www.youtube.com/shorts/pJWK-ZEy5_A",
+        "evidenceKind": "explicit_description_url"
+      },
+      {
+        "videoId": "F4mIdxeThYo",
+        "url": "https://www.youtube.com/shorts/F4mIdxeThYo",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:unslothai/unsloth",
+    "name": "unsloth",
+    "repository": "unslothai/unsloth",
+    "repositoryUrl": "https://github.com/unslothai/unsloth",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "pJWK-ZEy5_A",
+        "url": "https://www.youtube.com/shorts/pJWK-ZEy5_A",
+        "evidenceKind": "explicit_description_url"
+      },
+      {
+        "videoId": "F4mIdxeThYo",
+        "url": "https://www.youtube.com/shorts/F4mIdxeThYo",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:cactus-compute/needle",
+    "name": "needle",
+    "repository": "cactus-compute/needle",
+    "repositoryUrl": "https://github.com/cactus-compute/needle",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "pJWK-ZEy5_A",
+        "url": "https://www.youtube.com/shorts/pJWK-ZEy5_A",
+        "evidenceKind": "explicit_description_url"
+      },
+      {
+        "videoId": "F4mIdxeThYo",
+        "url": "https://www.youtube.com/shorts/F4mIdxeThYo",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:semantica-agi/semantica",
+    "name": "semantica",
+    "repository": "semantica-agi/semantica",
+    "repositoryUrl": "https://github.com/semantica-agi/semantica",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "pJWK-ZEy5_A",
+        "url": "https://www.youtube.com/shorts/pJWK-ZEy5_A",
+        "evidenceKind": "explicit_description_url"
+      },
+      {
+        "videoId": "F4mIdxeThYo",
+        "url": "https://www.youtube.com/shorts/F4mIdxeThYo",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:zhu1090093659/dsh-web-ui",
+    "name": "dsh-web-ui",
+    "repository": "zhu1090093659/dsh-web-ui",
+    "repositoryUrl": "https://github.com/zhu1090093659/dsh-web-ui",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:omdsh-dev/dsh-better-sidebar",
+    "name": "DSH-better-sidebar",
+    "repository": "omdsh-dev/DSH-better-sidebar",
+    "repositoryUrl": "https://github.com/omdsh-dev/DSH-better-sidebar",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:bowenliang123/dsh-context",
+    "name": "dsh-context",
+    "repository": "bowenliang123/dsh-context",
+    "repositoryUrl": "https://github.com/bowenliang123/dsh-context",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:fsmargoo/dsh-at-file",
+    "name": "dsh-at-file",
+    "repository": "FSMargoo/dsh-at-file",
+    "repositoryUrl": "https://github.com/FSMargoo/dsh-at-file",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:wjz-p/dsh-attachments",
+    "name": "dsh-attachments",
+    "repository": "WJZ-P/dsh-attachments",
+    "repositoryUrl": "https://github.com/WJZ-P/dsh-attachments",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:dsh-market/dsh-market",
+    "name": "dsh-market",
+    "repository": "dsh-market/dsh-market",
+    "repositoryUrl": "https://github.com/dsh-market/dsh-market",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:awesome-dsh-plugin/dsh-find-plugin",
+    "name": "dsh-find-plugin",
+    "repository": "awesome-dsh-plugin/dsh-find-plugin",
+    "repositoryUrl": "https://github.com/awesome-dsh-plugin/dsh-find-plugin",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:sulfide2085/dsh-skill-manager",
+    "name": "dsh-skill-manager",
+    "repository": "sulfide2085/dsh-skill-manager",
+    "repositoryUrl": "https://github.com/sulfide2085/dsh-skill-manager",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:liustack/modlens",
+    "name": "modlens",
+    "repository": "liustack/modlens",
+    "repositoryUrl": "https://github.com/liustack/modlens",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:ysr666/dsh-vision-router",
+    "name": "dsh-vision-router",
+    "repository": "ysr666/dsh-vision-router",
+    "repositoryUrl": "https://github.com/ysr666/dsh-vision-router",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:anionex/dsh-vision-toolkit",
+    "name": "dsh-vision-toolkit",
+    "repository": "Anionex/dsh-vision-toolkit",
+    "repositoryUrl": "https://github.com/Anionex/dsh-vision-toolkit",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:liustack/modsearch",
+    "name": "modsearch",
+    "repository": "liustack/modsearch",
+    "repositoryUrl": "https://github.com/liustack/modsearch",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:lum1104/dsh-browser",
+    "name": "dsh-browser",
+    "repository": "Lum1104/dsh-browser",
+    "repositoryUrl": "https://github.com/Lum1104/dsh-browser",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "2aBzzcnB4_Y",
+        "url": "https://www.youtube.com/shorts/2aBzzcnB4_Y",
+        "evidenceKind": "explicit_description_url"
+      }
+    ]
+  },
+  {
+    "id": "repo:deepseek-ai/deepseek-harness",
+    "name": "deepseek-harness",
+    "repository": "deepseek-ai/deepseek-harness",
+    "repositoryUrl": "https://github.com/deepseek-ai/deepseek-harness",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "xjhtZjCFfRI",
+        "url": "https://www.youtube.com/shorts/xjhtZjCFfRI",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  },
+  {
+    "id": "repo:cathrynlavery/diagram-design",
+    "name": "diagram-design",
+    "repository": "cathrynlavery/diagram-design",
+    "repositoryUrl": "https://github.com/cathrynlavery/diagram-design",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "xjhtZjCFfRI",
+        "url": "https://www.youtube.com/shorts/xjhtZjCFfRI",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  },
+  {
+    "id": "repo:cloudflare/computer",
+    "name": "computer",
+    "repository": "cloudflare/computer",
+    "repositoryUrl": "https://github.com/cloudflare/computer",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "xjhtZjCFfRI",
+        "url": "https://www.youtube.com/shorts/xjhtZjCFfRI",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  },
+  {
+    "id": "repo:firecrawl/pdf-inspector",
+    "name": "pdf-inspector",
+    "repository": "firecrawl/pdf-inspector",
+    "repositoryUrl": "https://github.com/firecrawl/pdf-inspector",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "xjhtZjCFfRI",
+        "url": "https://www.youtube.com/shorts/xjhtZjCFfRI",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  },
+  {
+    "id": "repo:tapxworld/chinatextbook",
+    "name": "ChinaTextbook",
+    "repository": "TapXWorld/ChinaTextbook",
+    "repositoryUrl": "https://github.com/TapXWorld/ChinaTextbook",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "xjhtZjCFfRI",
+        "url": "https://www.youtube.com/shorts/xjhtZjCFfRI",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  },
+  {
+    "id": "repo:microsoft/ai-for-beginners",
+    "name": "AI-For-Beginners",
+    "repository": "microsoft/AI-For-Beginners",
+    "repositoryUrl": "https://github.com/microsoft/AI-For-Beginners",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "5md6MSFHoZg",
+        "url": "https://www.youtube.com/shorts/5md6MSFHoZg",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  },
+  {
+    "id": "repo:virgiliojr94/book-to-skill",
+    "name": "book-to-skill",
+    "repository": "virgiliojr94/book-to-skill",
+    "repositoryUrl": "https://github.com/virgiliojr94/book-to-skill",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "5md6MSFHoZg",
+        "url": "https://www.youtube.com/shorts/5md6MSFHoZg",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  },
+  {
+    "id": "repo:block/buzz",
+    "name": "buzz",
+    "repository": "block/buzz",
+    "repositoryUrl": "https://github.com/block/buzz",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "5md6MSFHoZg",
+        "url": "https://www.youtube.com/shorts/5md6MSFHoZg",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  },
+  {
+    "id": "repo:tencentcloud/tencentdb-agent-memory",
+    "name": "TencentDB-Agent-Memory",
+    "repository": "TencentCloud/TencentDB-Agent-Memory",
+    "repositoryUrl": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "5md6MSFHoZg",
+        "url": "https://www.youtube.com/shorts/5md6MSFHoZg",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  },
+  {
+    "id": "repo:zhaoxuya520/reverse-skill",
+    "name": "reverse-skill",
+    "repository": "zhaoxuya520/reverse-skill",
+    "repositoryUrl": "https://github.com/zhaoxuya520/reverse-skill",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "5md6MSFHoZg",
+        "url": "https://www.youtube.com/shorts/5md6MSFHoZg",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  },
+  {
+    "id": "repo:learnprompt/awesome-seedance",
+    "name": "awesome-seedance",
+    "repository": "LearnPrompt/awesome-seedance",
+    "repositoryUrl": "https://github.com/LearnPrompt/awesome-seedance",
+    "identityStatus": "repository_explicit_in_description",
+    "licenseStatus": "not_assessed_in_video_audit",
+    "catalogAppId": null,
+    "sources": [
+      {
+        "videoId": "QGL8I4xWnBo",
+        "url": "https://www.youtube.com/shorts/QGL8I4xWnBo",
+        "evidenceKind": "explicit_description_repository_identifier"
+      }
+    ]
+  }
+]

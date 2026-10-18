@@ -1,0 +1,2338 @@
+{
+  "sourceCommit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "activeManuscripts": 719,
+  "families": 372,
+  "subjects": 17,
+  "withdrawals": 3,
+  "methods": {
+    "tex-include-tree": 718,
+    "pdf-pdftotext": 1
+  },
+  "statuses": {
+    "extracted": 719
+  },
+  "fullTextCharacters": 120129581,
+  "papersWithStatements": 719,
+  "papersWithDefinitions": 256,
+  "papersWithSections": 719,
+  "papersWithSourceAbstract": 718,
+  "leanYamlListedCurrentPapers": 172,
+  "leanScopeMappedCurrentPapers": 338,
+  "papersWithMissingIncludes": [
+    {
+      "id": "004-02",
+      "slug": "A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026",
+      "missing": [
+        {
+          "source": "preprints/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/A-pointwise-2-converse-for-elliptic-curves-with-rational-two-torsion-October-7-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "010-02",
+      "slug": "The-Dimension-of-the-Two-Adic-Hecke-Algebra-at-Odd-Level-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/The-Dimension-of-the-Two-Adic-Hecke-Algebra-at-Odd-Level-October-5-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/The-Dimension-of-the-Two-Adic-Hecke-Algebra-at-Odd-Level-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "012-01",
+      "slug": "The-joint-Dickman-law-for-consecutive-integers-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/The-joint-Dickman-law-for-consecutive-integers-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "013-01",
+      "slug": "the-additive-indecomposability-of-the-primes-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/the-additive-indecomposability-of-the-primes-September-24-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "016-04",
+      "slug": "Elliptic-Squares-and-Zilber-Pink-for-Curves-in-A2-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Elliptic-Squares-and-Zilber-Pink-for-Curves-in-A2-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "027-01",
+      "slug": "Integral-points-on-character-varieties-of-curves-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Integral-points-on-character-varieties-of-curves-September-25-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "034-02",
+      "slug": "Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Uniform-indices-for-semi-log-canonical-log-Calabi-Yau-pairs-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "035-02",
+      "slug": "Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Abundance-in-numerical-dimension-one-for-terminal-threefolds-in-positive-characteristic-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "040-01",
+      "slug": "Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Blochs-Conjecture-for-Surfaces-with-pg-equals-q-equals-0-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "055-02",
+      "slug": "Prescribed-large-volume-charges-on-threefolds-with-trivial-canonical-bundle-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Prescribed-large-volume-charges-on-threefolds-with-trivial-canonical-bundle-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "056-03",
+      "slug": "Termination-for-projective-log-canonical-fourfolds-with-rational-boundary-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Termination-for-projective-log-canonical-fourfolds-with-rational-boundary-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "056-05",
+      "slug": "Finite-ordinary-minimal-model-programs-on-compact-Kahler-fourfolds-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Finite-ordinary-minimal-model-programs-on-compact-Kahler-fourfolds-September-24-2026/build/main.tex",
+          "include": "glyphtounicode.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "060-01",
+      "slug": "Global-Spherical-Shells-on-Minimal-Surfaces-of-Class-VII-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Global-Spherical-Shells-on-Minimal-Surfaces-of-Class-VII-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "062-01",
+      "slug": "Contact-Fano-manifolds-and-the-LeBrun-Salamon-conjecture-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Contact-Fano-manifolds-and-the-LeBrun-Salamon-conjecture-September-23-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "066-02",
+      "slug": "Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Uniform-Cartier-sections-for-Fano-type-contractions-September-25-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "067-01",
+      "slug": "The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/The-Campana-Peternell-conjecture-in-dimension-six-September-25-2026/build/glyph-unicode.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "068-07",
+      "slug": "Exact-orders-and-invariant-anticanonical-linear-systems-September-26-2026",
+      "missing": [
+        {
+          "source": "preprints/Exact-orders-and-invariant-anticanonical-linear-systems-September-26-2026/build/source/glyph-unicode.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "072-01",
+      "slug": "Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Brennans-conjecture-and-sharp-inverse-square-integral-means-September-24-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "072-02",
+      "slug": "A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/A-strict-inverse-first-power-bound-for-univalent-functions-September-24-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "073-01",
+      "slug": "The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/The-Falconer-distance-conjecture-in-all-dimensions-September-23-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "075-01",
+      "slug": "Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Almost-everywhere-Fourier-convergence-in-L-log-L-September-23-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "078-01",
+      "slug": "Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Bochner-Riesz-Multipliers-in-Three-Dimensions-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "082-01",
+      "slug": "Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/main.tex",
+          "include": "glyphtounicode.tex",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Annular-variation-of-the-triangular-Hilbert-transform-at-the-symmetric-point-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "086-01",
+      "slug": "An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/An-L3-bound-for-the-trilinear-Hilbert-transform-October-5-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "087-01",
+      "slug": "The-symmetric-Mahler-conjecture-and-its-equality-cases-September-22-2026",
+      "missing": [
+        {
+          "source": "preprints/The-symmetric-Mahler-conjecture-and-its-equality-cases-September-22-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/The-symmetric-Mahler-conjecture-and-its-equality-cases-September-22-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "087-02",
+      "slug": "The-Mahler-Conjecture-for-General-Convex-Bodies-September-22-2026",
+      "missing": [
+        {
+          "source": "preprints/The-Mahler-Conjecture-for-General-Convex-Bodies-September-22-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "088-01",
+      "slug": "Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Pettys-projection-volume-conjecture-in-dimensions-at-least-four-September-24-2026/build/latex/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "090-01",
+      "slug": "An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026",
+      "missing": [
+        {
+          "source": "preprints/An-atomic-certificate-for-triangular-lattice-universal-optimality-September-26-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "090-03",
+      "slug": "A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/A-sharp-Fourier-certificate-for-planar-circle-packing-September-23-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "090-04",
+      "slug": "Triangular-minimality-for-planar-Coulomb-renormalized-energy-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Triangular-minimality-for-planar-Coulomb-renormalized-energy-September-23-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "093-01",
+      "slug": "A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "094-01",
+      "slug": "Subpolynomial-dimension-reduction-in-Lp-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Subpolynomial-dimension-reduction-in-Lp-September-23-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "095-01",
+      "slug": "Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Hyperbolicity-Cones-Without-Semidefinite-Lifts-October-5-2026/build/source/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "099-02",
+      "slug": "Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Finite-Circle-Obstructions-Binary-Codes-and-Histogram-Embeddings-for-Edit-Distance-September-27-2026/build/main.tex",
+          "include": "glyphtounicode-cmr",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "099-03",
+      "slug": "Tree-Constructions-for-the-l1-Distortion-of-Binary-Edit-Distance-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Tree-Constructions-for-the-l1-Distortion-of-Binary-Edit-Distance-September-27-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Tree-Constructions-for-the-l1-Distortion-of-Binary-Edit-Distance-September-27-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "114-01",
+      "slug": "An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/An-FPRAS-for-Common-Integer-Polymatroid-Bases-with-Binary-Capacities-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "118-01",
+      "slug": "Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Additive-hardness-and-unbounded-configuration-gaps-in-bin-packing-September-24-2026/build/source/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "133-04",
+      "slug": "Variable-dimension-Weisfeiler-Leman-equivalence-on-general-and-subcubic-graphs-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Variable-dimension-Weisfeiler-Leman-equivalence-on-general-and-subcubic-graphs-September-25-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "138-01",
+      "slug": "Subset-Sum-in-Time-2-power-0-49n-October-4-2026",
+      "missing": [
+        {
+          "source": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Subset-Sum-in-Time-2-power-0-49n-October-4-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "143-01",
+      "slug": "uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "148-01",
+      "slug": "The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/The-entropy-rate-dimension-formula-for-self-similar-measures-on-the-line-September-24-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "149-01",
+      "slug": "Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "149-02",
+      "slug": "Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "150-02",
+      "slug": "Ergodicity-of-triangular-billiards-with-an-irrational-angle-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Ergodicity-of-triangular-billiards-with-an-irrational-angle-September-25-2026/build/source/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "154-01",
+      "slug": "Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026",
+      "missing": [
+        {
+          "source": "preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "154-04",
+      "slug": "Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026",
+      "missing": [
+        {
+          "source": "preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "157-03",
+      "slug": "A-linear-list-coloring-bound-in-terms-of-the-Hadwiger-number-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/A-linear-list-coloring-bound-in-terms-of-the-Hadwiger-number-September-23-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "160-01",
+      "slug": "Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/preamble.tex",
+          "include": "glyphtounicode.tex",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Quantitative-Superexponential-Bounds-for-van-der-Waerden-Numbers-September-23-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "162-01",
+      "slug": "Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Balanced-Counterexamples-to-Rysers-Conjecture-at-Prime-Orders-September-27-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "162-02",
+      "slug": "A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/A-Counterexample-to-Rysers-Covering-Conjecture-September-23-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "164-01",
+      "slug": "Monochromatic-finite-sums-and-products-in-the-positive-integers-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Monochromatic-finite-sums-and-products-in-the-positive-integers-September-23-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "175-01",
+      "slug": "Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Graph-Decompositions-at-the-Integral-Expectation-Threshold-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "182-01",
+      "slug": "A-power-saving-for-intersective-polynomial-differences-with-an-exponent-depending-only-on-the-degree-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/A-power-saving-for-intersective-polynomial-differences-with-an-exponent-depending-only-on-the-degree-October-5-2026/build/manuscript/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "191-01",
+      "slug": "A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/A-power-improvement-in-the-Heilbronn-triangle-lower-bound-September-25-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "197-02",
+      "slug": "A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Characteristic-Two-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Characteristic-Two-September-23-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "197-03",
+      "slug": "A-Counterexample-to-the-Group-Ring-Determinant-Conjecture-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Counterexample-to-the-Group-Ring-Determinant-Conjecture-September-23-2026/build/main.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "197-04",
+      "slug": "A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Odd-Characteristic-September-26-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Counterexample-to-Kaplanskys-Direct-Finiteness-Conjecture-in-Odd-Characteristic-September-26-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "201-01",
+      "slug": "A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Counterexample-to-Kuroshs-Division-Ring-Problem-September-23-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "202-01",
+      "slug": "The-Blockwise-Alperin-Weight-Conjecture-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/The-Blockwise-Alperin-Weight-Conjecture-September-23-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "203-01",
+      "slug": "Donovans-Conjecture-over-Algebraic-Closures-of-Prime-Fields-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Donovans-Conjecture-over-Algebraic-Closures-of-Prime-Fields-September-24-2026/build/common.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "203-02",
+      "slug": "Integral-Donovan-Finiteness-over-Witt-Vectors-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Integral-Donovan-Finiteness-over-Witt-Vectors-September-25-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "205-01",
+      "slug": "Universal-Tensor-Squares-for-Symmetric-Groups-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Universal-Tensor-Squares-for-Symmetric-Groups-September-24-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "205-02",
+      "slug": "A-Cyclic-Polytabloid-Proof-of-Saxls-Conjecture-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Cyclic-Polytabloid-Proof-of-Saxls-Conjecture-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "210-01",
+      "slug": "Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Foulkes-Conjecture-for-the-Sixth-Symmetric-Power-September-25-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "210-02",
+      "slug": "Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Quadratic-Stabilization-of-the-Canonical-Foulkes-Howe-Map-September-25-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "211-01",
+      "slug": "Random-Walks-on-Critical-FK-Ising-Maps-and-Liouville-Brownian-Motion-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Random-Walks-on-Critical-FK-Ising-Maps-and-Liouville-Brownian-Motion-October-5-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Random-Walks-on-Critical-FK-Ising-Maps-and-Liouville-Brownian-Motion-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "211-04",
+      "slug": "Canonical-conformal-limits-of-subcritical-FK-planar-maps-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Canonical-conformal-limits-of-subcritical-FK-planar-maps-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "218-05",
+      "slug": "SLE3-universality-for-weak-finite-range-Ising-interactions-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/SLE3-universality-for-weak-finite-range-Ising-interactions-September-23-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "218-06",
+      "slug": "Buffered-comparison-and-stopping-band-resolution-in-critical-Ising-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Buffered-comparison-and-stopping-band-resolution-in-critical-Ising-September-23-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "219-02",
+      "slug": "GOE-bulk-universality-for-fixed-degree-random-regular-graphs-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/GOE-bulk-universality-for-fixed-degree-random-regular-graphs-September-23-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "221-01",
+      "slug": "The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/The-Mezard-Parisi-formula-for-diluted-spin-glasses-September-23-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "222-03",
+      "slug": "The-spherical-perceptron-with-bi-orthogonally-invariant-disorder-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/The-spherical-perceptron-with-bi-orthogonally-invariant-disorder-September-24-2026/build/pdf-glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "224-03",
+      "slug": "Cardys-formula-for-critical-Poisson-Voronoi-percolation-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Cardys-formula-for-critical-Poisson-Voronoi-percolation-September-23-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "227-04",
+      "slug": "Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode.tex",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "229-02",
+      "slug": "A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "230-01",
+      "slug": "An-exact-Hausdorff-gauge-for-SLE-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/main.tex",
+          "include": "glyphtounicode.tex",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/An-exact-Hausdorff-gauge-for-SLE-September-25-2026/build/main.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "232-02",
+      "slug": "The-Gaussian-free-field-limit-of-integer-Lipschitz-heights-with-two-arc-boundary-data-October-6-2026",
+      "missing": [
+        {
+          "source": "preprints/The-Gaussian-free-field-limit-of-integer-Lipschitz-heights-with-two-arc-boundary-data-October-6-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "232-03",
+      "slug": "Uniform-real-Lipschitz-surfaces-on-the-triangular-lattice-October-6-2026",
+      "missing": [
+        {
+          "source": "preprints/Uniform-real-Lipschitz-surfaces-on-the-triangular-lattice-October-6-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "234-01",
+      "slug": "All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/invariant-sk.tex",
+          "include": "glyphtounicode.tex",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/All-temperature-pressure-for-orthogonally-invariant-Ising-spin-glasses-September-25-2026/build/invariant-sk.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "235-02",
+      "slug": "Linear-Variance-of-the-Random-3-SAT-Hitting-Time-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Linear-Variance-of-the-Random-3-SAT-Hitting-Time-October-5-2026/build/source/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Linear-Variance-of-the-Random-3-SAT-Hitting-Time-October-5-2026/build/source/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "235-03",
+      "slug": "Variance-of-the-Random-k-SAT-Hitting-Time-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Variance-of-the-Random-k-SAT-Hitting-Time-September-27-2026/build/source/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "235-04",
+      "slug": "Computing-the-Random-3-SAT-Threshold-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Computing-the-Random-3-SAT-Threshold-September-27-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "237-03",
+      "slug": "Cylinder-loop-weights-and-planar-nesting-September-26-2026",
+      "missing": [
+        {
+          "source": "preprints/Cylinder-loop-weights-and-planar-nesting-September-26-2026/build/main.tex",
+          "include": "glyphtounicode.tex",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Cylinder-loop-weights-and-planar-nesting-September-26-2026/build/main.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "241-01",
+      "slug": "Rigidity-of-the-Turing-degrees-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Rigidity-of-the-Turing-degrees-September-24-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "249-01",
+      "slug": "A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/A-finitely-generated-counterexample-to-the-Eilenberg-Ganea-conjecture-September-23-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "254-02",
+      "slug": "An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/An-Artin-group-with-no-geometric-CAT-0-action-September-23-2026/build/macros.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "256-02",
+      "slug": "The-Kervaire-Theorem-for-Groups-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/The-Kervaire-Theorem-for-Groups-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/The-Kervaire-Theorem-for-Groups-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "260-02",
+      "slug": "A-Charged-Reduction-of-the-Spacetime-Penrose-Inequality-in-Spatial-Dimensions-at-Least-Four-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Charged-Reduction-of-the-Spacetime-Penrose-Inequality-in-Spatial-Dimensions-at-Least-Four-October-5-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "260-07",
+      "slug": "The-Penrose-inequality-for-maximal-asymptotically-hyperbolic-initial-data-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/The-Penrose-inequality-for-maximal-asymptotically-hyperbolic-initial-data-October-5-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/The-Penrose-inequality-for-maximal-asymptotically-hyperbolic-initial-data-October-5-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "260-09",
+      "slug": "The-spacetime-Penrose-inequality-and-enclosing-area-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/The-spacetime-Penrose-inequality-and-enclosing-area-September-27-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "260-10",
+      "slug": "Conformal-flow-and-the-Riemannian-Penrose-inequality-with-minimizing-frontiers-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Conformal-flow-and-the-Riemannian-Penrose-inequality-with-minimizing-frontiers-September-27-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "260-11",
+      "slug": "Equality-and-rigidity-in-the-spacetime-Penrose-inequality-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Equality-and-rigidity-in-the-spacetime-Penrose-inequality-September-27-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "263-01",
+      "slug": "Uniform-excess-charge-for-Coulomb-molecules-and-the-outer-radius-of-neutral-atoms-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Uniform-excess-charge-for-Coulomb-molecules-and-the-outer-radius-of-neutral-atoms-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Uniform-excess-charge-for-Coulomb-molecules-and-the-outer-radius-of-neutral-atoms-September-24-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "263-02",
+      "slug": "Generalized-ionization-energies-for-full-Coulomb-atoms-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Generalized-ionization-energies-for-full-Coulomb-atoms-September-24-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "263-03",
+      "slug": "Generalized-outer-electron-radii-of-neutral-Coulomb-atoms-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Generalized-outer-electron-radii-of-neutral-Coulomb-atoms-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Generalized-outer-electron-radii-of-neutral-Coulomb-atoms-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "264-03",
+      "slug": "Quantitative-Near-Kerr-Evolution-and-Generic-C2-Future-Inextendibility-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Quantitative-Near-Kerr-Evolution-and-Generic-C2-Future-Inextendibility-September-23-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "265-01",
+      "slug": "A-two-dimensional-area-law-from-a-global-spectral-gap-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/A-two-dimensional-area-law-from-a-global-spectral-gap-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/A-two-dimensional-area-law-from-a-global-spectral-gap-September-24-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "265-02",
+      "slug": "Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Polynomial-PEPS-approximation-of-gapped-square-grid-ground-states-September-24-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "266-01",
+      "slug": "The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/The-maximum-number-of-mutually-unbiased-bases-in-dimension-six-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "266-02",
+      "slug": "Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Exact-Fourier-certificates-for-complex-Hadamard-matrices-of-order-six-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "267-01",
+      "slug": "Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Bose-Einstein-condensation-at-positive-temperature-in-the-dilute-hard-sphere-gas-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "267-05",
+      "slug": "Ground-state-condensation-in-the-dilute-hard-sphere-gas-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Ground-state-condensation-in-the-dilute-hard-sphere-gas-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Ground-state-condensation-in-the-dilute-hard-sphere-gas-September-24-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "268-01",
+      "slug": "The-periodic-spin-one-Haldane-gap-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/The-periodic-spin-one-Haldane-gap-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "269-02",
+      "slug": "A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Fock-space-inequality-and-the-Laughlin-spectral-gap-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "270-01",
+      "slug": "The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/The-unique-threshold-bound-state-of-the-SU-N-BFSS-model-September-24-2026/build/manuscript/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "274-01",
+      "slug": "Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Product-projection-localization-and-the-QAC0-parity-lower-bound-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "274-02",
+      "slug": "Regular-trajectories-pruning-and-quantum-parity-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Regular-trajectories-pruning-and-quantum-parity-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "278-01",
+      "slug": "A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/A-Coulomb-Ground-State-Density-without-Kohn-Sham-Ensemble-Representation-September-25-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "279-01",
+      "slug": "Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Exact-quantum-factoring-over-a-fixed-finite-gate-set-September-25-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "280-01",
+      "slug": "Strongly-rational-unitary-vertex-operator-algebras-and-conformal-nets-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Strongly-rational-unitary-vertex-operator-algebras-and-conformal-nets-September-25-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Strongly-rational-unitary-vertex-operator-algebras-and-conformal-nets-September-25-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "286-02",
+      "slug": "The-arithmetic-category-and-stable-recovery-of-lattice-factors-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/The-arithmetic-category-and-stable-recovery-of-lattice-factors-September-23-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "288-01",
+      "slug": "Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Kadisons-similarity-theorem-through-uniform-derivation-estimates-September-23-2026/build/unicode-map.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "289-02",
+      "slug": "Near-Inclusions-of-von-Neumann-Algebras-Without-Small-Spatial-Embeddings-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Near-Inclusions-of-von-Neumann-Algebras-Without-Small-Spatial-Embeddings-October-5-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Near-Inclusions-of-von-Neumann-Algebras-Without-Small-Spatial-Embeddings-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "293-01",
+      "slug": "Invariant-projection-counterexamples-for-every-irrational-rotation-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Invariant-projection-counterexamples-for-every-irrational-rotation-September-27-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "293-02",
+      "slug": "Backward-intertwiners-and-a-transitive-commutant-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Backward-intertwiners-and-a-transitive-commutant-September-27-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "295-01",
+      "slug": "Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Vanishing-of-higher-bounded-Hochschild-cohomology-September-23-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "299-01",
+      "slug": "The-Kirchberg-Rordam-character-criterion-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/The-Kirchberg-Rordam-character-criterion-September-25-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "301-01",
+      "slug": "The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/The-trace-cone-classifies-Razak-Jacelon-stabilizations-September-25-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "303-01",
+      "slug": "Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/manuscript.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Weak-pure-infiniteness-and-O-infinity-absorption-September-25-2026/build/manuscript.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "305-02",
+      "slug": "A-marked-tensor-obstruction-to-four-dimensional-disk-embedding-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/A-marked-tensor-obstruction-to-four-dimensional-disk-embedding-September-24-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "308-02",
+      "slug": "A-finite-Smith-Toda-complex-V4-at-the-prime-1009-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/A-finite-Smith-Toda-complex-V4-at-the-prime-1009-September-23-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "310-01",
+      "slug": "Rational-homology-and-Quillens-conjecture-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Rational-homology-and-Quillens-conjecture-September-24-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "314-01",
+      "slug": "Cyclic-Length-and-Chromatic-Fixed-Point-Loss-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Cyclic-Length-and-Chromatic-Fixed-Point-Loss-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Cyclic-Length-and-Chromatic-Fixed-Point-Loss-September-24-2026/build/tools/unicode-map.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "318-03",
+      "slug": "A-rational-obstruction-to-strong-chromatic-splitting-at-height-three-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/A-rational-obstruction-to-strong-chromatic-splitting-at-height-three-September-25-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "318-04",
+      "slug": "Failure-of-finite-assembly-for-a-chromatic-overlap-at-the-prime-three-September-25-2026",
+      "missing": [
+        {
+          "source": "preprints/Failure-of-finite-assembly-for-a-chromatic-overlap-at-the-prime-three-September-25-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Failure-of-finite-assembly-for-a-chromatic-overlap-at-the-prime-three-September-25-2026/build/paper.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "318-05",
+      "slug": "Counterexamples-to-weak-chromatic-splitting-sphere-kernels-and-descent-exponents-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Counterexamples-to-weak-chromatic-splitting-sphere-kernels-and-descent-exponents-September-27-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Counterexamples-to-weak-chromatic-splitting-sphere-kernels-and-descent-exponents-September-27-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "323-01",
+      "slug": "Relative-independence-of-the-separable-quotient-problem-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Relative-independence-of-the-separable-quotient-problem-September-23-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "328-01",
+      "slug": "Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Fixed-Points-of-Nonexpansive-Maps-in-Reflexive-Banach-Spaces-September-24-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "331-02",
+      "slug": "Midpoint-lenses-in-segment-spaces-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Midpoint-lenses-in-segment-spaces-September-27-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "332-01",
+      "slug": "Metric-Markov-Cotype-Two-of-l1-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Metric-Markov-Cotype-Two-of-l1-October-5-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "334-01",
+      "slug": "A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/A-Smooth-Metric-with-No-Local-Isometric-Immersion-into-Three-Space-September-24-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "335-02",
+      "slug": "Positive-scalar-curvature-forces-rational-inessentiality-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Positive-scalar-curvature-forces-rational-inessentiality-September-23-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "337-01",
+      "slug": "Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Generalized-Cartan-Hadamard-isoperimetry-and-Euclidean-equality-rigidity-September-23-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "337-02",
+      "slug": "Sharp-integral-fillings-in-CAT(0)-spaces-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Sharp-integral-fillings-in-CAT(0)-spaces-September-23-2026/build/glyph-mappings.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "338-01",
+      "slug": "Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Uniformization-of-complete-Kahler-manifolds-with-positive-bisectional-curvature-September-23-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "341-01",
+      "slug": "Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026",
+      "missing": [
+        {
+          "source": "preprints/Deforming-hypersymplectic-four-manifolds-to-hyperkahler-triples-October-7-2026/build/preamble.tex",
+          "include": "glyphtounicode-cmex.tex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "343-01",
+      "slug": "Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Symplectic-Ball-Packings-in-Higher-Dimensions-September-23-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "346-02",
+      "slug": "Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Almost-everywhere-regularity-of-stationary-integral-varifolds-September-23-2026/build/unicode-map.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "348-02",
+      "slug": "An-L2-Einstein-Gap-for-Nonnegatively-Curved-Four-Manifolds-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/An-L2-Einstein-Gap-for-Nonnegatively-Curved-Four-Manifolds-October-5-2026/build/source/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/An-L2-Einstein-Gap-for-Nonnegatively-Curved-Four-Manifolds-October-5-2026/build/source/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "350-01",
+      "slug": "Sharp-nodal-length-on-smooth-surfaces-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Sharp-nodal-length-on-smooth-surfaces-September-23-2026/build/preamble.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "350-02",
+      "slug": "Smooth-counterexamples-to-Yaus-nodal-upper-bound-in-dimensions-three-and-four-September-23-2026",
+      "missing": [
+        {
+          "source": "preprints/Smooth-counterexamples-to-Yaus-nodal-upper-bound-in-dimensions-three-and-four-September-23-2026/build/paper.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "353-01",
+      "slug": "Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026",
+      "missing": [
+        {
+          "source": "preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/build/source/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Smooth-Nonquadratic-Affine-Maximal-Graph-in-Dimension-Ten-October-5-2026/build/source/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "369-01",
+      "slug": "Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026",
+      "missing": [
+        {
+          "source": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        },
+        {
+          "source": "preprints/Strict-hot-spots-and-absence-of-interior-critical-points-on-smooth-simply-connected-planar-domains-September-24-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "375-01",
+      "slug": "De-Giorgis-conjecture-in-dimension-eight-September-26-2026",
+      "missing": [
+        {
+          "source": "preprints/De-Giorgis-conjecture-in-dimension-eight-September-26-2026/build/main.tex",
+          "include": "glyphtounicode",
+          "category": "tex-system-font-map"
+        }
+      ]
+    },
+    {
+      "id": "376-05",
+      "slug": "Prefix-Instructions-and-Incompressible-Flows-September-27-2026",
+      "missing": [
+        {
+          "source": "preprints/Prefix-Instructions-and-Incompressible-Flows-September-27-2026/build/main.tex",
+          "include": "glyphtounicode-cmex",
+          "category": "tex-system-font-map"
+        }
+      ]
+    }
+  ],
+  "papersWithoutStatements": [],
+  "papersWithoutDefinitions": [
+    "002-01",
+    "003-03",
+    "004-01",
+    "005-01",
+    "006-02",
+    "008-01",
+    "009-02",
+    "009-03",
+    "010-01",
+    "010-02",
+    "010-03",
+    "011-02",
+    "011-03",
+    "013-01",
+    "014-01",
+    "014-03",
+    "014-04",
+    "014-06",
+    "015-01",
+    "015-02",
+    "015-03",
+    "016-02",
+    "016-03",
+    "016-04",
+    "017-01",
+    "018-01",
+    "018-02",
+    "019-01",
+    "019-02",
+    "020-01",
+    "023-01",
+    "025-01",
+    "026-01",
+    "027-01",
+    "028-01",
+    "029-01",
+    "031-01",
+    "032-01",
+    "032-02",
+    "032-03",
+    "032-05",
+    "033-01",
+    "033-03",
+    "033-04",
+    "033-05",
+    "034-02",
+    "034-05",
+    "034-06",
+    "034-07",
+    "034-08",
+    "034-11",
+    "034-12",
+    "034-14",
+    "035-01",
+    "035-02",
+    "036-01",
+    "036-02",
+    "036-03",
+    "036-04",
+    "037-01",
+    "037-02",
+    "038-01",
+    "039-01",
+    "039-02",
+    "040-01",
+    "041-01",
+    "041-02",
+    "043-01",
+    "044-01",
+    "046-01",
+    "046-02",
+    "047-01",
+    "048-01",
+    "049-01",
+    "049-02",
+    "050-01",
+    "051-01",
+    "052-02",
+    "055-01",
+    "055-02",
+    "056-02",
+    "058-02",
+    "059-01",
+    "059-02",
+    "060-01",
+    "062-01",
+    "063-01",
+    "064-01",
+    "066-02",
+    "067-01",
+    "068-01",
+    "068-02",
+    "068-03",
+    "068-04",
+    "068-05",
+    "068-06",
+    "068-07",
+    "069-01",
+    "072-02",
+    "076-01",
+    "076-02",
+    "076-03",
+    "077-02",
+    "082-01",
+    "082-02",
+    "082-03",
+    "084-01",
+    "084-02",
+    "085-01",
+    "087-01",
+    "087-02",
+    "087-03",
+    "088-02",
+    "089-02",
+    "090-01",
+    "090-02",
+    "090-03",
+    "090-04",
+    "091-01",
+    "092-01",
+    "092-02",
+    "093-01",
+    "094-01",
+    "095-01",
+    "095-02",
+    "095-03",
+    "096-01",
+    "097-01",
+    "098-01",
+    "099-01",
+    "099-02",
+    "100-01",
+    "100-02",
+    "100-03",
+    "100-04",
+    "101-01",
+    "102-03",
+    "102-04",
+    "104-02",
+    "107-03",
+    "108-01",
+    "110-01",
+    "110-02",
+    "111-01",
+    "113-02",
+    "114-02",
+    "115-02",
+    "116-01",
+    "116-02",
+    "116-03",
+    "117-02",
+    "119-01",
+    "119-02",
+    "121-01",
+    "122-01",
+    "122-02",
+    "125-01",
+    "126-01",
+    "127-01",
+    "128-01",
+    "129-01",
+    "129-02",
+    "130-01",
+    "131-01",
+    "132-01",
+    "134-03",
+    "135-01",
+    "137-01",
+    "138-01",
+    "138-02",
+    "140-04",
+    "142-01",
+    "143-02",
+    "144-01",
+    "147-01",
+    "149-01",
+    "149-02",
+    "150-01",
+    "150-02",
+    "151-01",
+    "152-01",
+    "153-01",
+    "161-01",
+    "162-01",
+    "162-02",
+    "165-01",
+    "165-02",
+    "166-01",
+    "167-01",
+    "167-02",
+    "168-01",
+    "169-01",
+    "170-01",
+    "170-02",
+    "172-01",
+    "173-01",
+    "174-02",
+    "175-01",
+    "175-02",
+    "175-03",
+    "176-01",
+    "177-01",
+    "178-01",
+    "179-01",
+    "180-01",
+    "181-01",
+    "182-01",
+    "182-02",
+    "182-03",
+    "183-01",
+    "184-01",
+    "184-02",
+    "185-01",
+    "186-01",
+    "186-02",
+    "189-01",
+    "190-01",
+    "191-01",
+    "192-01",
+    "193-01",
+    "195-01",
+    "197-02",
+    "197-03",
+    "197-04",
+    "198-01",
+    "199-01",
+    "199-02",
+    "200-02",
+    "201-01",
+    "205-01",
+    "205-02",
+    "207-02",
+    "208-01",
+    "209-01",
+    "209-02",
+    "210-01",
+    "210-02",
+    "211-01",
+    "211-02",
+    "212-01",
+    "213-01",
+    "213-02",
+    "215-01",
+    "215-02",
+    "215-05",
+    "216-01",
+    "216-02",
+    "216-04",
+    "216-05",
+    "217-01",
+    "218-01",
+    "218-03",
+    "218-04",
+    "219-01",
+    "219-02",
+    "220-01",
+    "220-02",
+    "221-01",
+    "222-02",
+    "222-03",
+    "222-04",
+    "223-01",
+    "223-05",
+    "223-06",
+    "225-01",
+    "226-01",
+    "227-02",
+    "227-05",
+    "227-06",
+    "227-07",
+    "227-08",
+    "228-01",
+    "229-01",
+    "229-02",
+    "229-03",
+    "230-01",
+    "230-02",
+    "231-01",
+    "234-01",
+    "235-01",
+    "235-02",
+    "235-03",
+    "235-04",
+    "236-01",
+    "237-01",
+    "237-02",
+    "237-03",
+    "237-04",
+    "237-05",
+    "237-06",
+    "237-07",
+    "237-08",
+    "237-09",
+    "237-10",
+    "237-11",
+    "237-12",
+    "237-13",
+    "238-01",
+    "238-02",
+    "238-03",
+    "238-04",
+    "238-05",
+    "238-06",
+    "238-07",
+    "238-08",
+    "238-09",
+    "238-10",
+    "238-11",
+    "238-12",
+    "239-01",
+    "239-02",
+    "241-01",
+    "243-01",
+    "244-01",
+    "246-01",
+    "247-01",
+    "248-01",
+    "249-01",
+    "250-01",
+    "250-02",
+    "250-03",
+    "251-01",
+    "251-02",
+    "252-01",
+    "253-01",
+    "256-01",
+    "256-02",
+    "259-01",
+    "260-05",
+    "260-08",
+    "260-10",
+    "260-13",
+    "261-02",
+    "262-01",
+    "262-02",
+    "262-03",
+    "263-01",
+    "263-02",
+    "263-03",
+    "266-02",
+    "267-03",
+    "267-04",
+    "268-01",
+    "268-02",
+    "269-01",
+    "269-02",
+    "270-02",
+    "271-02",
+    "271-03",
+    "273-01",
+    "274-01",
+    "275-01",
+    "275-02",
+    "276-01",
+    "277-01",
+    "279-01",
+    "280-01",
+    "281-02",
+    "283-01",
+    "284-01",
+    "285-02",
+    "288-01",
+    "289-02",
+    "290-01",
+    "290-02",
+    "292-01",
+    "293-01",
+    "293-02",
+    "294-01",
+    "296-01",
+    "297-01",
+    "298-01",
+    "299-01",
+    "300-01",
+    "302-02",
+    "305-03",
+    "307-01",
+    "307-02",
+    "308-02",
+    "309-01",
+    "311-01",
+    "314-01",
+    "315-01",
+    "316-01",
+    "317-01",
+    "318-02",
+    "318-03",
+    "318-05",
+    "319-01",
+    "321-01",
+    "322-01",
+    "323-01",
+    "324-01",
+    "324-02",
+    "325-01",
+    "325-02",
+    "326-01",
+    "327-01",
+    "328-01",
+    "329-01",
+    "330-01",
+    "331-01",
+    "331-02",
+    "331-03",
+    "331-04",
+    "331-05",
+    "331-06",
+    "331-07",
+    "334-01",
+    "336-01",
+    "336-02",
+    "337-01",
+    "337-02",
+    "338-01",
+    "340-01",
+    "342-01",
+    "343-01",
+    "344-01",
+    "345-01",
+    "346-01",
+    "346-02",
+    "347-01",
+    "347-02",
+    "347-04",
+    "347-05",
+    "348-01",
+    "348-03",
+    "351-01",
+    "353-01",
+    "354-01",
+    "355-01",
+    "356-01",
+    "356-02",
+    "357-01",
+    "358-01",
+    "359-01",
+    "359-02",
+    "360-01",
+    "360-02",
+    "361-01",
+    "361-02",
+    "362-01",
+    "365-01",
+    "365-02",
+    "366-01",
+    "367-01",
+    "369-01",
+    "370-01",
+    "371-01",
+    "372-01",
+    "373-01",
+    "374-01",
+    "375-01",
+    "376-01",
+    "376-02",
+    "376-03",
+    "376-04",
+    "376-05",
+    "376-06",
+    "376-07",
+    "376-08",
+    "376-09",
+    "377-01"
+  ],
+  "unresolvedContentIncludes": [],
+  "sourceTexFileReads": 7407,
+  "allPdfsExist": true,
+  "allExtractFilesExist": true
+}

@@ -1,0 +1,522 @@
+[
+  {
+    "id": "264-01",
+    "titleZh": "固定 Kerr 時空附近、局部平方可積聯絡的泛型未來不可延拓性",
+    "summaryZh": "論文主張：對固定質量 M>0、0<|a|<M 的旋轉次極端 Kerr 背景，其完整雙端橋附近的平滑真空初值中，容許未來 C⁰∩W¹,²loc 延拓者形成稀疏集。延拓度量連續且非退化，弱聯絡局部平方可積；鄰域只需第十個加權半範數小，而泛型性拓樸測試所有有限階。",
+    "problemZh": "在相當弱的度量正則性下，Cauchy 發展是否一般仍不能跨越未來邊界延拓？",
+    "limitsZh": "局限固定旋轉次極端背景的鄰域；Baire 稀疏性不是指定機率分布下的零機率；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究強宇宙審查的正則性門檻及近 Kerr 擾動；不直接預測任意天體坍縮。"
+  },
+  {
+    "id": "264-02",
+    "titleZh": "旋轉次極端 Kerr 附近的泛型 C¹ 未來不可延拓性",
+    "summaryZh": "論文主張：固定 M>0、0<a<M 的 Kerr 時空附近，一個稠密 Gδ 集的平滑完整雙端真空初值，其最大全域雙曲發展沒有未來 C¹ 延拓。鄰域與泛型性採加權平滑拓樸，候選延拓本身可以不是真空。",
+    "problemZh": "放寬外部延拓不必滿足真空方程後，C¹ 不可延拓性是否仍泛型成立？",
+    "limitsZh": "初值須鄰近固定 Kerr 背景；稠密 Gδ 是拓樸泛型，而非每筆初值皆滿足；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：比較不同延拓正則性版本的強宇宙審查與數值相對論診斷。"
+  },
+  {
+    "id": "264-03",
+    "titleZh": "近 Kerr 演化的定量估計與泛型 C² 未來不可延拓性",
+    "summaryZh": "論文主張：每個固定旋轉次極端 Kerr 橋的適當鄰域中，完整最大全域雙曲發展可作 C² 未來延拓的平滑真空初值形成稀疏集。鄰域由單一有限階半範數定義，允許具符號型界的漸近平坦尾端，不施加對稱。",
+    "problemZh": "能否在不對稱且保留一般漸近平坦尾端的近 Kerr 資料類中建立 C² 泛型障礙？",
+    "limitsZh": "只處理指定鄰域與資料拓樸，不能升級為所有黑洞初值的分類；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：分析擾動尾端、正則性與宇宙審查版本的關係。"
+  },
+  {
+    "id": "265-01",
+    "titleZh": "由全域能隙導出的二維面積律",
+    "summaryZh": "論文主張：有限誘導正方晶格上，唯一基態的糾纏熵由切過邊界的邊數乘一個常數控制。只需整體 Hamiltonian 的固定能隙，以及固定局部維度、作用範圍和作用強度；常數與區域大小及形狀無關。",
+    "problemZh": "一般二維局域有能隙系統的糾纏，是否能由邊界而非體積控制？",
+    "limitsZh": "唯一基態、全域固定正 gap 及局域有界交互作用不可刪除；不是任意量子態的熵界；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：評估張量網路可表達性、量子模擬中的截斷策略，但仍需演算法和誤差分析。"
+  },
+  {
+    "id": "265-02",
+    "titleZh": "有能隙正方網格基態的多項式 PEPS 近似",
+    "summaryZh": "論文主張：對 L×L 正方晶格上的一致有能隙最近鄰 Hamiltonian，唯一基態存在 bond dimension 為 L 多項式的 PEPS 近似。正規化後全域向量誤差至多 L⁻¹；僅假設全體 Hamiltonian 有 gap，常數對固定局部維度、強度及 gap 的模型一致。",
+    "problemZh": "二維基態能否以多項式 bond dimension 在全域向量範數中近似？",
+    "limitsZh": "這是存在性定理，未給高效張量構造、最佳化或收縮演算法；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究 PEPS 模型容量與壓縮；需額外證明才能主張實務量子模擬加速。"
+  },
+  {
+    "id": "266-01",
+    "titleZh": "六維互不偏基底的最大數量",
+    "summaryZh": "論文主張：ℂ⁶ 中兩兩互不偏正交基底的最大數目為 3，對應六維 Zauner 猜想。排除第 4 組的部分使用計算輔助證明，依指定 binary64 算術與編譯器條件，完整執行驗證流程以排除任意複基底。",
+    "problemZh": "六維量子量測是否容許超過三組兩兩均勻重疊的正交基底？",
+    "limitsZh": "上界依完整覆蓋、捨入誤差合約與執行紀錄；本次沒有重跑該大型計算；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：設計量子量測教具、比較 tomography 基底及研究認證數值搜尋。"
+  },
+  {
+    "id": "266-02",
+    "titleZh": "六階複 Hadamard 矩陣的精確 Fourier 證書",
+    "summaryZh": "論文主張：Tao 三次類別以外的每個六階複 Hadamard 矩陣，在 (1,1,1,−1,−1,−1) 的所有排列上均有指定角色和為零。另提供只用整數與有理數的證書排除 ℂ⁶ 的 7 組互不偏基底，再藉 Weiner 完成定理得到上界 5；包含完整驗證器。",
+    "problemZh": "能否用精確代數證書控制六階 Hadamard 的 Fourier 消去與 MUB 上界？",
+    "limitsZh": "本篇自身的 MUB 上界為 5，不應誤寫成它單獨證 N(6)=3；排除特定 Tao 等價類；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：構建精確量子設計檢查器並比較區間式與有理數式證書。"
+  },
+  {
+    "id": "267-01",
+    "titleZh": "稀薄硬球 Bose 氣體在正溫度的 Bose–Einstein 凝聚",
+    "summaryZh": "論文主張：三維稀薄硬球氣體在正溫度具有 Bose–Einstein 凝聚。固定排斥距離與足夠小但固定密度後，存在不依體積的正溫度，使精確正則 Gibbs 態於熱力學極限中有正凝聚比例，凝聚於常數軌域。",
+    "problemZh": "真實互動硬球模型在固定正溫度能否嚴格產生宏觀軌域佔據？",
+    "limitsZh": "溫度為存在性且可依密度；非完整臨界溫度公式，也非任意密度或任意勢能；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：為稀薄 Bose 氣體有限溫度模型提供基準，另分析臨界尺度與實驗參數。"
+  },
+  {
+    "id": "267-02",
+    "titleZh": "稀薄硬球 Bose 氣體的量子耗盡與動量分布",
+    "summaryZh": "論文主張：三維硬球 Bose 氣體零溫耗盡粒子的完整縮放動量分布符合 Bogoliubov 預測。固定密度先取熱力學極限，再取稀薄極限，對所有純或混合基態一致；非零動量縮放佔據測度總質量為 8/(3√π)，耗盡比例為該係數乘 √(ρa³) 加較小階項。",
+    "problemZh": "除了總耗盡量，能否控制互動 Bose 基態的整個縮放動量分布？",
+    "limitsZh": "三維硬球、零溫與指定極限順序；不宣稱有限體積或有限密度的誤差常數；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：比較 Bogoliubov 理論與動量分辨量測、建立量子耗盡數值基準。"
+  },
+  {
+    "id": "267-03",
+    "titleZh": "固定有界排斥勢的量子耗盡",
+    "summaryZh": "論文主張：三維 Bose 氣體在固定有界、非負、徑向、有限範圍且正散射長度 a 的勢能下，基態耗盡比例為 8√(ρa³)/(3√π)+o(√(ρa³))。固定 ρ 先取熱力學極限，再令 ρ↓0；對基態密度矩陣一致，不要求佔據量的熱力學極限唯一。",
+    "problemZh": "Bogoliubov 耗盡係數能否從硬球拓展到固定有界排斥勢？",
+    "limitsZh": "徑向、非負、有限範圍及正散射長度屬必要範圍；採累積值而非假定極限唯一；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：比較不同微觀勢的散射長度普適性，需另建立有限密度誤差估計。"
+  },
+  {
+    "id": "267-04",
+    "titleZh": "稀薄 Bose 氣體中對密度一致的凝聚下界",
+    "summaryZh": "論文主張：對三維固定有界可測、非負、徑向、有限範圍且非幾乎處處為零的勢能，常數軌域凝聚比例具有正下界。此界對所有充分小密度與 0≤T≤ρ² 一致，熱力學極限中勢能及密度保持固定。",
+    "problemZh": "能否找到不隨稀薄參數消失、且涵蓋小正溫度區間的凝聚比例下界？",
+    "limitsZh": "溫度區間是原文正規化的 T≤ρ²；不等於最佳臨界溫度，也不涵蓋任意勢；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：建立低溫凝聚的穩健區間，並研究物理單位與實驗尺度的轉換。"
+  },
+  {
+    "id": "267-05",
+    "titleZh": "稀薄硬球氣體的基態凝聚",
+    "summaryZh": "論文主張：三維稀薄硬球 Bose 氣體的每一個基態都具有 Bose–Einstein 凝聚。每個充分小但固定氣體參數下，常數軌域在熱力學極限佔正粒子比例；下界可不依氣體參數，並涵蓋任意複基態。",
+    "problemZh": "凝聚是否對全部硬球基態成立，而不只是特定實正基態或精選序列？",
+    "limitsZh": "基態、三維與充分稀薄；不給完整耗盡分布或正溫度相圖；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：作為基態數值方法與低能 Bose 有效理論的嚴格比較對象。"
+  },
+  {
+    "id": "268-01",
+    "titleZh": "週期 spin-1 Haldane 能隙",
+    "summaryZh": "論文主張：純反鐵磁 spin-1 Heisenberg 鏈在偶數週期環上具有一致正譜隙。這處理 Haldane 猜想的偶數週期有限體積表述，要求下界不隨鏈長消失。",
+    "problemZh": "物理上預期的 spin-1 gap 能否在任意大偶數環上嚴格保持？",
+    "limitsZh": "純雙線性、反鐵磁與偶數週期邊界；不是由 AKLT 或有限長對角化直接推出；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究 spin chain 低能態與有能隙相，另檢查開邊界及輸運結論。"
+  },
+  {
+    "id": "268-02",
+    "titleZh": "spin-1 Heisenberg 鏈的邊界場能隙",
+    "summaryZh": "論文主張：對奇數開放 spin-1 反鐵磁鏈，在兩端施相同 h=3/5 磁場，所有 2L+1 點且 L≥960 的鏈有 gap>log(10)/392。藉 Tasaki 指標定理，這些邊界選定基態的每個子序列局部極限皆有拓樸指標 −1。",
+    "problemZh": "指定端點場能否選定有一致能隙且非平凡指標的無窮鏈態？",
+    "limitsZh": "固定端點場、奇數開鏈和長度門檻；不等同任意開邊界 Hamiltonian；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究邊界態選擇與拓樸相診斷，需另建可觀測量與有限鏈誤差。"
+  },
+  {
+    "id": "269-01",
+    "titleZh": "球面 Laughlin 能隙的一致穩定性",
+    "summaryZh": "論文主張：在擴張圓球上、填充率 1/3 的費米 Laughlin V₁ Hamiltonian，加入足夠弱且投影至最低 Landau 能階的有界實純量單體勢後，唯一基態與一致 gap 仍保留。每對投影係數為 1、磁通 q=3(N−1)，擾動門檻與 gap 對足夠大粒子數及 sup 範數≤1 的勢輪廓一致。",
+    "problemZh": "球面 Laughlin gap 是否抵抗一般有界弱單體擾動？",
+    "limitsZh": "使用 companion 的未擾動 Fock-space gap；常數為存在性，作用限定最低 Landau level；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：分析分數量子 Hall 模型對雜質勢的穩健性，需另連結真實幾何與實驗尺度。"
+  },
+  {
+    "id": "269-02",
+    "titleZh": "Fock 空間不等式與 Laughlin 譜隙",
+    "summaryZh": "論文主張：對完整 V₁ 交互作用，球面填充率 1/3 的費米 Laughlin 態在足夠大系統有 gap 至少 1/25。更一般地，大磁通 Q 下整個最低 Landau level Fock 空間滿足 H_Q²≥γH_Q，其中固定 γ>1/25，且與粒子數無關。",
+    "problemZh": "Laughlin 母 Hamiltonian 的能隙能否在熱力學尺度保持，並擴到整個 Fock 空間？",
+    "limitsZh": "每對投影的係數正規化為 1；足夠大磁通門檻，非任意 Coulomb Hamiltonian；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：建立量子 Hall 拓樸相與弱擾動穩定性的可用譜下界。"
+  },
+  {
+    "id": "270-01",
+    "titleZh": "SU(N) BFSS 模型唯一的閾值束縛態",
+    "summaryZh": "論文主張：對每個有限 N≥2，未變形 SU(N) BFSS 矩陣量子力學去除質心後，恰有一個可正規化的零能態。此結果對應閾值束縛態猜想。",
+    "problemZh": "連續譜閾值上的 supersymmetric 束縛態是否存在且唯一？",
+    "limitsZh": "有限 N、未變形、去除質心且限定零能態；不等同整個譜只有一個本徵態；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：檢查矩陣模型與超對稱量子力學的低能結構，不能直接當成弦論全部非擾動解。"
+  },
+  {
+    "id": "270-02",
+    "titleZh": "相對 SU(2) BFSS Hamiltonian 的正本徵值",
+    "summaryZh": "論文主張：相對 SU(2) BFSS Hamiltonian 有無窮多個趨向無窮大的正本徵值，並有平方可積本徵向量。算子以規範不變超荷形式閉包定義，據此反駁原 BFSS 文中在 N=2 排除可正規化正能態的說法。",
+    "problemZh": "BFSS 相對模型除了零能束縛態外，是否仍容許可正規化正能態？",
+    "limitsZh": "結論限定 N=2 與指定自伴閉包，不能直接推所有 N 或全譜型態；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究矩陣量子力學的束縛與連續譜共存，以及數值譜求解的判準。"
+  },
+  {
+    "id": "271-01",
+    "titleZh": "三維有限範圍 Heisenberg 鐵磁體的 Bloch 定律",
+    "summaryZh": "論文主張：對固定正量子 spin、非負對稱有限範圍且支撐生成 ℤ³ 的耦合，自發磁化低溫缺額滿足 Bloch T³ᐟ² 定律。精確領先係數由單 magnon 二次色散矩陣的行列式決定，允許空間各向異性。",
+    "problemZh": "能否由互動量子自旋嚴格導出自旋波磁化定律及係數？",
+    "limitsZh": "先熱力學極限、再零場右導數、最後低溫；不能直接微分零場自由能漸近式；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：比較各向異性 magnon 有效模型與磁化溫度律；動態輸運仍需額外理論。"
+  },
+  {
+    "id": "271-02",
+    "titleZh": "Bloch 定律的第一個晶格修正",
+    "summaryZh": "論文主張：三維最近鄰量子 Heisenberg 鐵磁體對每個固定 S=1/2,1,3/2,…，磁化缺額與完整理想 magnon 密度之差為 o(β⁻⁵ᐟ²)。除領先 Bloch 項外，得到修正 3ζ(5/2)(βS)⁻⁵ᐟ²/(128π³ᐟ²)。",
+    "problemZh": "從連續二次色散近似回到離散晶格，第一個可控磁化修正是多少？",
+    "limitsZh": "最近鄰、三維與固定 spin；體積、零場、低溫的順序不可互換；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：量化低溫晶格色散效應與磁化擬合；不把此階修正誤稱為全部 magnon 交互作用。"
+  },
+  {
+    "id": "271-03",
+    "titleZh": "三維量子 Heisenberg 鐵磁體的球面磁化律",
+    "summaryZh": "論文主張：三維最近鄰各向同性量子鐵磁體，在固定正 spin 與充分低但固定正溫度，偶數週期盒增大時，對稱零場磁化依矩收斂至方向均勻、大小確定且為正的分布。該大小等於無窮體積 pressure 的零場右導數。",
+    "problemZh": "零場對稱態平均磁化可為零時，巨觀磁化的分布如何呈現有序？",
+    "limitsZh": "使用自伴線性組合的矩描述，不假設非對易自旋分量可聯合量測；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：教學上區分對稱混合態與選向自發磁化，以及研究巨觀序參量波動。"
+  },
+  {
+    "id": "271-04",
+    "titleZh": "量子 Heisenberg 鐵磁體的自發磁化",
+    "summaryZh": "論文主張：每個 d≥3 與正半整數 spin 的最近鄰各向同性量子 Heisenberg 鐵磁體，在充分低正溫度存在平移不變自發磁化平衡態。此態同時滿足零場動力學 KMS 條件，且磁化至少 S/4。",
+    "problemZh": "三維以上量子鐵磁體是否存在真正有限溫度的有序平衡態？",
+    "limitsZh": "最近鄰、各向同性、d≥3 與低溫；不涵蓋低維 Mermin–Wagner 禁止的範圍；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：建立低溫磁性理論基準，進一步連結自旋波近似與場選態。"
+  },
+  {
+    "id": "272-01",
+    "titleZh": "局部維度十中可蒸餾秘密金鑰為零的糾纏",
+    "summaryZh": "論文主張：在 ℂ¹⁰⊗ℂ¹⁰ 構造糾纏態，使指定局部儀器協定的可蒸餾秘密金鑰為零，即使容許所有副本聯合處理與無限雙向公開通訊。輸入是唯一共享私密資源，竊聽者持純化與完整公開紀錄；另反駁無限制兩映射 PPT 合成猜想，並給 M₂₁ 的 trace-preserving PPT 通道，其平方非 entanglement breaking。",
+    "problemZh": "糾纏是否必定能在指定公開通訊模型中轉成秘密金鑰？",
+    "limitsZh": "結論依協定資源與竊聽模型；不能省略局部儀器規格而擴張成所有可能密碼資源模型；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：分辨糾纏、金鑰可蒸餾性與通道組合資源，研究量子密碼資源的限制。"
+  },
+  {
+    "id": "273-01",
+    "titleZh": "熵光子數不等式",
+    "summaryZh": "論文主張：對任意有限模態數、兩個彼此獨立且有限平均能量的 bosonic 輸入，證明熵光子數不等式，容許各輸入內的模態糾纏。據此求出同一 thermal attenuator 任意有限張量次方在固定輸入熵下的精確最小輸出熵，以及 degraded 雙接收 pure-loss bosonic 廣播通道的平均光子限制容量區域。",
+    "problemZh": "光場混合時，熵是否遵循可控制通訊容量的光子數型不等式？",
+    "limitsZh": "兩輸入互相獨立、有限能量、有限模態；通道容量結論使用指定衰減與廣播模型；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：分析光通訊編碼界與多模態糾纏效益；實際元件損耗與噪音需另匹配模型。"
+  },
+  {
+    "id": "274-01",
+    "titleZh": "乘積投影局域化與 QAC⁰ 的 parity 下界",
+    "summaryZh": "論文主張：含任意單 qubit 閘與無界 arity Toffoli 閘的常數深度量子電路，若總 qubit 數為多項式，就不能對每個輸入以固定正優勢計算 parity。輔助位元初始為零，只量測單一輸出 qubit，最終其餘垃圾不受限制。",
+    "problemZh": "強大多輸入閘是否能讓淺層量子電路可靠計算全域 parity？",
+    "limitsZh": "測得輸出模型、固定正最壞輸入優勢、常數深度與多項式 qubits；不是所有電路深度下界；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：比較量子電路深度與非局域功能，協助理解容錯與淺層架構限制。"
+  },
+  {
+    "id": "274-02",
+    "titleZh": "規則軌跡、剪枝與量子 parity",
+    "summaryZh": "論文主張：任意單 qubit 與無界 arity Toffoli 閘組成的常數深度電路，在多項式總 qubits 下不能對所有輸入以固定正優勢計算 parity。輔助 qubits 為 |0⟩，量測一個輸出，其餘暫存器可任意丟棄；本篇以軌跡與剪枝路線處理相同測得輸出問題。",
+    "problemZh": "透過規則軌跡與剪枝分析，能否證明允許垃圾輸出的 parity 電路限制？",
+    "limitsZh": "不可與無限制深度、不同閘集或不同初始共享資源模型混用；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：建立量子電路下界的替代分析工具，並檢查模型變更如何影響下界。"
+  },
+  {
+    "id": "275-01",
+    "titleZh": "二進位核電荷的連續 Coulomb 計算困難性",
+    "summaryZh": "論文主張：三維電子 Coulomb 譜下確界的近似，在正整數核電荷以二進位編碼時為 QMA-hard。原子核位於相異有理位置、電子數採 unary，對全部反對稱連續態與自旋部門取下確界；確定性多項式歸約產生至少 1 的閾值間距。",
+    "problemZh": "不預先選軌域基底的連續電子問題，本身是否具有量子驗證複雜度障礙？",
+    "limitsZh": "核電荷可指數大但位元長度多項式；這個輸入編碼與真實低電荷化學不同；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：理解連續量子化學的最壞情形複雜度與編碼假設，不能據此否定結構化分子的可計算性。"
+  },
+  {
+    "id": "275-02",
+    "titleZh": "單位核電荷的連續 Coulomb 能量 QMA 困難性",
+    "summaryZh": "論文主張：即使核電荷全部為 1，clamped nuclei 的電子基態能量下確界近似仍 QMA-hard。歸約產生多項式數量的相異有理位置原子核與電子、位元長度多項式，閾值間距至少 1；不提供軌域基底、磁場或額外勢。",
+    "problemZh": "將大核電荷移除後，完整連續費米電子模型是否仍保有最壞困難性？",
+    "limitsZh": "對完整含 spin 費米連續空間取下確界，不假設一定形成束縛態；QMA-hard 不代表所有實例困難；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：分析量子化學演算法何時需要結構假設，以及離散化與物理輸入的關係。"
+  },
+  {
+    "id": "276-01",
+    "titleZh": "廣義振幅阻尼的古典容量與熵不等式",
+    "summaryZh": "論文主張：每個 qubit 廣義振幅阻尼通道在所有阻尼與熱佔據參數下，其無輔助古典容量等於單次 Holevo 容量，可由單變數最大值表示。二元純態 ensemble 達到單次最佳，獨立乘積在每個區塊長度最佳；另主張與任意有限維 CPTP 夥伴通道的 Holevo 容量、最小輸出熵與 regularized 無輔助容量皆可加。",
+    "problemZh": "熱阻尼 qubit 通道的古典資訊容量是否需要跨通道糾纏編碼提升？",
+    "limitsZh": "結論指定廣義振幅阻尼及無輔助古典容量；不是全部量子通道的普遍可加性；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究量子硬體噪音下的古典編碼最佳化，需另處理實際通道偏離模型的程度。"
+  },
+  {
+    "id": "277-01",
+    "titleZh": "有限維糾纏賽局的閾值平行重複",
+    "summaryZh": "論文主張：每個有限雙人單輪賽局若糾纏值 v<1，則在 k 次獨立重複中贏得至少 (v+δ) 比例的機率對 k 指數衰減，且對任意有限維聯合策略一致。容許相關提問分布，通用速率正比 δ⁵/(1+log(|A||B|))；固定提問分布時另給 δ³ 速率。",
+    "problemZh": "跨多輪使用糾纏與聯合策略，能否避免高於單輪值的成功比例受到指數壓低？",
+    "limitsZh": "有限賽局、有限維策略、0<δ<1−v；獨立的是各次提問抽樣，不要求策略分解；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：量子互動證明的誤差放大與非局域測試設計，需保留維度與賽局模型。"
+  },
+  {
+    "id": "278-01",
+    "titleZh": "不具 Kohn–Sham ensemble 表示的 Coulomb 基態密度",
+    "summaryZh": "論文主張：構造三電子、兩個相等正整數核電荷的有限 Coulomb 分子，其自旋加總基態密度不能由非互動電子的基態 ensemble 重現。禁止的表示是單一實、與 spin 無關的局部勢，屬 L³ᐟ²(ℝ³)+L∞；核電荷由精確有限但非數值公式指定。",
+    "problemZh": "互動電子的基態密度是否總有同密度非互動 Kohn–Sham 基態 ensemble？",
+    "limitsZh": "反例針對指定勢函數類與基態 ensemble，不能推成所有密度泛函方法都無效；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：澄清 DFT 可表示性的理論範圍，研究廣義勢或其他 ensemble 是否避開障礙。"
+  },
+  {
+    "id": "279-01",
+    "titleZh": "固定有限閘集上的精確量子整數分解",
+    "summaryZh": "論文主張：給出多項式時間均勻的量子電路族，對每個 N≥2 以機率 1 輸出完整質因數分解。只需固定有限個有界 arity 閘，閘數與 qubit 數對輸入位元長度具有最壞情形多項式界。",
+    "problemZh": "量子分解能否同時做到精確成功、固定有限閘集與最壞多項式資源？",
+    "limitsZh": "理想量子電路模型的機率 1 不含實體閘噪音、錯誤率與容錯資源成本；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：比較 exact 與 bounded-error 量子複雜度，另估算實際容錯實作成本。"
+  },
+  {
+    "id": "280-01",
+    "titleZh": "強有理酉頂點算子代數與共形網",
+    "summaryZh": "論文主張：每個簡單、酉且強有理的頂點算子代數產生完全有理共形網。所有簡單 grading-restricted 模可酉化、canonical fusion form 為正，並由 Carpi–Weiner–Xu 函子給出有限長模與網的有限 index sectors 之 braided unitary tensor equivalence；再藉 Gui 延拓定理對應局部延拓。",
+    "problemZh": "代數式 VOA 與算子代數式共形場論是否在強有理酉範圍完全一致？",
+    "limitsZh": "簡單、酉、強有理與指定模類皆為假設；不涵蓋一般非有理或非酉 CFT；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：在二維有理 CFT、融合規則與拓樸量子資料間轉譯結構。"
+  },
+  {
+    "id": "281-01",
+    "titleZh": "先熱力學極限下 QAOA 達到 SK 基態能量",
+    "summaryZh": "論文主張：對 Gaussian、零場 Sherrington–Kirkpatrick 模型，先讓自旋數趨無窮，再增加 QAOA 深度，可逼近基態每自旋能量。每個精度有某有限深度與不依尺寸、disorder 的確定角度，使用標準 cost 與 transverse-field mixer。",
+    "problemZh": "QAOA 在特定自旋玻璃極限中，最終能否達到 Parisi 最佳能量？",
+    "limitsZh": "僅 limiting expected energy；沒有深度定量界或有效選角程序，極限順序不可互換；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：比較量子最佳化的理論表達能力與實際有限深度瓶頸，不能據此宣稱普遍量子加速。"
+  },
+  {
+    "id": "281-02",
+    "titleZh": "零溫 Sherrington–Kirkpatrick 序參數的完整支撐",
+    "summaryZh": "論文主張：純零場 SK 模型零溫 Parisi 泛函的每個可容許可積極小者，在 [0,1) 都有完整相對 Stieltjes 支撐。即所有小於 1 的 overlap 尺度都無支撐缺口，採 covariance ξ(t)=t²/2 正規化。",
+    "problemZh": "零溫序參數是否真的涵蓋所有 overlap 尺度，而非只有部分區間？",
+    "limitsZh": "限定純、零場、指定正規化與可積極小者；不直接提供數值密度公式；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究 full RSB 結構、Parisi 數值解與最佳化能量景觀。"
+  },
+  {
+    "id": "282-01",
+    "titleZh": "四維 operational 量子場論的尺度與共形對稱",
+    "summaryZh": "論文主張：對指定四維酉、正能量 QFT 類別，尺度對稱可提升為局部共形對稱。假設尺度維度譜離散且下有界、有限重數、原始場有限尺度支撐、相容局部網實現與物理 dilation current 的 Ward identities；據此改善應力張量成對稱、守恆且無跡，保持平移與 Lorentz 電荷。",
+    "problemZh": "在完整局部算子與電流假設下，scale invariance 是否強迫 conformal invariance？",
+    "limitsZh": "結論是局部 Ward identities；整個有界局部網的全域共形群作用仍是另一問題；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：梳理場論固定點、應力張量改善與尺度／共形論證的必要條件。"
+  },
+  {
+    "id": "283-01",
+    "titleZh": "由 Boolean oracle 進行多項式時間酉算子合成",
+    "summaryZh": "論文主張：對每個 n，可僅由 n 在多項式時間生成一個量子 oracle 電路，適當選 Boolean oracle 後，近似任意 n-qubit 酉通道至完整 diamond-norm 誤差≤1/2。使用固定 H,T,T†,CNOT 閘，qubits、閘數、oracle 呼叫和查詢長度皆多項式。",
+    "problemZh": "把目標資訊藏在 Boolean oracle 中後，一個通用電路能否合成任意酉通道到常數誤差？",
+    "limitsZh": "oracle 可依目標酉算子而變；不給高效古典程序建造它，不能當一般無 oracle 酉編譯器；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究 oracle 資訊存取、量子合成與資料載入成本的分界。"
+  },
+  {
+    "id": "284-01",
+    "titleZh": "隨機與量子查詢複雜度近四次方分離",
+    "summaryZh": "論文主張：構造總 Boolean 函數，使 bounded-error 隨機查詢複雜度 R 與量子 Q 有近四次方分離。這排除所有 α<4 的通用 R(f)=O((1+Q(f))^α) 界，顯示已知四次方上界的指數最佳，並反駁三次方猜想。",
+    "problemZh": "對所有輸入都有定義的 Boolean 函數，量子查詢相對隨機查詢最多能改善多少？",
+    "limitsZh": "計算的是最壞輸入 bit queries、逐輸入錯誤≤1/3；非完整執行時間或所有資料結構成本；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：設計查詢模型分離例與辨析 oracle 加速能否轉成端到端加速。"
+  },
+  {
+    "id": "285-01",
+    "titleZh": "約化 Baum–Connes 單射性的無撓反例",
+    "summaryZh": "論文主張：構造有限生成無撓離散群，其無係數、約化 Baum–Connes degree-zero assembly map 有無限階核類。因而反駁此範圍的有理單射性。",
+    "problemZh": "無撓群是否足以保證約化 assembly map 在有理化後單射？",
+    "limitsZh": "無係數、約化與 degree-zero 版本須保留；單射失敗不等同任意其他 assembly map 都失敗；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：檢查群幾何、K 理論與 index 理論中依賴單射性的推論。"
+  },
+  {
+    "id": "285-02",
+    "titleZh": "Kadison–Kaplansky 投影猜想的無撓反例",
+    "summaryZh": "論文主張：構造有限生成無撓離散群，使其約化群 C* 代數含非零且非單位的投影。此構造反駁 Kadison–Kaplansky 投影猜想。",
+    "problemZh": "群沒有有限階元素，是否仍可能在約化群代數中出現非平凡投影？",
+    "limitsZh": "涉及 reduced group C* algebra；不可混同抽象群環的冪等元問題；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究群代數投影、K₀ 類與無撓假設的極限。"
+  },
+  {
+    "id": "285-03",
+    "titleZh": "以無理跡反駁約化 Baum–Connes 猜想",
+    "summaryZh": "論文主張：構造有限生成離散群，其約化群 C* 代數有 canonical trace 為無理數的投影。該 K₀ 類不在無係數約化 assembly map 像中，因而反駁可數離散群的該猜想。",
+    "problemZh": "能否以投影跡的算術性偵測 assembly map 不滿射？",
+    "limitsZh": "本篇摘要未要求構造群無撓；不能把另一 companion 的無撓性移植到此結果；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：建立投影跡作為 K 理論 obstruction 的例子及檢驗依賴猜想的定理。"
+  },
+  {
+    "id": "286-01",
+    "titleZh": "局部域格點之扭曲有限對應的算術性",
+    "summaryZh": "論文主張：對與特徵零局部域上 property-(T) 格點可公度的 ICC 群，其任意純量扭曲 group factor 與任意可數 ICC 群之扭曲 factor 的 bifinite correspondences 均被算術模型窮盡。每個對應是由實際有限 index 子群同構與匹配 cocycle 比值的有限維 projective representations 所建有限直和的閉直和因子。",
+    "problemZh": "有限雙模對應是否完全由底層格點群的算術資料決定？",
+    "limitsZh": "property-(T)、ICC、可公度與特徵零局部域範圍；不能推所有群 factor；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：分類格點因子的有限對應，並分析混合實／有限 places 與可約乘積。"
+  },
+  {
+    "id": "286-02",
+    "titleZh": "算術範疇與格點因子的穩定恢復",
+    "summaryZh": "論文主張：指定的穩定同構可從上述扭曲格點因子恢復群、差一 normalized cochain 的 cocycle，以及相同 amplification scales。另計算任意可數 ICC 群的算術 correspondence 子範疇，包含有界映射、直和因子、共軛與 Connes fusion，並結合 companion 的窮盡定理。",
+    "problemZh": "從具體穩定同構能否恢復底層群及扭曲資料，而不只是抽象分類？",
+    "limitsZh": "恢復主結論限指定格點相關因子；需 companion 算術窮盡與精確 cocycle 比值條件；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：把算子代數的穩定同構轉成群論資料，研究有限 index 鄰接因子。"
+  },
+  {
+    "id": "287-01",
+    "titleZh": "自由群因子的同構",
+    "summaryZh": "論文主張：L(F₂) 與 L(F₃) 作為帶跡 von Neumann 代數同構。再用經典自由群因子二擇一定理，推出所有 interpolated 自由群因子連同 L(F∞) 皆同構，fundamental group 為全部正實數。",
+    "problemZh": "自由群生成元數能否由其 von Neumann factor 區分？",
+    "limitsZh": "同構的是群 von Neumann 代數而非 F₂ 與 F₃ 本身；不可把代數同構誤作群同構；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：重整自由機率與因子分類中依賴參數差異的問題，需再核對同構構造。"
+  },
+  {
+    "id": "288-01",
+    "titleZh": "由一致導子估計導出的 Kadison 相似性定理",
+    "summaryZh": "論文主張：任意有單位複 C* 代數到任意 Hilbert 空間有界算子的有界複線性單位代數同態，皆與某個 *-同態相似。另得到對所有單位 von Neumann 代數通用的 hyperreflexivity 常數。",
+    "problemZh": "只保代數乘法的有界表示，是否經可逆座標變換就能保留伴隨運算？",
+    "limitsZh": "有界、複線性、單位同態與 C* 結構不可省略；相似不等於本來就是 *-表示；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究表示穩定性、導子估計及非自伴算子代數的控制。"
+  },
+  {
+    "id": "289-01",
+    "titleZh": "普遍的強 Kadison–Kastler 穩定性",
+    "summaryZh": "論文主張：充分接近的單位 von Neumann 代數由一個任意接近單位算子的酉算子共軛。容許代數距離只依指定酉距離要求，對所有代數、表示與 Hilbert 空間一致。",
+    "problemZh": "算子代數作小的雙側集合擾動，是否只是小酉座標變換？",
+    "limitsZh": "這是 von Neumann 代數的雙側 Kadison–Kastler 距離；不涵蓋一般 C* 代數或單側近包含；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：分析觀測代數與表示的擾動穩定性，需保留閉包與距離模型。"
+  },
+  {
+    "id": "289-02",
+    "titleZh": "無小空間嵌入的 von Neumann 代數近包含",
+    "summaryZh": "論文主張：在可分複 Hilbert 空間構造共同單位元的 von Neumann 代數對，其單側 gap 趨零。來源到目標的空間嵌入確實存在，但每個實現嵌入的酉算子都距離單位元一個固定正量。",
+    "problemZh": "單側近包含能否保證由接近 identity 的酉算子實現嵌入？",
+    "limitsZh": "反例針對「小」實現酉算子，不是沒有空間嵌入；不與雙側 close-algebra 穩定性混淆；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：辨析單側測量誤差和雙側代數距離對重建穩定性的差別。"
+  },
+  {
+    "id": "289-03",
+    "titleZh": "相近但不空間共軛的可分 C* 代數",
+    "summaryZh": "論文主張：對每個 ε>0，構造共同可分 Hilbert 空間與共同單位元上的 norm-separable C* 代數，Kadison–Kastler 距離<ε，卻不由任何酉算子共軛。兩者仍有同一 von Neumann 閉包。",
+    "problemZh": "一般可分 C* 代數是否享有 von Neumann 代數式的空間擾動剛性？",
+    "limitsZh": "反例是空間酉共軛的失敗；共同弱閉包不代表原 norm-closed 代數相同；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究不同完成拓樸對量子觀測代數重建與分類的影響。"
+  },
+  {
+    "id": "290-01",
+    "titleZh": "保留核心交換子的具期望 amenable 子代數",
+    "summaryZh": "論文主張：對可分 predual、帶忠實正常條件期望的包含 N⊂M，存在帶期望的 amenable 子代數 P⊂N，使 P′∩c(M)=N′∩c(M)。其中 c(M) 為連續核心，據此解決此範圍的 relative bicentralizer 猜想。",
+    "problemZh": "能否以較可處理的 amenable 子代數保留連續核心中的全部相對交換子？",
+    "limitsZh": "可分 predual 與忠實正常條件期望屬假設；結論精確在 continuous core 中；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究 type III 因子結構、相對 bicentralizer 與模理論的簡化。"
+  },
+  {
+    "id": "290-02",
+    "titleZh": "模譜平均的有界恢復",
+    "summaryZh": "論文主張：對具有忠實正常態且 centralizer 只有純量的 von Neumann 代數，縮小模譜帶上的正平均平方範數可在一致有界、譜支撐縮小的代數元素上恢復。此有界譜恢復定理用於 spectral intertwining 剛性，並給可分 predual 的 type III₁ 因子 bicentralizer 平凡性的替代證明。",
+    "problemZh": "Hilbert 空間層級的模譜訊號能否轉回有一致範數控制的代數元素？",
+    "limitsZh": "初始恢復定理需純量 centralizer；相關應用須核對各自的模態假設；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：提供模理論與 type III 分類中可控制的近似／剛性工具。"
+  },
+  {
+    "id": "291-01",
+    "titleZh": "單位穩定有限情況下 amenable 作用的等變 Jiang–Su 穩定性",
+    "summaryZh": "論文主張：可數離散 amenable 群作用在簡單、可分、單位、無窮維、nuclear、stably finite 且已 Z-stable 的複 C* 代數上，會在 cocycle conjugacy 意義下吸收 Jiang–Su 代數的平凡作用。對 tracial-state simplex 上的作用不加限制，處理 Szabó 猜想 A 的此一範圍。",
+    "problemZh": "已知非等變 Z-stability，是否會自動提升為群作用的等變吸收？",
+    "limitsZh": "單位、穩定有限及原本 Z-stable 是假設；不是任意群或任意 C* 代數作用；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：分類 amenable 動力系統與等變算子代數，研究跡空間作用的可容範圍。"
+  },
+  {
+    "id": "291-02",
+    "titleZh": "Cuntz 比較與 Jiang–Su 吸收",
+    "summaryZh": "論文主張：對可分、簡單、nuclear、非 elementary C* 代數，以 extended-functional 意義定義的 strict comparison 推出 Jiang–Su 吸收，包含非單位與無界跡情況。更一般地，可分 nuclear 代數若 Cuntz 半群 almost unperforated 且 fully almost divisible，便吸收 Z。",
+    "problemZh": "序半群的比較正則性能否強迫吸收 Jiang–Su 代數？",
+    "limitsZh": "需保留 strict comparison 的擴展泛函定義與非 elementary 條件；不能只用有限跡版本替代；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：推進 Toms–Winter 正則性與非單位 C* 分類。"
+  },
+  {
+    "id": "291-03",
+    "titleZh": "無 elementary 子商下的 nuclear dimension 與 Jiang–Su 穩定性",
+    "summaryZh": "論文主張：對沒有非零 elementary ideal subquotients 的可分 nuclear C* 代數，有限 nuclear dimension 等價於 Jiang–Su 穩定。更一般地，任意可分 nuclear A₀ 都滿足 dim_nuc(A₀⊗Z)≤1，處理 Robert–Tikuisis 猜想 C1 及非簡單正則性問題。",
+    "problemZh": "在非簡單代數中，有限非交換維度與 Z 吸收是否仍等價？",
+    "limitsZh": "等價式需排除 elementary ideal subquotients；通用維度界是對張量 Z 後的代數；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究非簡單 nuclear 代數的分類與結構分解。"
+  },
+  {
+    "id": "291-04",
+    "titleZh": "跡投影方法與一致 property Γ",
+    "summaryZh": "論文主張：對簡單、可分、單位、無窮維、nuclear、stably finite 且有跡的 C* 代數，一致跡完成的一致跡 ultrapower 具有 real rank zero 可推出 uniform property Γ。另主張 strict comparison 推出單位情況的 Z 吸收，並在有限 target rank 比較及有界緻密定義跡等假設下處理 stably projectionless 類。",
+    "problemZh": "跡 ultrapower 中的投影正則性是否能提供 property Γ 與 Z 吸收？",
+    "limitsZh": "各結論的跡有界性、緊 normalized base 與比較測試範圍不同，不能合併成無條件普遍結論；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：建構分類理論中的跡近似工具，連結 uniform Γ 與 Toms–Winter 正則性。"
+  },
+  {
+    "id": "292-01",
+    "titleZh": "nuclear norm-ultrapower 嵌入的明確障礙",
+    "summaryZh": "論文主張：構造明確可分單位 full group C* 代數，對任何非零單位 nuclear C* 代數 B 與 ℕ 上自由 ultrafilter ω，均不能單位嵌入 Bω。特別不能單位嵌入 O₂ω，給 Kirchberg norm-ultrapower 嵌入問題否定答案。",
+    "problemZh": "所有可分 C* 結構能否藏在 nuclear 代數的 norm-ultrapower 中？",
+    "limitsZh": "full group C*、norm-ultrapower 與 unital embedding 必須區分於 reduced 或 tracial ultrapower；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：分析 nuclear 近似與普遍嵌入策略的邊界。"
+  },
+  {
+    "id": "293-01",
+    "titleZh": "每個無理旋轉的不變投影反例",
+    "summaryZh": "論文主張：對事先指定的每個無理角，構造連續非負圓周權重，恰一零點且對數積分為 −∞；其加權旋轉在相關 hyperfinite type II₁ factor 中無非平凡不變投影。所得算子非零且 norm-quasinilpotent，否定 Zhu–Fang–Shi 的問題。",
+    "problemZh": "給定無理旋轉角後，加權旋轉是否必定有可見於 factor 內的不變投影？",
+    "limitsZh": "特定權重、type II₁ factor 與不變投影問題；不等同所有 Hilbert 子空間的不變性問題；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究動力系統構造的算子反例與 quasinilpotent 行為。"
+  },
+  {
+    "id": "293-02",
+    "titleZh": "向後交織算子與傳遞交換子代數",
+    "summaryZh": "論文主張：在每個無窮維可分複 Hilbert 空間上，構造非零有界 norm-quasinilpotent 算子，沒有非零真閉超不變子空間。其交換子是 proper、強閉、單位且 transitive 的複算子代數。",
+    "problemZh": "一個算子是否必有同時對所有與它交換的算子不變的真子空間？",
+    "limitsZh": "hyperinvariant 比 invariant 更強；本篇否定的是超不變子空間問題，不能誤稱一般不變子空間問題已解；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究交換子代數與不變子空間層級差異，以及無窮維譜的極端例子。"
+  },
+  {
+    "id": "294-01",
+    "titleZh": "Kaplansky 準跡猜想反例與張量積穩定有限性的失敗",
+    "summaryZh": "論文主張：構造可分單位複 C* 代數，有 normalized 2-quasitraces 卻無 tracial state，反駁 Kaplansky 準跡猜想。另顯示兩個單位簡單 stably finite 代數的最小張量積可 properly infinite，即使其中一因子是 C*r(F₂)。",
+    "problemZh": "準跡是否必然產生真跡，以及穩定有限性是否在最小張量積下保留？",
+    "limitsZh": "quasitrace 不等於線性 trace；張量積型態與兩因子假設應完整保留；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：重新檢查 C* 代數有限性、跡與張量乘積的分類準則。"
+  },
+  {
+    "id": "295-01",
+    "titleZh": "高階有界 Hochschild 上同調的消失",
+    "summaryZh": "論文主張：複 von Neumann 代數上、以自身為係數的每個 degree≥2 有界 Hochschild cocycle，皆有有界 primitive。結合已知 degree-one inner-derivation 定理，給 Kadison–Ringrose 上同調猜想正面答案。",
+    "problemZh": "有界多線性上同調障礙是否在 von Neumann 自係數情況全部消失？",
+    "limitsZh": "有界 cocycle、自身係數及複 von Neumann 類別；不可換成任意模或無界上同調；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究代數變形、導子與表示的剛性工具。"
+  },
+  {
+    "id": "296-01",
+    "titleZh": "相對生成與有限因子的生成元問題",
+    "summaryZh": "論文主張：每個具有可分 predual 的 type II₁ factor 可由一個算子生成，等價於由兩個自伴算子生成。再結合既有 direct-integral reduction，對可分 predual 的 von Neumann 代數生成元問題給正面答案。",
+    "problemZh": "看似龐大的可分算子代數是否能由單一非自伴算子編碼？",
+    "limitsZh": "單一算子可非自伴；不能解讀成由單一自伴算子生成非交換代數；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究算子代數資料的最小生成表示及其穩定性。"
+  },
+  {
+    "id": "297-01",
+    "titleZh": "ZFC 中 Naimark 問題的反例",
+    "summaryZh": "論文主張：在 ZFC 內構造單位、無窮維、簡單複 C* 代數，具有忠實跡態，而且其所有非零不可約表示皆酉等價。這在不加額外集合論假設下給 Naimark 問題否定答案。",
+    "problemZh": "不可約表示只有一種是否足以迫使 C* 代數為標準緊算子型？",
+    "limitsZh": "摘要沒有可分性假設，不能默加；只主張在 ZFC 中存在該反例；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究表示唯一性與集合論在 C* 分類中的作用。"
+  },
+  {
+    "id": "298-01",
+    "titleZh": "microstates 與 nonmicrostates 自由熵的有限熵分離",
+    "summaryZh": "論文主張：構造帶忠實正常跡的 von Neumann 代數中有界自伴 tuple X，使 −∞<χ(X)≤χ*(X)−1/2<∞。χ 使用原始 operator-norm cutoff 與矩陣大小的 limsup，反例變數數量大但固定。",
+    "problemZh": "兩種自由熵在都有限時，是否仍可能存在嚴格差距？",
+    "limitsZh": "固定的微狀態定義及截斷／limsup 很重要；不只是無限值的退化分離；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：比較自由機率中的矩陣近似、資訊量與隨機矩陣方法。"
+  },
+  {
+    "id": "299-01",
+    "titleZh": "Kirchberg–Rørdam 角色判準",
+    "summaryZh": "論文主張：對每個 ℕ 上自由 ultrafilter，非零單位可分複 C* 代數吸收 Jiang–Su 代數，等價於其 norm central-sequence algebra 沒有 characters。另主張任何無 characters 的此類代數之無限最小張量次方皆 Z-stable 且含單位 Z。",
+    "problemZh": "可否由中心序列代數沒有一維表示，精確判定 Z 吸收？",
+    "limitsZh": "norm central-sequence、unital、separable 與 ultrafilter 條件需保留；非任意中心的角色判準；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：簡化 Z-stability 檢查並分析無限張量系統的正則性。"
+  },
+  {
+    "id": "300-01",
+    "titleZh": "任意最大交換子代數上的近似 paving",
+    "summaryZh": "論文主張：每個複 von Neumann 代數的最大交換子代數都滿足 Popa–Vaes approximation-paving 猜想。自伴算子是某些自伴近似子的強極限；近似子範數≤原範數 3 倍，各自可用至多 Cε⁻⁶ 個投影得到相對自身範數 ε 誤差的 norm paving。",
+    "problemZh": "任意 MASA 上是否能先以強近似再用有限投影分塊降低非對角部分？",
+    "limitsZh": "原算子是強極限，不是宣稱原算子本身在 norm 下直接可 paving；不需可分或條件期望；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：比較算子分塊近似與強／範數拓樸的差異，研究投影數量界。"
+  },
+  {
+    "id": "300-02",
+    "titleZh": "任意最大交換子代數上的二次方強算子 paving",
+    "summaryZh": "論文主張：每個 von Neumann 代數自伴元素對任意最大交換子代數，具有 strong-operator paving，投影數至多 5×10⁸ ε⁻²。界對所有表示一致，且不需可分性或條件期望假設。",
+    "problemZh": "強算子 paving 的投影數是否能達到誤差倒數的二次方尺度？",
+    "limitsZh": "這是 strong-operator paving，不可與 norm paving 混同；常數巨大不等同實務有效；此為摘要層導讀，未在本次獨立驗證完整證明。",
+    "applicationsZh": "可能延伸（需另外論證或實作）：研究誤差與分塊數量的理論權衡，評估是否有特定模型的較佳常數。"
+  }
+]

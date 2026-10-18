@@ -1,0 +1,15 @@
+{
+  "issue": "HTML entity decoding before generic tag removal could delete raw mathematical inequalities. Fixed to remove only actual allowed tags before decoding.",
+  "correctedPaperIds": [
+    "107-01",
+    "107-02",
+    "107-03",
+    "223-01",
+    "223-02",
+    "223-03",
+    "223-04",
+    "223-05",
+    "223-06",
+    "277-01"
+  ]
+}
