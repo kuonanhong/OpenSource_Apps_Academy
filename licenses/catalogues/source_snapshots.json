@@ -1,0 +1,74 @@
+[
+  {
+    "id": "selfhosted",
+    "repo": "awesome-selfhosted/awesome-selfhosted-data",
+    "commit": "8cf2209828f0ee185109a98808010534bd78517e",
+    "commitDate": "2026-10-17T01:26:29Z",
+    "retrievedAt": "2026-10-18T03:55:06.079781+00:00",
+    "files": [],
+    "archiveSha256": "e5f7f20be481517422db05308a493f5bd6ae170a485f0b017909fb4204f6bf20",
+    "sourceUrl": "https://github.com/awesome-selfhosted/awesome-selfhosted-data/tree/8cf2209828f0ee185109a98808010534bd78517e"
+  },
+  {
+    "id": "sysadmin",
+    "repo": "awesome-foss/awesome-sysadmin",
+    "commit": "86787ee02eee8a25a3f2da179499b39ce47a8973",
+    "commitDate": "2026-10-15T11:32:48Z",
+    "retrievedAt": "2026-10-18T03:55:06.016349+00:00",
+    "files": [
+      {
+        "path": "README.md",
+        "sha256": "70fcb1f4cc46d3c80739dc39b2e62908ae43a1fa3a89a1a9c2a3dc541b7d3633"
+      },
+      {
+        "path": "LICENSE.txt",
+        "sha256": "2ee4926edd20442e2237f93f90bcb519f97b4200f0334426e76f273be6a764d4"
+      }
+    ],
+    "sourceUrl": "https://github.com/awesome-foss/awesome-sysadmin/tree/86787ee02eee8a25a3f2da179499b39ce47a8973"
+  },
+  {
+    "id": "python",
+    "repo": "vinta/awesome-python",
+    "commit": "3e8c86bac6ad0548b36921ba219a56592982e046",
+    "commitDate": "2026-10-17T08:58:56Z",
+    "retrievedAt": "2026-10-18T03:55:06.019366+00:00",
+    "files": [
+      {
+        "path": "README.md",
+        "sha256": "7f6fa18acd2b37d9792e142f7933bc0c6f254af987eb363397b2ee1674650b0d"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "40adf29211f429da45be3e92cf2c4955f980e5d39d82b6c49fff8ccd18bad5ec"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha256": "5aca6d2877020be1bac7366147e758d42382c04d559faf450b49383e2c514971"
+      }
+    ],
+    "sourceUrl": "https://github.com/vinta/awesome-python/tree/3e8c86bac6ad0548b36921ba219a56592982e046"
+  },
+  {
+    "id": "go",
+    "repo": "avelino/awesome-go",
+    "commit": "9084f305adfe8a9677a706cbac851a7b1af5fe77",
+    "commitDate": "2026-10-14T11:19:54Z",
+    "retrievedAt": "2026-10-18T03:55:06.080632+00:00",
+    "files": [
+      {
+        "path": "README.md",
+        "sha256": "96f5026b79908a1184b24ad8623cd383105e338b43deacccf93983deffb586cc"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "55df7521c33945cd0ab5b4fbaf0046a8a58cc1cf81ee9096614bf33a0e2e0983"
+      },
+      {
+        "path": "CONTRIBUTING.md",
+        "sha256": "ca07f009eed5339033b52c4f65f7ab9fc66a78c57571187c7bd47d4c80775476"
+      }
+    ],
+    "sourceUrl": "https://github.com/avelino/awesome-go/tree/9084f305adfe8a9677a706cbac851a7b1af5fe77"
+  }
+]

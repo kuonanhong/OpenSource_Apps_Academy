@@ -1,0 +1,79 @@
+<!doctype html><html lang="zh-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>參考學院與離線設計 · OpenSource Apps Academy</title><style>body{font:17px/1.85 system-ui,sans-serif;background:#f6f5ed;color:#213b33;max-width:920px;margin:auto;padding:28px}h1,h2,h3{line-height:1.5}h2{margin-top:2em;border-top:1px solid #c6d0bb;padding-top:1em}pre{background:#e8eddf;border-radius:12px;padding:20px;white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 monospace}code{overflow-wrap:anywhere}a{color:#28664a;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:15px}td,th{padding:12px;border:1px solid #c6d0bb}li{margin:.65em 0}.back{display:inline-block;margin-bottom:20px}@media(max-width:500px){body{padding:18px;font-size:16px}pre{padding:12px;font-size:12px}}@media print{body{background:white;padding:0}.back{display:none}}</style></head><body><a class="back" href="../index.html">← OpenSource Apps Academy</a><h1>馬蓋先／華佗參考介面與離線能力核對</h1>
+<p>檢視日期：2026-10-18 UTC。這是檔案與公開原始碼檢視，沒有執行上傳套件中的程式、部署網站或測試真實手機聲音；沒有修改 <code>academy/</code>。</p>
+<h2>版本與證據</h2>
+<ul>
+<li>新上傳 <code>HuaTuo_Medical_Academy_Complete_v3_2.zip</code>：154,942,085 bytes、700 個項目、解壓內容合計 306,828,121 bytes。SHA-256：<code>94440a53c6029ed25fdf966441afb057d87bc3748319e85fe8811a8c0f2aafbd</code>，與前次參考 ZIP 完全一致。套件最上層仍命名 <code>HuaTuo_Medical_Academy_v2</code>，不代表此次漏讀 v3.2。</li>
+<li>公開 MacGyver：commit <code>5dfefc3d842f9bdecc60e90a3a44fb7e078dfe20</code>，REST tree 未截斷，2,476 個檔案。</li>
+<li>公開 HuaTuo：commit <code>c300bd9943386e785710e6d447384267d2c3e1bf</code>，REST tree 未截斷，196 個檔案。完整 ZIP 與免費公開站是兩種不同交付物。</li>
+<li>GitHub API 回報兩庫皆公開且 <code>has_pages=true</code>；本次搜尋服務無法取得實際 Pages 網頁，不把這個欄位當成目前網址正常運行的證明。</li>
+</ul>
+<h2>可移植的具體設計</h2>
+<table>
+<thead>
+<tr>
+<th>實際原始碼模式</th>
+<th>對 Open Lab 的具體改法</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>兩個參考的根 <code>index.html</code> 有立即導向、手動入口及完整解壓提示；JS 導向保留 hash，公開 HuaTuo 也保留 query。</td>
+<td>根入口保留 <code>location.search</code> 與 <code>location.hash</code>，同時留下可點入口。以「開始閱讀」「開啟工具」「使用指南」為第一層，不要求學員先看安裝術語。</td>
+</tr>
+<tr>
+<td>華佗 <code>bootstrap.js</code> 逐一載入 classic scripts，載入失敗會顯示檔名與修復方法。</td>
+<td>保留 classic/IIFE 入口與 <code>defer</code> 資料，加入可讀的載入失敗面板；避免只留下轉圈動畫。</td>
+</tr>
+<tr>
+<td>華佗 <code>course-player.js:14–26</code>：HTTP 模式取 JSON；<code>file://</code> 模式透過 script 載入該學科 JS 資料。</td>
+<td>正文採按篇載入的 <code>window.OPENLAB_PAPERS[id]</code> JS 備援。HTTP 仍可用 JSON；不要為雙擊載入全部 719 篇完整正文。</td>
+</tr>
+<tr>
+<td>馬蓋先離線模式載入 <code>offline-data.js</code>、多份 <code>offline-data-NN.js</code>、<code>offline-runtime.js</code>，再載入預建 bundle。</td>
+<td>借鏡預建與資料包形式，但不要整包照搬數百 MB。閱讀所需資料預載；正文與大型工具按需載入。</td>
+</tr>
+<tr>
+<td>華佗課程先呈現工作台，之後才展開目標、操作、觀察、失效與驗收；有上一步／下一步、測驗解釋及來源。</td>
+<td>每個工具頁固定「選檔／載入例子 → 執行 → 檢視結果 → 匯出」，說明置於同頁。每篇論文固定「問題 → 先修 → 假設 → 主張 → 證明路線 → 小例子 → 限制 → 延伸」。</td>
+</tr>
+<tr>
+<td>華佗完成條件是實作與測驗都通過；進度與下一步狀態一直可見。</td>
+<td>工具成功應根據真實函式／API 回傳；閱讀完成、計算成功、證明已核驗分開記錄。不要因按下按鈕就記為成功。</td>
+</tr>
+<tr>
+<td>桌面側欄、手機底部導覽、搜尋、明顯語言切換；AI 師傅是可選面板。</td>
+<td>手機保留主要動作與輸出，不把工具藏在長文章底部。中文／英文內容與機器翻譯覆蓋分開標示。</td>
+</tr>
+<tr>
+<td>華佗語音嘗試預設聲音、等待 <code>voiceschanged</code>，以真正的 <code>onstart</code>／<code>onplaying</code> 更新狀態；可選 <code>/api/tts</code>。</td>
+<td>「試聽／播放／停止／重試」都應可見；聲音清單暫時為空不直接宣告失敗。未連接 TTS 時仍能閱讀文字。</td>
+</tr>
+<tr>
+<td>華佗 Service Worker 只快取明列的公開 shell；避開 API、私人目錄及受保護課程。</td>
+<td>PWA 快取只限公開閱讀資產；不快取 token、使用者檔案或 AI 回覆。不能把首頁可離線誤寫為全部正文及模型已離線。</td>
+</tr>
+</tbody></table>
+<h2>舊 Open Lab 的雙擊問題：可確定與不可確定部分</h2>
+<p>檢視時根入口只是導向 <code>dist/index.html</code>；實際首頁已經使用 classic scripts，並以 JS 形式附帶目錄、中文摘要與學習路徑。因此，不能把整個舊版的問題一概歸因為 ES modules，亦未重現「所有瀏覽器首頁空白」。確定的阻礙是：</p>
+<ol>
+<li><code>assets/app.js</code> 的完整正文按鈕仍使用 <code>fetch()</code> 讀取逐篇 JSON；失敗後才提示啟動本機服務。</li>
+<li><code>assets/tools.js</code> 的 math.js 工作執行緒明確拒絕 <code>file://</code>。部分其他工具也有相同服務需求。</li>
+<li><code>api()</code> 在 <code>file://</code> 下拒絕執行；GitHub Pages 上的 <code>/api/*</code> 也沒有 Python 後端。</li>
+<li>根入口的固定 meta refresh 不保留深連結；手機檔案預覽器也不保證像完整瀏覽器一樣執行 JS。</li>
+</ol>
+<p>建議常駐顯示「離線閱讀／線上靜態站／本機完整服務」模式與每個工具的可用狀態，在執行前說明差異。需要 Worker 的計算可改為 Blob Worker 並真正測試，或明確引導一鍵啟動器；不要退回主執行緒運算而失去逾時終止。HTML 按鈕不能可靠、通用地直接執行任意本機 shell。</p>
+<h2>公開交付邊界</h2>
+<ul>
+<li>完整 ZIP 中約 215.46 MB 是 <code>models/</code>；<code>public/</code> 約 88.95 MB。公開 HuaTuo tree 全部檔案約 34.06 MB。模型、會員完整內容與私人站長設定不應因「模仿網站」一併搬入新站。</li>
+<li>只從新專案的已驗證靜態輸出發布；排除 <code>private/</code>、<code>owner-private/</code>、<code>portable/data/</code>、<code>local-documents/</code>、模型／權重、資料庫、<code>.env*</code>、私鑰、上傳檔與參考 ZIP。不跟隨 symlink。</li>
+<li>華佗 <code>tools/export_static.py</code> 會裁掉非免費階段；公開庫 <code>tools/stage_pages.py</code> 又依管理清單和逐檔 SHA-256 建立 Pages artifact。這個「明確清單＋雜湊」模式比整個工作資料夾直接上傳更值得採用。</li>
+<li>華佗 <code>LICENSES.md</code> 明列程式與課程文字 MIT；第三方模型／資料另外適用各自授權。API 的 <code>license:null</code> 並不代表沒有授權文件。此次建議重寫互動模式，不複製醫學教材、私密內容或大型資產。</li>
+</ul>
+<h2>建議驗收</h2>
+<p>完整解壓後，在兩種桌面瀏覽器以 <code>file://</code> 開啟根入口、逐篇正文與至少一項不依賴服務的工具；另外用 localhost 與 <code>/REPO/</code> 子路徑測試所有連結。驗收記錄應分開列出哪些功能在各模式成功，手機語音與模型推論只有真機執行後才能標成已測試。</p>
+<h2>來源定位</h2>
+<ul>
+<li><a href="https://github.com/kuonanhong/macgyver-academy/blob/5dfefc3d842f9bdecc60e90a3a44fb7e078dfe20/index.html">MacGyver 固定版本根入口</a>、<a href="https://github.com/kuonanhong/macgyver-academy/blob/5dfefc3d842f9bdecc60e90a3a44fb7e078dfe20/public/academy/bootstrap.js">載入器</a>、<a href="https://github.com/kuonanhong/macgyver-academy/blob/5dfefc3d842f9bdecc60e90a3a44fb7e078dfe20/.github/workflows/pages.yml">Pages workflow</a>。</li>
+<li><a href="https://github.com/kuonanhong/Hua-Tuo-Medical-Biomedical-Academy/blob/c300bd9943386e785710e6d447384267d2c3e1bf/index.html">HuaTuo 固定版本根入口</a>、<a href="https://github.com/kuonanhong/Hua-Tuo-Medical-Biomedical-Academy/blob/c300bd9943386e785710e6d447384267d2c3e1bf/public/academy/bootstrap.js">載入器</a>、<a href="https://github.com/kuonanhong/Hua-Tuo-Medical-Biomedical-Academy/blob/c300bd9943386e785710e6d447384267d2c3e1bf/tools/stage_pages.py">安全 artifact 建立器</a>。</li>
+<li>上傳 ZIP 內 <code>public/academy/{index.html,bootstrap.js,course-player.js,voice.js,sw.js}</code>、<code>tools/export_static.py</code>、<code>LICENSES.md</code>；檔案清單與版本證據保存在本資料夾。</li>
+</ul>
+</body></html>

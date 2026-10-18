@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Reference academies and offline design · OpenSource Apps Academy</title><style>body{font:17px/1.85 system-ui,sans-serif;background:#f6f5ed;color:#213b33;max-width:920px;margin:auto;padding:28px}h1,h2,h3{line-height:1.5}h2{margin-top:2em;border-top:1px solid #c6d0bb;padding-top:1em}pre{background:#e8eddf;border-radius:12px;padding:20px;white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 monospace}code{overflow-wrap:anywhere}a{color:#28664a;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:15px}td,th{padding:12px;border:1px solid #c6d0bb}li{margin:.65em 0}.back{display:inline-block;margin-bottom:20px}@media(max-width:500px){body{padding:18px;font-size:16px}pre{padding:12px;font-size:12px}}@media print{body{background:white;padding:0}.back{display:none}}</style></head><body><a class="back" href="../index.html">← OpenSource Apps Academy</a><h1>Reference interface and offline audit</h1>
+<p>Reviewed 18 October 2026 UTC. This is a source audit, not a runtime certification. No uploaded program was executed, no service was deployed, and no <code>academy/</code> file was edited.</p>
+<p>The newly uploaded HuaTuo v3.2 ZIP is byte-identical to the previous reference: 154,942,085 bytes, 700 entries, SHA-256 <code>94440a53c6029ed25fdf966441afb057d87bc3748319e85fe8811a8c0f2aafbd</code>. Its internal directory still says v2. Public repository revisions were inspected through GitHub REST: MacGyver <code>5dfefc3d842f9bdecc60e90a3a44fb7e078dfe20</code> (2,476 files) and HuaTuo <code>c300bd9943386e785710e6d447384267d2c3e1bf</code> (196 files). Neither tree response was truncated. <code>has_pages=true</code> is metadata, not proof that the live site currently responds; the web lookup could not retrieve either Pages site.</p>
+<h2>Patterns to adapt</h2>
+<table>
+<thead>
+<tr>
+<th>Evidence in the references</th>
+<th>Concrete Open Lab adaptation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Root entry with redirect, manual link and complete-extraction instructions.</td>
+<td>Preserve query/hash; provide an obvious reading entry and a separate local-service launcher.</td>
+</tr>
+<tr>
+<td>Ordered classic-script loader, explicit static/file mode, readable failure message.</td>
+<td>Keep a built static shell and JS data. Show the failed asset and a recovery action instead of an endless spinner.</td>
+</tr>
+<tr>
+<td>HuaTuo loads course JSON over HTTP and a course JS shard under <code>file://</code>.</td>
+<td>Load one manuscript JS fallback on demand. Do not parse all 719 full texts on startup.</td>
+</tr>
+<tr>
+<td>MacGyver has prebuilt bundles and multiple offline-data shards.</td>
+<td>Reuse the packaging idea, not its hundreds of MB of content.</td>
+</tr>
+<tr>
+<td>HuaTuo presents practice first, with objectives, instructions, observations, failures, checks and sources nearby.</td>
+<td>Tool sequence: choose input/example, run the real engine, inspect output, export. Paper sequence: problem, prerequisites, assumptions, claim, proof outline, example, limitations, research extensions.</td>
+</tr>
+<tr>
+<td>Practice and quiz success are separate completion gates.</td>
+<td>Keep reading progress, successful computation and independently checked proof status separate.</td>
+</tr>
+<tr>
+<td>Sidebar, mobile navigation, search and language control remain visible.</td>
+<td>Keep primary actions accessible on phones. Distinguish authored translation from optional machine translation.</td>
+</tr>
+<tr>
+<td>Speech state follows real start/play events and delayed voice discovery.</td>
+<td>Offer play/test/stop/retry; an initially empty voice list must not immediately block playback. Backend TTS remains optional.</td>
+</tr>
+<tr>
+<td>Service Worker caches an explicit public shell list and excludes private/API data.</td>
+<td>Cache public reading assets only; do not imply that a cached home page includes all papers and model weights.</td>
+</tr>
+</tbody></table>
+<h2>What the old double-click issue actually establishes</h2>
+<p>The inspected Open Lab entry redirects to <code>dist/index.html</code>; that page already uses classic scripts and JS copies of its catalogue, translations and learning paths. It would be inaccurate to blame all entry failures on ES modules or claim that every browser showed a blank page.</p>
+<p>The confirmed restrictions were the full-text button&#39;s JSON <code>fetch</code>, the math Worker’s explicit <code>file://</code> guard, and local API calls. The root redirect also discarded deep-link state. Static hosting supplies no Python API. Phone file-preview applications may not execute the site like a full browser.</p>
+<p>Show a persistent operating mode: offline reading, hosted static site, or local service. Mark a tool’s requirements before execution. A Blob Worker is a possible file-mode adaptation only after a real test; a blocking main-thread fallback would sacrifice timeout termination. A webpage cannot reliably launch arbitrary local shell commands across devices.</p>
+<h2>Public-export boundary</h2>
+<p>The complete HuaTuo ZIP contains about 215.46 MB of model assets and 88.95 MB under <code>public/</code>; the public repository’s complete file tree is about 34.06 MB. Do not transplant the full distribution into Open Lab. Publish only a verified generated static export; exclude private/owner files, databases, local documents, models, weights, credentials, uploaded files and reference archives. Reject symlinks.</p>
+<p>HuaTuo’s exporter removes non-free course stages. Its public <code>stage_pages.py</code> uses an explicit file list and per-file SHA-256 checks before producing the artifact. This is the strongest deployment pattern to adapt. Its <code>LICENSES.md</code> explicitly licenses project code/course text under MIT; third-party materials retain their own terms. A GitHub API <code>license:null</code> is not a substitute for reading that file. Recommendations here transfer interaction patterns without copying medical content or large assets.</p>
+<p>Acceptance should cover a completely extracted package under <code>file://</code>, localhost and a <code>/REPO/</code> hosting prefix; verify entry links, a full manuscript and a service-free tool. Mobile sound and model inference require their own actual-device checks.</p>
+<p>Pinned source links and exact local file locators are listed in <code>REFERENCE_ADAPTATION_ZH.md</code>; machine-readable versions and source inventory are alongside this document.</p>
+</body></html>

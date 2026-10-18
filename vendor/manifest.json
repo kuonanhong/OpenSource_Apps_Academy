@@ -1,0 +1,184 @@
+[
+  {
+    "name": "papaparse",
+    "version": "5.5.3",
+    "source": "https://registry.npmjs.org/papaparse/-/papaparse-5.5.3.tgz",
+    "status": "bundled"
+  },
+  {
+    "name": "katex",
+    "version": "0.16.22",
+    "source": "https://registry.npmjs.org/katex/-/katex-0.16.22.tgz",
+    "status": "bundled"
+  },
+  {
+    "name": "mathjs",
+    "version": "14.8.1",
+    "source": "https://registry.npmjs.org/mathjs/-/mathjs-14.8.1.tgz",
+    "status": "bundled"
+  },
+  {
+    "name": "dompurify",
+    "version": "3.2.7",
+    "source": "https://registry.npmjs.org/dompurify/-/dompurify-3.2.7.tgz",
+    "status": "bundled"
+  },
+  {
+    "name": "marked",
+    "version": "17.0.5",
+    "source": {
+      "type": "git",
+      "url": "git://github.com/markedjs/marked.git"
+    },
+    "status": "bundled"
+  },
+  {
+    "name": "jszip",
+    "version": "3.10.1",
+    "source": {
+      "type": "git",
+      "url": "https://github.com/Stuk/jszip.git"
+    },
+    "status": "bundled"
+  },
+  {
+    "name": "pdf-lib",
+    "version": "1.17.1",
+    "source": "git+https://github.com/Hopding/pdf-lib.git",
+    "status": "bundled"
+  },
+  {
+    "name": "three",
+    "version": "0.179.1",
+    "source": "https://registry.npmjs.org/three/-/three-0.179.1.tgz",
+    "status": "bundled",
+    "license": "MIT",
+    "licensePath": "threejs/LICENSE",
+    "bytes": 1421769,
+    "sha256": {
+      "threejs/three.offline.js": "5f2ef5aadcc222aa35cb6eeef5324fb1ff579eba2f4a64fc2749059d9cc7ab4f",
+      "threejs/build/three.core.min.js": "79f2b4f58d3e99a9948a4d3b7f6d5c2daf705bdefe9fb82ebec715623966551c",
+      "threejs/build/three.module.min.js": "06552c54e4071fbc7305117aafe6765d92c5d2a2a83507d4f05b9bf4f3d4d463"
+    },
+    "offlineBuild": "classic IIFE with no module fetch"
+  },
+  {
+    "name": "pdfjs-dist",
+    "version": "5.6.205",
+    "source": "https://github.com/mozilla/pdfjs-dist/tree/v5.6.205",
+    "status": "bundled",
+    "license": "Apache-2.0",
+    "licensePath": "pdfjs/LICENSE",
+    "bytes": 9546010,
+    "sha256": {
+      "pdfjs/pdf.worker.offline.js": "ce28836ce923becf215ced1573b36c424fefa765d1b0ce2f28e325d042dadfed",
+      "pdfjs/pdf.offline.js": "fa650123e2615317717f2ec652794bf51a47d843021842c1113936b94fe963f8",
+      "pdfjs/pdf.binary-assets.js": "5e6df7ec5dfa7c6b3527671eff202166610cf5e390369e01fa3b1f661c6c474a",
+      "pdfjs/wasm/openjpeg_nowasm_fallback.js": "07c3c3361827308741bc31c561b59e705ebb4d1e8efb84e4d24884e230dbb894",
+      "pdfjs/build/pdf.min.mjs": "0d29c4871eff0b72f3896825f2673ddf7dfbccf815a7095a5d14f5aa68fab0e5",
+      "pdfjs/build/pdf.worker.min.mjs": "7fc442c268d107d656755252cf38c422a88e825b7f0caaac6a5f58364dff4179"
+    },
+    "build": "legacy (compatibility polyfills)",
+    "offlineBuild": "classic IIFE with no module fetch"
+  },
+  {
+    "name": "pako",
+    "version": "2.1.0",
+    "repository": "https://github.com/nodeca/pako",
+    "tarball": "https://registry.npmjs.org/pako/-/pako-2.1.0.tgz",
+    "integrity": "sha512-w+eufiZ1WuJYgPXbV/PO3NCMEc3xqylkKHzp8bxp1uW4qaSNQUkwmLLEc3kKsfz8lpV1F8Ht3U1Cm+9Srog2ug==",
+    "license": "(MIT AND Zlib)",
+    "status": "bundled",
+    "licensePath": "pako/LICENSE"
+  },
+  {
+    "name": "fuse.js",
+    "version": "7.1.0",
+    "source": "https://registry.npmjs.org/fuse.js/-/fuse.js-7.1.0.tgz",
+    "license": "Apache-2.0",
+    "status": "bundled",
+    "bundle": "browser-workbenches/browser-tools.iife.js",
+    "licenseDirectory": "browser-workbenches/licenses"
+  },
+  {
+    "name": "js-yaml",
+    "version": "4.1.0",
+    "source": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz",
+    "license": "MIT",
+    "status": "bundled",
+    "bundle": "browser-workbenches/browser-tools.iife.js",
+    "licenseDirectory": "browser-workbenches/licenses"
+  },
+  {
+    "name": "diff",
+    "version": "8.0.2",
+    "source": "https://registry.npmjs.org/diff/-/diff-8.0.2.tgz",
+    "license": "BSD-3-Clause",
+    "status": "bundled",
+    "bundle": "browser-workbenches/browser-tools.iife.js",
+    "licenseDirectory": "browser-workbenches/licenses"
+  },
+  {
+    "name": "qrcode",
+    "version": "1.5.4",
+    "source": "https://registry.npmjs.org/qrcode/-/qrcode-1.5.4.tgz",
+    "license": "MIT",
+    "status": "bundled",
+    "bundle": "browser-workbenches/browser-tools.iife.js",
+    "licenseDirectory": "browser-workbenches/licenses"
+  },
+  {
+    "name": "uuid",
+    "version": "11.1.0",
+    "source": "https://registry.npmjs.org/uuid/-/uuid-11.1.0.tgz",
+    "license": "MIT",
+    "status": "bundled",
+    "bundle": "browser-workbenches/browser-tools.iife.js",
+    "licenseDirectory": "browser-workbenches/licenses"
+  },
+  {
+    "name": "ajv",
+    "version": "8.17.1",
+    "source": "https://registry.npmjs.org/ajv/-/ajv-8.17.1.tgz",
+    "license": "MIT",
+    "status": "bundled",
+    "bundle": "browser-workbenches/browser-tools.iife.js",
+    "licenseDirectory": "browser-workbenches/licenses"
+  },
+  {
+    "name": "decimal.js",
+    "version": "10.6.0",
+    "source": "https://registry.npmjs.org/decimal.js/-/decimal.js-10.6.0.tgz",
+    "license": "MIT",
+    "status": "bundled",
+    "bundle": "browser-workbenches/browser-tools.iife.js",
+    "licenseDirectory": "browser-workbenches/licenses"
+  },
+  {
+    "name": "fflate",
+    "version": "0.8.2",
+    "source": "https://registry.npmjs.org/fflate/-/fflate-0.8.2.tgz",
+    "license": "MIT",
+    "status": "bundled",
+    "bundle": "browser-workbenches/browser-tools.iife.js",
+    "licenseDirectory": "browser-workbenches/licenses"
+  },
+  {
+    "name": "dayjs",
+    "version": "1.11.13",
+    "source": "https://registry.npmjs.org/dayjs/-/dayjs-1.11.13.tgz",
+    "license": "MIT",
+    "status": "bundled",
+    "bundle": "browser-workbenches/browser-tools.iife.js",
+    "licenseDirectory": "browser-workbenches/licenses"
+  },
+  {
+    "name": "validator",
+    "version": "13.15.23",
+    "source": "https://registry.npmjs.org/validator/-/validator-13.15.23.tgz",
+    "license": "MIT",
+    "status": "bundled",
+    "bundle": "browser-workbenches/browser-tools.iife.js",
+    "licenseDirectory": "browser-workbenches/licenses"
+  }
+]

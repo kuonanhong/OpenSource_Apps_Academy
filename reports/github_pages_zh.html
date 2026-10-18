@@ -1,0 +1,46 @@
+<!doctype html><html lang="zh-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GitHub Pages 發布教學 · OpenSource Apps Academy</title><style>body{font:17px/1.85 system-ui,sans-serif;background:#f6f5ed;color:#213b33;max-width:920px;margin:auto;padding:28px}h1,h2,h3{line-height:1.5}h2{margin-top:2em;border-top:1px solid #c6d0bb;padding-top:1em}pre{background:#e8eddf;border-radius:12px;padding:20px;white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 monospace}code{overflow-wrap:anywhere}a{color:#28664a;overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:15px}td,th{padding:12px;border:1px solid #c6d0bb}li{margin:.65em 0}.back{display:inline-block;margin-bottom:20px}@media(max-width:500px){body{padding:18px;font-size:16px}pre{padding:12px;font-size:12px}}@media print{body{background:white;padding:0}.back{display:none}}</style></head><body><a class="back" href="../index.html">← OpenSource Apps Academy</a><h1>發布 OpenSource Apps Academy 到 GitHub Pages</h1>
+<h2>一般使用：不用終端機</h2>
+<p>先將整個 ZIP 解壓縮，再雙擊最外層 <code>index.html</code>。不要在壓縮檔預覽視窗內開啟 HTML。目錄、719篇論文導讀與瀏覽器工具不需要 Python、SciPy 或虛擬環境。手機和平板建議使用發布後的 HTTPS 網址，因為部分系統的檔案預覽器不會執行本機 JavaScript。</p>
+<h2>第一次發布</h2>
+<ol>
+<li><p>在 GitHub 登入 <code>kuonanhong</code>，建立新的 <code>OpenSource_Apps_Academy</code> repository。一般免費帳號請選 Public。不要將模型權重、個人文件或金鑰加入公開網站。</p>
+</li>
+<li><p>電腦先裝好 Git 並設定 GitHub SSH 金鑰；執行 <code>ssh -T git@github.com</code> 檢查 GitHub 回覆的帳號是否正確。該測試即使顯示驗證成功，也可能回傳非零退出碼，GitHub 不提供互動式 shell。
+若 Git 尚未設定提交身分，先設定 <code>git config --global user.name &quot;您的名稱&quot;</code> 及 <code>git config --global user.email &quot;您的GitHub已驗證信箱&quot;</code>。請填自己的資料，不要照抄範例文字。</p>
+</li>
+<li><p>在解壓縮後專案資料夾開啟終端機，先預覽：</p>
+<pre><code class="language-bash">bash Publish_GitHub_Pages.sh
+</code></pre>
+</li>
+<li><p>確認來源及目的地正確後上傳：</p>
+<pre><code class="language-bash">bash Publish_GitHub_Pages.sh --execute
+</code></pre>
+</li>
+<li><p>開啟該 repository → <strong>Settings → Pages → Build and deployment</strong>。Source 選 <strong>Deploy from a branch</strong>，Branch 選 <strong>main</strong>，Folder 選 <strong>/(root)</strong>，再按 <strong>Save</strong>。</p>
+</li>
+<li><p>等待 Pages 顯示成功及網站網址。預設位置為 <code>https://kuonanhong.github.io/OpenSource_Apps_Academy/</code>。這個網址只有在您完成上傳與 Pages 設定後才會生效。</p>
+</li>
+</ol>
+<p>這個簡化流程把 <code>dist/</code> 的內容上傳至遠端根目錄；因此 Pages 必須選 <code>/(root)</code>，不能選 <code>/docs</code> 或 <code>/dist</code>。<code>.nojekyll</code> 已附上，讓套件的 <code>vendor/</code>、資料與 HTML 直接發布。若改用 GitHub Actions 發布，需另設定 workflow；本流程不依賴自製 workflow。</p>
+<h2>日後增量更新與斷線續傳</h2>
+<p>替換本地套件中新增或修正的檔案後，再執行同一個 <code>--execute</code> 指令。腳本比較檔案內容、分批 commit/push；已完成批次會保留。它不會 force-push，不會自動刪除遠端舊檔，也不會把公開網站與私人權重混在一起。Git 的未完成 pack 可能重傳，不是每個位元組都能續傳。</p>
+<h2>上傳完整原始碼</h2>
+<p>預設上傳可直接部署的 <code>dist/</code>。若另建專門保存完整原始碼的 repository，可使用：</p>
+<pre><code class="language-bash">bash upload_github.sh --repo git@github.com:kuonanhong/OpenSource_Apps_Academy_Source.git --source . --execute
+</code></pre>
+<p>不要對既有的馬蓋先或華佗 repository 執行此指令，除非您確定要把此專案合入它們。</p>
+<h2>模型與權重：另一個私人 repository</h2>
+<p>先安裝 GitHub CLI <code>gh</code> 並執行 <code>gh auth login</code>，供腳本確認 repository 確實是私人；實際傳輸仍走 SSH。再執行：</p>
+<pre><code class="language-bash">bash Publish_GitHub_Pages.sh --models-dir &quot;$PWD/models&quot; --models-repo git@github.com:kuonanhong/PRIVATE-MODELS.git --execute
+</code></pre>
+<p>將 <code>models</code> 改成您實際存放權重的資料夾。模型按40MiB分片，附分片與整檔SHA-256；只上傳已取得使用及散布權利的模型。還原方法見 <code>UPLOAD_GUIDE.md</code>。網頁不會因為權重存在 GitHub 而自動執行模型；生成式問答仍需要可用的模型服務。</p>
+<h2>私有庫與手機使用</h2>
+<p>GitHub Free 的 Pages 使用公開 repository；其他方案可支援私人 repository。私人 repository 不代表發布的 Pages 網站也是私人。一般 Pages 網站是公開網址。網站發布後，手機、平板、Mac、Windows、Linux 可用瀏覽器開啟；Python/CAD/本機模型不能在 GitHub Pages 的靜態主機內執行。</p>
+<p>官方說明（核對日期2026-10-18）：</p>
+<ul>
+<li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site</a></li>
+<li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages</a></li>
+<li><a href="https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits">https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits</a></li>
+</ul>
+<p>Pages 發布網站上限1GB；本套件不把模型權重放進網站。免費外部服務可能有流量、硬體、API或帳號限制；開源授權不保證雲端運算免費。</p>
+</body></html>
