@@ -1,0 +1,8 @@
+{
+  "threeClassicGeometry": true,
+  "pdfClassicParse": true,
+  "pdfClassicText": "Offline classic PDF test",
+  "pdfClassicRenderPNGBytes": 3921,
+  "externalFetches": 0,
+  "scope": "Classic scripts in browser-like Node VM with all fetch blocked; browser UI and OS file associations not tested"
+}

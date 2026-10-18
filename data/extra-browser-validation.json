@@ -1,0 +1,8 @@
+{
+  "threeRevision": "179",
+  "geometryTriangles": 2880,
+  "pdfVersion": "5.6.205",
+  "pdfText": "Open Lab PDF.js verified",
+  "renderPNGBytes": 4398,
+  "scope": "Actual vendored libraries tested in Node; browser interactions and WebGL rendering not visually tested"
+}

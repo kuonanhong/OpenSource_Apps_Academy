@@ -1,0 +1,47 @@
+{
+  "tests": [
+    {
+      "id": "fuse",
+      "status": "passed"
+    },
+    {
+      "id": "yaml",
+      "status": "passed"
+    },
+    {
+      "id": "diff",
+      "status": "passed"
+    },
+    {
+      "id": "qrcode",
+      "status": "passed"
+    },
+    {
+      "id": "uuid",
+      "status": "passed"
+    },
+    {
+      "id": "ajv",
+      "status": "passed"
+    },
+    {
+      "id": "decimal",
+      "status": "passed"
+    },
+    {
+      "id": "fflate",
+      "status": "passed"
+    },
+    {
+      "id": "dayjs",
+      "status": "passed"
+    },
+    {
+      "id": "validator",
+      "status": "passed"
+    }
+  ],
+  "gzipRoundtrip": true,
+  "schemaGuard": true,
+  "scope": "Actual bundled classic-IIFE libraries executed in isolated Node VM. Full browser UI and mobile filesystem behavior not tested."
+}

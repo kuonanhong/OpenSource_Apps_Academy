@@ -1,0 +1,27 @@
+{
+  "active": 719,
+  "families": 372,
+  "subjects": 17,
+  "withdrawals": 3,
+  "sourceExtracted": 719,
+  "chineseNotes": 719,
+  "deepDives": 15,
+  "browserTools": 18,
+  "localAdapters": 16,
+  "integrationGuides": 15,
+  "browserVisualQA": "not-run-control-browser-unavailable",
+  "proofVerification": "not-performed",
+  "repositoryEntries": 2400,
+  "catalogCategories": 12,
+  "catalogCapabilities": {
+    "source": 2366,
+    "local": 16,
+    "browser": 18
+  },
+  "offlineSourceRecords": 719,
+  "publicShortsListed": 237,
+  "publicShortsMetadataChecked": 237,
+  "videosViewed": 0,
+  "transcriptsReviewed": 0,
+  "videoRepositoryAdditions": 19
+}

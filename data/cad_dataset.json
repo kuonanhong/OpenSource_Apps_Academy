@@ -1,0 +1,53 @@
+{
+  "id": "cad-1000-hours",
+  "name": "CAD-1000-Hours",
+  "type": "dataset",
+  "category": "cad",
+  "url": "https://huggingface.co/datasets/markov-ai/cad-1000-hours",
+  "verified_at": "2026-10-18",
+  "license": "not specified in the reviewed dataset card; not treated as freely redistributable",
+  "summary_zh": "CAD 操作示範資料集，包含任務、評分準則、錄影、操作事件與輸入/輸出檔案。它不是可以直接用 HTML 執行的 CAD 引擎。",
+  "summary_en": "A dataset of CAD tasks, recordings, event traces, rubrics and input/output artifacts; it is not a browser CAD engine.",
+  "publisher_reported_stats": {
+    "tasks": 509,
+    "hours": 1018.1229,
+    "public_task_objects": 5455,
+    "size_gib": 207.18,
+    "platform": "Windows"
+  },
+  "software_task_counts": {
+    "AutoCAD": 312,
+    "Revit": 24,
+    "SOLIDWORKS": 114,
+    "SketchUp": 30,
+    "CATIA V5": 7,
+    "Siemens NX": 20,
+    "V-Ray": 2
+  },
+  "task_files": [
+    "task_desc.json",
+    "rubrics.json",
+    "task_overview.pdf",
+    "clip.mp4",
+    "frame_events.json",
+    "metadata.json",
+    "narration.json",
+    "input_files/",
+    "output_files/"
+  ],
+  "integration": "A lesson player can load locally supplied task_desc/rubrics/narration and a licensed task clip, synchronize events, and link a CadQuery exercise. This is an integration proposal, not a validated dataset-derived CAD agent.",
+  "limitations": [
+    "The current Hugging Face viewer reports DatasetGenerationError.",
+    "No dataset license was found in the reviewed card/raw README. Verify licensing before redistribution or training.",
+    "Native CAD files may require commercial applications; dataset availability does not grant those software licenses.",
+    "Statistics are publisher-reported, not an independent audit of all files."
+  ],
+  "source_urls": [
+    "https://huggingface.co/datasets/markov-ai/cad-1000-hours",
+    "https://huggingface.co/datasets/markov-ai/cad-1000-hours/raw/main/README.md"
+  ],
+  "source_refs": [
+    "turn2view8",
+    "turn12view2"
+  ]
+}
